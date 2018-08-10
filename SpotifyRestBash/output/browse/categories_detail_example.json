@@ -1,0 +1,10 @@
+{
+  "href" : "https://api.spotify.com/v1/browse/categories/metal",
+  "icons" : [ {
+    "height" : 274,
+    "url" : "https://t.scdn.co/media/original/metal_27c921443fd0a5ba95b1b2c2ae654b2b_274x274.jpg",
+    "width" : 274
+  } ],
+  "id" : "metal",
+  "name" : "Metal"
+}

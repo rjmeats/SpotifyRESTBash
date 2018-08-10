@@ -1,0 +1,1024 @@
+{
+  "tracks" : [ {
+    "album" : {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1QL7yTHrdahRMpvNtn6rI2"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1QL7yTHrdahRMpvNtn6rI2",
+        "id" : "1QL7yTHrdahRMpvNtn6rI2",
+        "name" : "George Frideric Handel",
+        "type" : "artist",
+        "uri" : "spotify:artist:1QL7yTHrdahRMpvNtn6rI2"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/32i0ni9RO8Q7T7T7ZqkGU2"
+        },
+        "href" : "https://api.spotify.com/v1/artists/32i0ni9RO8Q7T7T7ZqkGU2",
+        "id" : "32i0ni9RO8Q7T7T7ZqkGU2",
+        "name" : "Yehudi Menuhin",
+        "type" : "artist",
+        "uri" : "spotify:artist:32i0ni9RO8Q7T7T7ZqkGU2"
+      } ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/657D9POYWMrDMK9MWNxPHL"
+      },
+      "href" : "https://api.spotify.com/v1/albums/657D9POYWMrDMK9MWNxPHL",
+      "id" : "657D9POYWMrDMK9MWNxPHL",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/3677dcd7673ce0368c33c1c2e24dd47925e634c5",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/9aeb691462a66514eb7c98c2e19b87f8cbb3b8ca",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/6c6eecb2bc3dbe54213ab075e3ed3d0f535a3900",
+        "width" : 64
+      } ],
+      "name" : "Handel Sarabande",
+      "release_date" : "2002",
+      "release_date_precision" : "year",
+      "total_tracks" : 22,
+      "type" : "album",
+      "uri" : "spotify:album:657D9POYWMrDMK9MWNxPHL"
+    },
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1QL7yTHrdahRMpvNtn6rI2"
+      },
+      "href" : "https://api.spotify.com/v1/artists/1QL7yTHrdahRMpvNtn6rI2",
+      "id" : "1QL7yTHrdahRMpvNtn6rI2",
+      "name" : "George Frideric Handel",
+      "type" : "artist",
+      "uri" : "spotify:artist:1QL7yTHrdahRMpvNtn6rI2"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/6bk0YPhJSL44WBtoGe4GI6"
+      },
+      "href" : "https://api.spotify.com/v1/artists/6bk0YPhJSL44WBtoGe4GI6",
+      "id" : "6bk0YPhJSL44WBtoGe4GI6",
+      "name" : "Alexander Briger",
+      "type" : "artist",
+      "uri" : "spotify:artist:6bk0YPhJSL44WBtoGe4GI6"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/77CaCn32H4mOMQA7UElzfF"
+      },
+      "href" : "https://api.spotify.com/v1/artists/77CaCn32H4mOMQA7UElzfF",
+      "id" : "77CaCn32H4mOMQA7UElzfF",
+      "name" : "Academy of St. Martin in the Fields",
+      "type" : "artist",
+      "uri" : "spotify:artist:77CaCn32H4mOMQA7UElzfF"
+    } ],
+    "disc_number" : 1,
+    "duration_ms" : 207266,
+    "explicit" : false,
+    "external_ids" : {
+      "isrc" : "GBAYC0201575"
+    },
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/track/1upQiytDIEZfl9ItruoXuC"
+    },
+    "href" : "https://api.spotify.com/v1/tracks/1upQiytDIEZfl9ItruoXuC",
+    "id" : "1upQiytDIEZfl9ItruoXuC",
+    "is_local" : false,
+    "is_playable" : true,
+    "name" : "Handel / Arr Hale: Keyboard Suite in D Minor, HWV 437: III. Sarabande (Arr. Hale for Orchestra)",
+    "popularity" : 53,
+    "preview_url" : "https://p.scdn.co/mp3-preview/a4db8e757fef306c7a2cdb88cec1e9f6631d1e7d?cid=774b29d4f13844c495f206cafdad9c86",
+    "track_number" : 1,
+    "type" : "track",
+    "uri" : "spotify:track:1upQiytDIEZfl9ItruoXuC"
+  }, {
+    "album" : {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1QL7yTHrdahRMpvNtn6rI2"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1QL7yTHrdahRMpvNtn6rI2",
+        "id" : "1QL7yTHrdahRMpvNtn6rI2",
+        "name" : "George Frideric Handel",
+        "type" : "artist",
+        "uri" : "spotify:artist:1QL7yTHrdahRMpvNtn6rI2"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/60adCptqwRkANTtVja0bvf"
+        },
+        "href" : "https://api.spotify.com/v1/artists/60adCptqwRkANTtVja0bvf",
+        "id" : "60adCptqwRkANTtVja0bvf",
+        "name" : "Academy of Ancient Music",
+        "type" : "artist",
+        "uri" : "spotify:artist:60adCptqwRkANTtVja0bvf"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/0wIAnpAug0yADcWCSB4jKq"
+        },
+        "href" : "https://api.spotify.com/v1/artists/0wIAnpAug0yADcWCSB4jKq",
+        "id" : "0wIAnpAug0yADcWCSB4jKq",
+        "name" : "Richard Egarr",
+        "type" : "artist",
+        "uri" : "spotify:artist:0wIAnpAug0yADcWCSB4jKq"
+      } ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/5OQJ9lv225IZAL4YNVO8L5"
+      },
+      "href" : "https://api.spotify.com/v1/albums/5OQJ9lv225IZAL4YNVO8L5",
+      "id" : "5OQJ9lv225IZAL4YNVO8L5",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/2da26d1a3e5335f83d0ac99d3be3bc3466bd0841",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/b03ba8f7f262fcb0832adc877a737e6b35790f48",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/e3e4387536f9b19848eaea80499ef13c9cb626f7",
+        "width" : 64
+      } ],
+      "name" : "Handel: Organ Concertos, Op. 7",
+      "release_date" : "2009-08-11",
+      "release_date_precision" : "day",
+      "total_tracks" : 32,
+      "type" : "album",
+      "uri" : "spotify:album:5OQJ9lv225IZAL4YNVO8L5"
+    },
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1QL7yTHrdahRMpvNtn6rI2"
+      },
+      "href" : "https://api.spotify.com/v1/artists/1QL7yTHrdahRMpvNtn6rI2",
+      "id" : "1QL7yTHrdahRMpvNtn6rI2",
+      "name" : "George Frideric Handel",
+      "type" : "artist",
+      "uri" : "spotify:artist:1QL7yTHrdahRMpvNtn6rI2"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/60adCptqwRkANTtVja0bvf"
+      },
+      "href" : "https://api.spotify.com/v1/artists/60adCptqwRkANTtVja0bvf",
+      "id" : "60adCptqwRkANTtVja0bvf",
+      "name" : "Academy of Ancient Music",
+      "type" : "artist",
+      "uri" : "spotify:artist:60adCptqwRkANTtVja0bvf"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/0wIAnpAug0yADcWCSB4jKq"
+      },
+      "href" : "https://api.spotify.com/v1/artists/0wIAnpAug0yADcWCSB4jKq",
+      "id" : "0wIAnpAug0yADcWCSB4jKq",
+      "name" : "Richard Egarr",
+      "type" : "artist",
+      "uri" : "spotify:artist:0wIAnpAug0yADcWCSB4jKq"
+    } ],
+    "disc_number" : 1,
+    "duration_ms" : 285840,
+    "explicit" : false,
+    "external_ids" : {
+      "isrc" : "USHM10744714"
+    },
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/track/05iURKvut2OWEzPHQUhDT5"
+    },
+    "href" : "https://api.spotify.com/v1/tracks/05iURKvut2OWEzPHQUhDT5",
+    "id" : "05iURKvut2OWEzPHQUhDT5",
+    "is_local" : false,
+    "is_playable" : true,
+    "name" : "Concerto in D Minor, Op.7, No.4: I. Adagio",
+    "popularity" : 52,
+    "preview_url" : "https://p.scdn.co/mp3-preview/3df4c80b90bb67b5fbe0cc68ac6ac6cf6bc3285c?cid=774b29d4f13844c495f206cafdad9c86",
+    "track_number" : 14,
+    "type" : "track",
+    "uri" : "spotify:track:05iURKvut2OWEzPHQUhDT5"
+  }, {
+    "album" : {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1QL7yTHrdahRMpvNtn6rI2"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1QL7yTHrdahRMpvNtn6rI2",
+        "id" : "1QL7yTHrdahRMpvNtn6rI2",
+        "name" : "George Frideric Handel",
+        "type" : "artist",
+        "uri" : "spotify:artist:1QL7yTHrdahRMpvNtn6rI2"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1R1hwKrqqLqYiD53NtXEBJ"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1R1hwKrqqLqYiD53NtXEBJ",
+        "id" : "1R1hwKrqqLqYiD53NtXEBJ",
+        "name" : "Akademie für Alte Musik Berlin",
+        "type" : "artist",
+        "uri" : "spotify:artist:1R1hwKrqqLqYiD53NtXEBJ"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2LnE7uKchgVW2Uv7vzwixZ"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2LnE7uKchgVW2Uv7vzwixZ",
+        "id" : "2LnE7uKchgVW2Uv7vzwixZ",
+        "name" : "Andreas Scholl",
+        "type" : "artist",
+        "uri" : "spotify:artist:2LnE7uKchgVW2Uv7vzwixZ"
+      } ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/1NhltGpKXjUYFf6bBxEWAH"
+      },
+      "href" : "https://api.spotify.com/v1/albums/1NhltGpKXjUYFf6bBxEWAH",
+      "id" : "1NhltGpKXjUYFf6bBxEWAH",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/d144085db00ab9b15a69c6a77fc34046bfd48760",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/f34fedf10c2b82d61ad54061a71ebe43af46fe1e",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/4775cf8ca84398991f68a795a6cab61776941024",
+        "width" : 64
+      } ],
+      "name" : "Handel: Ombra mai fù",
+      "release_date" : "1999",
+      "release_date_precision" : "year",
+      "total_tracks" : 24,
+      "type" : "album",
+      "uri" : "spotify:album:1NhltGpKXjUYFf6bBxEWAH"
+    },
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1QL7yTHrdahRMpvNtn6rI2"
+      },
+      "href" : "https://api.spotify.com/v1/artists/1QL7yTHrdahRMpvNtn6rI2",
+      "id" : "1QL7yTHrdahRMpvNtn6rI2",
+      "name" : "George Frideric Handel",
+      "type" : "artist",
+      "uri" : "spotify:artist:1QL7yTHrdahRMpvNtn6rI2"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1R1hwKrqqLqYiD53NtXEBJ"
+      },
+      "href" : "https://api.spotify.com/v1/artists/1R1hwKrqqLqYiD53NtXEBJ",
+      "id" : "1R1hwKrqqLqYiD53NtXEBJ",
+      "name" : "Akademie für Alte Musik Berlin",
+      "type" : "artist",
+      "uri" : "spotify:artist:1R1hwKrqqLqYiD53NtXEBJ"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/2LnE7uKchgVW2Uv7vzwixZ"
+      },
+      "href" : "https://api.spotify.com/v1/artists/2LnE7uKchgVW2Uv7vzwixZ",
+      "id" : "2LnE7uKchgVW2Uv7vzwixZ",
+      "name" : "Andreas Scholl",
+      "type" : "artist",
+      "uri" : "spotify:artist:2LnE7uKchgVW2Uv7vzwixZ"
+    } ],
+    "disc_number" : 1,
+    "duration_ms" : 183333,
+    "explicit" : false,
+    "external_ids" : {
+      "isrc" : "FRZ149824070"
+    },
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/track/6WK6PgqSgVfeMZNiYUajdc"
+    },
+    "href" : "https://api.spotify.com/v1/tracks/6WK6PgqSgVfeMZNiYUajdc",
+    "id" : "6WK6PgqSgVfeMZNiYUajdc",
+    "is_local" : false,
+    "is_playable" : true,
+    "name" : "Serse: Aria \"Ombra mai fù\" (Atto I, scena 1)",
+    "popularity" : 49,
+    "preview_url" : "https://p.scdn.co/mp3-preview/4464a85f5331811a3cd63b05186c5ff4a3f29101?cid=774b29d4f13844c495f206cafdad9c86",
+    "track_number" : 7,
+    "type" : "track",
+    "uri" : "spotify:track:6WK6PgqSgVfeMZNiYUajdc"
+  }, {
+    "album" : {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1QL7yTHrdahRMpvNtn6rI2"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1QL7yTHrdahRMpvNtn6rI2",
+        "id" : "1QL7yTHrdahRMpvNtn6rI2",
+        "name" : "George Frideric Handel",
+        "type" : "artist",
+        "uri" : "spotify:artist:1QL7yTHrdahRMpvNtn6rI2"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/0VzF0TRE4XHQiTqDrEmvW1"
+        },
+        "href" : "https://api.spotify.com/v1/artists/0VzF0TRE4XHQiTqDrEmvW1",
+        "id" : "0VzF0TRE4XHQiTqDrEmvW1",
+        "name" : "Anne Queffélec",
+        "type" : "artist",
+        "uri" : "spotify:artist:0VzF0TRE4XHQiTqDrEmvW1"
+      } ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/4RUb7QQCx6cka5pTY7GdDq"
+      },
+      "href" : "https://api.spotify.com/v1/albums/4RUb7QQCx6cka5pTY7GdDq",
+      "id" : "4RUb7QQCx6cka5pTY7GdDq",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/b2f7e7b9fc561185c325894679bf7736c936a51b",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/adf6fa43beb7b82241c07c0462b8ee72da91d2a5",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/880b312fabcb72edc06c38b6fe57ac704ed9300f",
+        "width" : 64
+      } ],
+      "name" : "Anne Queffélec Plays Handel",
+      "release_date" : "2006",
+      "release_date_precision" : "year",
+      "total_tracks" : 23,
+      "type" : "album",
+      "uri" : "spotify:album:4RUb7QQCx6cka5pTY7GdDq"
+    },
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1QL7yTHrdahRMpvNtn6rI2"
+      },
+      "href" : "https://api.spotify.com/v1/artists/1QL7yTHrdahRMpvNtn6rI2",
+      "id" : "1QL7yTHrdahRMpvNtn6rI2",
+      "name" : "George Frideric Handel",
+      "type" : "artist",
+      "uri" : "spotify:artist:1QL7yTHrdahRMpvNtn6rI2"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/0VzF0TRE4XHQiTqDrEmvW1"
+      },
+      "href" : "https://api.spotify.com/v1/artists/0VzF0TRE4XHQiTqDrEmvW1",
+      "id" : "0VzF0TRE4XHQiTqDrEmvW1",
+      "name" : "Anne Queffélec",
+      "type" : "artist",
+      "uri" : "spotify:artist:0VzF0TRE4XHQiTqDrEmvW1"
+    } ],
+    "disc_number" : 1,
+    "duration_ms" : 275640,
+    "explicit" : false,
+    "external_ids" : {
+      "isrc" : "FRU620501023"
+    },
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/track/27cvNIRYgNqDGki4r49lxF"
+    },
+    "href" : "https://api.spotify.com/v1/tracks/27cvNIRYgNqDGki4r49lxF",
+    "id" : "27cvNIRYgNqDGki4r49lxF",
+    "is_local" : false,
+    "is_playable" : true,
+    "name" : "Menuet en Sol Mineur, Transcription de Wilhem Kempff d’après Le Menuet de la Suite en Si Bémol Majeur No. 1, HWV 434, 1er Cahier",
+    "popularity" : 47,
+    "preview_url" : "https://p.scdn.co/mp3-preview/ec27294877a32a7f8d6365abb094dffca6d521f3?cid=774b29d4f13844c495f206cafdad9c86",
+    "track_number" : 23,
+    "type" : "track",
+    "uri" : "spotify:track:27cvNIRYgNqDGki4r49lxF"
+  }, {
+    "album" : {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1QL7yTHrdahRMpvNtn6rI2"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1QL7yTHrdahRMpvNtn6rI2",
+        "id" : "1QL7yTHrdahRMpvNtn6rI2",
+        "name" : "George Frideric Handel",
+        "type" : "artist",
+        "uri" : "spotify:artist:1QL7yTHrdahRMpvNtn6rI2"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/7xB7TQUAeFWgqdkhGiArgZ"
+        },
+        "href" : "https://api.spotify.com/v1/artists/7xB7TQUAeFWgqdkhGiArgZ",
+        "id" : "7xB7TQUAeFWgqdkhGiArgZ",
+        "name" : "Christina Pluhar",
+        "type" : "artist",
+        "uri" : "spotify:artist:7xB7TQUAeFWgqdkhGiArgZ"
+      } ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/1O4kkAnaVjGnmXuDp5v8CA"
+      },
+      "href" : "https://api.spotify.com/v1/albums/1O4kkAnaVjGnmXuDp5v8CA",
+      "id" : "1O4kkAnaVjGnmXuDp5v8CA",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/ca480e3ce434bef5a1edcff272a6ac8cc47a5b8f",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/fdb5b4845f7392d0b0f36b1e3116438c77af48f0",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/b6620da050645fa90cf3cdf671bcf55e7e726c32",
+        "width" : 64
+      } ],
+      "name" : "Handel goes Wild",
+      "release_date" : "2017-09-01",
+      "release_date_precision" : "day",
+      "total_tracks" : 15,
+      "type" : "album",
+      "uri" : "spotify:album:1O4kkAnaVjGnmXuDp5v8CA"
+    },
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1QL7yTHrdahRMpvNtn6rI2"
+      },
+      "href" : "https://api.spotify.com/v1/artists/1QL7yTHrdahRMpvNtn6rI2",
+      "id" : "1QL7yTHrdahRMpvNtn6rI2",
+      "name" : "George Frideric Handel",
+      "type" : "artist",
+      "uri" : "spotify:artist:1QL7yTHrdahRMpvNtn6rI2"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/7xB7TQUAeFWgqdkhGiArgZ"
+      },
+      "href" : "https://api.spotify.com/v1/artists/7xB7TQUAeFWgqdkhGiArgZ",
+      "id" : "7xB7TQUAeFWgqdkhGiArgZ",
+      "name" : "Christina Pluhar",
+      "type" : "artist",
+      "uri" : "spotify:artist:7xB7TQUAeFWgqdkhGiArgZ"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/3kC7VaScP8y69rzg0vsswQ"
+      },
+      "href" : "https://api.spotify.com/v1/artists/3kC7VaScP8y69rzg0vsswQ",
+      "id" : "3kC7VaScP8y69rzg0vsswQ",
+      "name" : "L'Arpeggiata",
+      "type" : "artist",
+      "uri" : "spotify:artist:3kC7VaScP8y69rzg0vsswQ"
+    } ],
+    "disc_number" : 1,
+    "duration_ms" : 301040,
+    "explicit" : false,
+    "external_ids" : {
+      "isrc" : "GBPFW1700016"
+    },
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/track/3rjSA87foWFMhgSmT4MX3l"
+    },
+    "href" : "https://api.spotify.com/v1/tracks/3rjSA87foWFMhgSmT4MX3l",
+    "id" : "3rjSA87foWFMhgSmT4MX3l",
+    "is_local" : false,
+    "is_playable" : true,
+    "name" : "Handel / Arr Pluhar: Sinfonia (From Alcina HWV 34)",
+    "popularity" : 46,
+    "preview_url" : "https://p.scdn.co/mp3-preview/a800aa3b38e4e380d3dc595b666ff616c5c79429?cid=774b29d4f13844c495f206cafdad9c86",
+    "track_number" : 1,
+    "type" : "track",
+    "uri" : "spotify:track:3rjSA87foWFMhgSmT4MX3l"
+  }, {
+    "album" : {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1QL7yTHrdahRMpvNtn6rI2"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1QL7yTHrdahRMpvNtn6rI2",
+        "id" : "1QL7yTHrdahRMpvNtn6rI2",
+        "name" : "George Frideric Handel",
+        "type" : "artist",
+        "uri" : "spotify:artist:1QL7yTHrdahRMpvNtn6rI2"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/4yCuIgkycBRN7pSeP4OSbi"
+        },
+        "href" : "https://api.spotify.com/v1/artists/4yCuIgkycBRN7pSeP4OSbi",
+        "id" : "4yCuIgkycBRN7pSeP4OSbi",
+        "name" : "Apollo's Fire",
+        "type" : "artist",
+        "uri" : "spotify:artist:4yCuIgkycBRN7pSeP4OSbi"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/0bkA8dvOFQ9VzxKS9Pwkfm"
+        },
+        "href" : "https://api.spotify.com/v1/artists/0bkA8dvOFQ9VzxKS9Pwkfm",
+        "id" : "0bkA8dvOFQ9VzxKS9Pwkfm",
+        "name" : "Jeannette Sorrell",
+        "type" : "artist",
+        "uri" : "spotify:artist:0bkA8dvOFQ9VzxKS9Pwkfm"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2zvJs6RTtBWHcFalFjNMao"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2zvJs6RTtBWHcFalFjNMao",
+        "id" : "2zvJs6RTtBWHcFalFjNMao",
+        "name" : "The Cleveland Baroque Orchestra",
+        "type" : "artist",
+        "uri" : "spotify:artist:2zvJs6RTtBWHcFalFjNMao"
+      } ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/7kZLrZGiSDrErwiNh0rCDb"
+      },
+      "href" : "https://api.spotify.com/v1/albums/7kZLrZGiSDrErwiNh0rCDb",
+      "id" : "7kZLrZGiSDrErwiNh0rCDb",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/d76b4beb487ebd421e665a31f9596489070aeefc",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/4f8ce0a0a4c44b7994ebe3ea3f1fba9d3ee52cf5",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/2bde57576db36e528dcb2a606573f532951425b5",
+        "width" : 64
+      } ],
+      "name" : "Handel: Messiah",
+      "release_date" : "2011-02-08",
+      "release_date_precision" : "day",
+      "total_tracks" : 49,
+      "type" : "album",
+      "uri" : "spotify:album:7kZLrZGiSDrErwiNh0rCDb"
+    },
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1QL7yTHrdahRMpvNtn6rI2"
+      },
+      "href" : "https://api.spotify.com/v1/artists/1QL7yTHrdahRMpvNtn6rI2",
+      "id" : "1QL7yTHrdahRMpvNtn6rI2",
+      "name" : "George Frideric Handel",
+      "type" : "artist",
+      "uri" : "spotify:artist:1QL7yTHrdahRMpvNtn6rI2"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/2zvJs6RTtBWHcFalFjNMao"
+      },
+      "href" : "https://api.spotify.com/v1/artists/2zvJs6RTtBWHcFalFjNMao",
+      "id" : "2zvJs6RTtBWHcFalFjNMao",
+      "name" : "The Cleveland Baroque Orchestra",
+      "type" : "artist",
+      "uri" : "spotify:artist:2zvJs6RTtBWHcFalFjNMao"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/4yCuIgkycBRN7pSeP4OSbi"
+      },
+      "href" : "https://api.spotify.com/v1/artists/4yCuIgkycBRN7pSeP4OSbi",
+      "id" : "4yCuIgkycBRN7pSeP4OSbi",
+      "name" : "Apollo's Fire",
+      "type" : "artist",
+      "uri" : "spotify:artist:4yCuIgkycBRN7pSeP4OSbi"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/0bkA8dvOFQ9VzxKS9Pwkfm"
+      },
+      "href" : "https://api.spotify.com/v1/artists/0bkA8dvOFQ9VzxKS9Pwkfm",
+      "id" : "0bkA8dvOFQ9VzxKS9Pwkfm",
+      "name" : "Jeannette Sorrell",
+      "type" : "artist",
+      "uri" : "spotify:artist:0bkA8dvOFQ9VzxKS9Pwkfm"
+    } ],
+    "disc_number" : 1,
+    "duration_ms" : 232680,
+    "explicit" : false,
+    "external_ids" : {
+      "isrc" : "GBELX1003515"
+    },
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/track/3462hQTzF5oHhoJfJJ5ULK"
+    },
+    "href" : "https://api.spotify.com/v1/tracks/3462hQTzF5oHhoJfJJ5ULK",
+    "id" : "3462hQTzF5oHhoJfJJ5ULK",
+    "is_local" : false,
+    "is_playable" : true,
+    "name" : "Messiah, HWV 56, Pt. 1: For unto us a child is born - Part I",
+    "popularity" : 43,
+    "preview_url" : "https://p.scdn.co/mp3-preview/4952fae3d0051e211d9de4ec925b25f300d92cc1?cid=774b29d4f13844c495f206cafdad9c86",
+    "track_number" : 12,
+    "type" : "track",
+    "uri" : "spotify:track:3462hQTzF5oHhoJfJJ5ULK"
+  }, {
+    "album" : {
+      "album_type" : "single",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1QL7yTHrdahRMpvNtn6rI2"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1QL7yTHrdahRMpvNtn6rI2",
+        "id" : "1QL7yTHrdahRMpvNtn6rI2",
+        "name" : "George Frideric Handel",
+        "type" : "artist",
+        "uri" : "spotify:artist:1QL7yTHrdahRMpvNtn6rI2"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/63CKT3IDfI3TsX6jddmb7A"
+        },
+        "href" : "https://api.spotify.com/v1/artists/63CKT3IDfI3TsX6jddmb7A",
+        "id" : "63CKT3IDfI3TsX6jddmb7A",
+        "name" : "Anthony Roth Costanzo",
+        "type" : "artist",
+        "uri" : "spotify:artist:63CKT3IDfI3TsX6jddmb7A"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/0z6t3buywDCXXWpXnkmH7R"
+        },
+        "href" : "https://api.spotify.com/v1/artists/0z6t3buywDCXXWpXnkmH7R",
+        "id" : "0z6t3buywDCXXWpXnkmH7R",
+        "name" : "Jonathan Cohen",
+        "type" : "artist",
+        "uri" : "spotify:artist:0z6t3buywDCXXWpXnkmH7R"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/0JjlFfPu43HSIHEUP3zKvP"
+        },
+        "href" : "https://api.spotify.com/v1/artists/0JjlFfPu43HSIHEUP3zKvP",
+        "id" : "0JjlFfPu43HSIHEUP3zKvP",
+        "name" : "Les Violons du Roy",
+        "type" : "artist",
+        "uri" : "spotify:artist:0JjlFfPu43HSIHEUP3zKvP"
+      } ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/45wFScW1LmwawwNVSdRqf1"
+      },
+      "href" : "https://api.spotify.com/v1/albums/45wFScW1LmwawwNVSdRqf1",
+      "id" : "45wFScW1LmwawwNVSdRqf1",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/42b7a15ec71712dcad1603d03500af4b3c385359",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/2d5f220fc079fd0ec29b8908f1bf53abc159f123",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/6aba88a727a8d3544314372e57d89b5a212377c3",
+        "width" : 64
+      } ],
+      "name" : "Amadigi di Gaula, HWV 11: Pena Tiranna",
+      "release_date" : "2018-07-20",
+      "release_date_precision" : "day",
+      "total_tracks" : 1,
+      "type" : "album",
+      "uri" : "spotify:album:45wFScW1LmwawwNVSdRqf1"
+    },
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1QL7yTHrdahRMpvNtn6rI2"
+      },
+      "href" : "https://api.spotify.com/v1/artists/1QL7yTHrdahRMpvNtn6rI2",
+      "id" : "1QL7yTHrdahRMpvNtn6rI2",
+      "name" : "George Frideric Handel",
+      "type" : "artist",
+      "uri" : "spotify:artist:1QL7yTHrdahRMpvNtn6rI2"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/63CKT3IDfI3TsX6jddmb7A"
+      },
+      "href" : "https://api.spotify.com/v1/artists/63CKT3IDfI3TsX6jddmb7A",
+      "id" : "63CKT3IDfI3TsX6jddmb7A",
+      "name" : "Anthony Roth Costanzo",
+      "type" : "artist",
+      "uri" : "spotify:artist:63CKT3IDfI3TsX6jddmb7A"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/0z6t3buywDCXXWpXnkmH7R"
+      },
+      "href" : "https://api.spotify.com/v1/artists/0z6t3buywDCXXWpXnkmH7R",
+      "id" : "0z6t3buywDCXXWpXnkmH7R",
+      "name" : "Jonathan Cohen",
+      "type" : "artist",
+      "uri" : "spotify:artist:0z6t3buywDCXXWpXnkmH7R"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/0JjlFfPu43HSIHEUP3zKvP"
+      },
+      "href" : "https://api.spotify.com/v1/artists/0JjlFfPu43HSIHEUP3zKvP",
+      "id" : "0JjlFfPu43HSIHEUP3zKvP",
+      "name" : "Les Violons du Roy",
+      "type" : "artist",
+      "uri" : "spotify:artist:0JjlFfPu43HSIHEUP3zKvP"
+    } ],
+    "disc_number" : 1,
+    "duration_ms" : 401040,
+    "explicit" : false,
+    "external_ids" : {
+      "isrc" : "USUM71805929"
+    },
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/track/6CXihvab0avtOWROGwfaHX"
+    },
+    "href" : "https://api.spotify.com/v1/tracks/6CXihvab0avtOWROGwfaHX",
+    "id" : "6CXihvab0avtOWROGwfaHX",
+    "is_local" : false,
+    "is_playable" : true,
+    "name" : "Amadigi di Gaula, HWV 11: Pena Tiranna",
+    "popularity" : 41,
+    "preview_url" : null,
+    "track_number" : 1,
+    "type" : "track",
+    "uri" : "spotify:track:6CXihvab0avtOWROGwfaHX"
+  }, {
+    "album" : {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/0bouHpX4JiuPnIfP2jFxRi"
+        },
+        "href" : "https://api.spotify.com/v1/artists/0bouHpX4JiuPnIfP2jFxRi",
+        "id" : "0bouHpX4JiuPnIfP2jFxRi",
+        "name" : "Khatia Buniatishvili",
+        "type" : "artist",
+        "uri" : "spotify:artist:0bouHpX4JiuPnIfP2jFxRi"
+      } ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/1QlwdrB0YycnoWOH1JqCqh"
+      },
+      "href" : "https://api.spotify.com/v1/albums/1QlwdrB0YycnoWOH1JqCqh",
+      "id" : "1QlwdrB0YycnoWOH1JqCqh",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/6c70923c246d7f88cc6e150367dc1e7a3db07f86",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/81afcc401bfeb68c58db54ba6b40a93d0015bb53",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/d69824cff236c940d7609f274e1a9f8223db0e63",
+        "width" : 64
+      } ],
+      "name" : "Motherland",
+      "release_date" : "2014-05-16",
+      "release_date_precision" : "day",
+      "total_tracks" : 17,
+      "type" : "album",
+      "uri" : "spotify:album:1QlwdrB0YycnoWOH1JqCqh"
+    },
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1QL7yTHrdahRMpvNtn6rI2"
+      },
+      "href" : "https://api.spotify.com/v1/artists/1QL7yTHrdahRMpvNtn6rI2",
+      "id" : "1QL7yTHrdahRMpvNtn6rI2",
+      "name" : "George Frideric Handel",
+      "type" : "artist",
+      "uri" : "spotify:artist:1QL7yTHrdahRMpvNtn6rI2"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/0bouHpX4JiuPnIfP2jFxRi"
+      },
+      "href" : "https://api.spotify.com/v1/artists/0bouHpX4JiuPnIfP2jFxRi",
+      "id" : "0bouHpX4JiuPnIfP2jFxRi",
+      "name" : "Khatia Buniatishvili",
+      "type" : "artist",
+      "uri" : "spotify:artist:0bouHpX4JiuPnIfP2jFxRi"
+    } ],
+    "disc_number" : 1,
+    "duration_ms" : 230893,
+    "explicit" : false,
+    "external_ids" : {
+      "isrc" : "USSM11308082"
+    },
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/track/6jZj45D2jdR6fMEb58TlSc"
+    },
+    "href" : "https://api.spotify.com/v1/tracks/6jZj45D2jdR6fMEb58TlSc",
+    "id" : "6jZj45D2jdR6fMEb58TlSc",
+    "is_local" : false,
+    "is_playable" : true,
+    "name" : "Suite in B-Flat Major, HWV 434: IV. Menuet",
+    "popularity" : 40,
+    "preview_url" : "https://p.scdn.co/mp3-preview/0d840f57de23e803a7461b724232eb5e5ae389e5?cid=774b29d4f13844c495f206cafdad9c86",
+    "track_number" : 16,
+    "type" : "track",
+    "uri" : "spotify:track:6jZj45D2jdR6fMEb58TlSc"
+  }, {
+    "album" : {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/6JM9ijNSKNjSXzxVrFjmuh"
+        },
+        "href" : "https://api.spotify.com/v1/artists/6JM9ijNSKNjSXzxVrFjmuh",
+        "id" : "6JM9ijNSKNjSXzxVrFjmuh",
+        "name" : "Rolf Lislevand",
+        "type" : "artist",
+        "uri" : "spotify:artist:6JM9ijNSKNjSXzxVrFjmuh"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/5MtjwE0QvUGLeepPhEu7gU"
+        },
+        "href" : "https://api.spotify.com/v1/artists/5MtjwE0QvUGLeepPhEu7gU",
+        "id" : "5MtjwE0QvUGLeepPhEu7gU",
+        "name" : "Concerto Stella Matutina",
+        "type" : "artist",
+        "uri" : "spotify:artist:5MtjwE0QvUGLeepPhEu7gU"
+      } ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/6mPNYpx47nLYi6pekAqhoK"
+      },
+      "href" : "https://api.spotify.com/v1/albums/6mPNYpx47nLYi6pekAqhoK",
+      "id" : "6mPNYpx47nLYi6pekAqhoK",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/b58749b831a42c1af535f6eaefa2b7ef61da1d52",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/15cbe94e90f10c7bbb5c4644dace67471aec6fc9",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/d4a46e222a7031f16cb991b6c0977ec3e676736b",
+        "width" : 64
+      } ],
+      "name" : "Nuove Invenzioni",
+      "release_date" : "2018-06-15",
+      "release_date_precision" : "day",
+      "total_tracks" : 9,
+      "type" : "album",
+      "uri" : "spotify:album:6mPNYpx47nLYi6pekAqhoK"
+    },
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1QL7yTHrdahRMpvNtn6rI2"
+      },
+      "href" : "https://api.spotify.com/v1/artists/1QL7yTHrdahRMpvNtn6rI2",
+      "id" : "1QL7yTHrdahRMpvNtn6rI2",
+      "name" : "George Frideric Handel",
+      "type" : "artist",
+      "uri" : "spotify:artist:1QL7yTHrdahRMpvNtn6rI2"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/6JM9ijNSKNjSXzxVrFjmuh"
+      },
+      "href" : "https://api.spotify.com/v1/artists/6JM9ijNSKNjSXzxVrFjmuh",
+      "id" : "6JM9ijNSKNjSXzxVrFjmuh",
+      "name" : "Rolf Lislevand",
+      "type" : "artist",
+      "uri" : "spotify:artist:6JM9ijNSKNjSXzxVrFjmuh"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/5MtjwE0QvUGLeepPhEu7gU"
+      },
+      "href" : "https://api.spotify.com/v1/artists/5MtjwE0QvUGLeepPhEu7gU",
+      "id" : "5MtjwE0QvUGLeepPhEu7gU",
+      "name" : "Concerto Stella Matutina",
+      "type" : "artist",
+      "uri" : "spotify:artist:5MtjwE0QvUGLeepPhEu7gU"
+    } ],
+    "disc_number" : 1,
+    "duration_ms" : 353720,
+    "explicit" : false,
+    "external_ids" : {
+      "isrc" : "USSM11802608"
+    },
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/track/2GTQ3iVNLw90PLPVUdPE4t"
+    },
+    "href" : "https://api.spotify.com/v1/tracks/2GTQ3iVNLw90PLPVUdPE4t",
+    "id" : "2GTQ3iVNLw90PLPVUdPE4t",
+    "is_local" : false,
+    "is_playable" : true,
+    "name" : "Eternal Source of Light Divine, HWV 74 (Arrangement)",
+    "popularity" : 39,
+    "preview_url" : "https://p.scdn.co/mp3-preview/29989fa31f77a4cc6d66683363438ea31cfeaf12?cid=774b29d4f13844c495f206cafdad9c86",
+    "track_number" : 2,
+    "type" : "track",
+    "uri" : "spotify:track:2GTQ3iVNLw90PLPVUdPE4t"
+  }, {
+    "album" : {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1QL7yTHrdahRMpvNtn6rI2"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1QL7yTHrdahRMpvNtn6rI2",
+        "id" : "1QL7yTHrdahRMpvNtn6rI2",
+        "name" : "George Frideric Handel",
+        "type" : "artist",
+        "uri" : "spotify:artist:1QL7yTHrdahRMpvNtn6rI2"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/3uw6GzeL10NfFrcikMo9Na"
+        },
+        "href" : "https://api.spotify.com/v1/artists/3uw6GzeL10NfFrcikMo9Na",
+        "id" : "3uw6GzeL10NfFrcikMo9Na",
+        "name" : "Cecilia Bartoli",
+        "type" : "artist",
+        "uri" : "spotify:artist:3uw6GzeL10NfFrcikMo9Na"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/6uELdghdD8aUe94aDyyMCK"
+        },
+        "href" : "https://api.spotify.com/v1/artists/6uELdghdD8aUe94aDyyMCK",
+        "id" : "6uELdghdD8aUe94aDyyMCK",
+        "name" : "David Daniels",
+        "type" : "artist",
+        "uri" : "spotify:artist:6uELdghdD8aUe94aDyyMCK"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/60adCptqwRkANTtVja0bvf"
+        },
+        "href" : "https://api.spotify.com/v1/artists/60adCptqwRkANTtVja0bvf",
+        "id" : "60adCptqwRkANTtVja0bvf",
+        "name" : "Academy of Ancient Music",
+        "type" : "artist",
+        "uri" : "spotify:artist:60adCptqwRkANTtVja0bvf"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/0vBafEFOLXtq5mZuhMgsyL"
+        },
+        "href" : "https://api.spotify.com/v1/artists/0vBafEFOLXtq5mZuhMgsyL",
+        "id" : "0vBafEFOLXtq5mZuhMgsyL",
+        "name" : "Christopher Hogwood",
+        "type" : "artist",
+        "uri" : "spotify:artist:0vBafEFOLXtq5mZuhMgsyL"
+      } ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/51AEGqTCrec0ZTcIBaq3vl"
+      },
+      "href" : "https://api.spotify.com/v1/albums/51AEGqTCrec0ZTcIBaq3vl",
+      "id" : "51AEGqTCrec0ZTcIBaq3vl",
+      "images" : [ {
+        "height" : 558,
+        "url" : "https://i.scdn.co/image/59b519e9fcf689bb9aa501c45a05d403bd9f2a3a",
+        "width" : 640
+      }, {
+        "height" : 262,
+        "url" : "https://i.scdn.co/image/9223419abca5236bc25fb8e52eb3b6bc9952fd5e",
+        "width" : 300
+      }, {
+        "height" : 56,
+        "url" : "https://i.scdn.co/image/8435c90e5fa5e1fc78d37c305ac639e09a11d6e9",
+        "width" : 64
+      } ],
+      "name" : "Handel: Rinaldo - complete opera (Original 1711 Version) HWV7a (3CDs) [3 CDs]",
+      "release_date" : "2000-01-01",
+      "release_date_precision" : "day",
+      "total_tracks" : 82,
+      "type" : "album",
+      "uri" : "spotify:album:51AEGqTCrec0ZTcIBaq3vl"
+    },
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1QL7yTHrdahRMpvNtn6rI2"
+      },
+      "href" : "https://api.spotify.com/v1/artists/1QL7yTHrdahRMpvNtn6rI2",
+      "id" : "1QL7yTHrdahRMpvNtn6rI2",
+      "name" : "George Frideric Handel",
+      "type" : "artist",
+      "uri" : "spotify:artist:1QL7yTHrdahRMpvNtn6rI2"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/3uw6GzeL10NfFrcikMo9Na"
+      },
+      "href" : "https://api.spotify.com/v1/artists/3uw6GzeL10NfFrcikMo9Na",
+      "id" : "3uw6GzeL10NfFrcikMo9Na",
+      "name" : "Cecilia Bartoli",
+      "type" : "artist",
+      "uri" : "spotify:artist:3uw6GzeL10NfFrcikMo9Na"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/60adCptqwRkANTtVja0bvf"
+      },
+      "href" : "https://api.spotify.com/v1/artists/60adCptqwRkANTtVja0bvf",
+      "id" : "60adCptqwRkANTtVja0bvf",
+      "name" : "Academy of Ancient Music",
+      "type" : "artist",
+      "uri" : "spotify:artist:60adCptqwRkANTtVja0bvf"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/0vBafEFOLXtq5mZuhMgsyL"
+      },
+      "href" : "https://api.spotify.com/v1/artists/0vBafEFOLXtq5mZuhMgsyL",
+      "id" : "0vBafEFOLXtq5mZuhMgsyL",
+      "name" : "Christopher Hogwood",
+      "type" : "artist",
+      "uri" : "spotify:artist:0vBafEFOLXtq5mZuhMgsyL"
+    } ],
+    "disc_number" : 2,
+    "duration_ms" : 285333,
+    "explicit" : false,
+    "external_ids" : {
+      "isrc" : "GBBBB2000041"
+    },
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/track/6xZGds6ClLaEPeyep1C8si"
+    },
+    "href" : "https://api.spotify.com/v1/tracks/6xZGds6ClLaEPeyep1C8si",
+    "id" : "6xZGds6ClLaEPeyep1C8si",
+    "is_local" : false,
+    "is_playable" : true,
+    "name" : "Rinaldo, HWV 7a / Act 2: \"Lascia ch'io pianga\"",
+    "popularity" : 38,
+    "preview_url" : null,
+    "track_number" : 12,
+    "type" : "track",
+    "uri" : "spotify:track:6xZGds6ClLaEPeyep1C8si"
+  } ]
+}

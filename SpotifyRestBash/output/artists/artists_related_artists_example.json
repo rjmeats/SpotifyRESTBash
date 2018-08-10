@@ -1,0 +1,623 @@
+{
+  "artists" : [ {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/5aIqB5nVVvmFsvSdExz408"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 1683436
+    },
+    "genres" : [ "baroque", "classical", "early music", "german jazz", "romantic era" ],
+    "href" : "https://api.spotify.com/v1/artists/5aIqB5nVVvmFsvSdExz408",
+    "id" : "5aIqB5nVVvmFsvSdExz408",
+    "images" : [ {
+      "height" : 479,
+      "url" : "https://i.scdn.co/image/a2ec08fe69ecec2748fbc764aede8f1b03ae8f88",
+      "width" : 479
+    }, {
+      "height" : 200,
+      "url" : "https://i.scdn.co/image/53ec9642cf116eca56d88284c40bb1497585e28e",
+      "width" : 200
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/438b280a22e63f994fd39feb031683fb861a31cb",
+      "width" : 64
+    } ],
+    "name" : "Johann Sebastian Bach",
+    "popularity" : 72,
+    "type" : "artist",
+    "uri" : "spotify:artist:5aIqB5nVVvmFsvSdExz408"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/2fg5h5pzleqI4RjFopWroj"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 45918
+    },
+    "genres" : [ "baroque", "classical", "early music" ],
+    "href" : "https://api.spotify.com/v1/artists/2fg5h5pzleqI4RjFopWroj",
+    "id" : "2fg5h5pzleqI4RjFopWroj",
+    "images" : [ {
+      "height" : 1174,
+      "url" : "https://i.scdn.co/image/1bfb64dffe1596f4efda1384007d15338e255446",
+      "width" : 1000
+    }, {
+      "height" : 752,
+      "url" : "https://i.scdn.co/image/ce74f8a9c9d6a6dd5aa59b5b54a618a6c58df6f1",
+      "width" : 640
+    }, {
+      "height" : 235,
+      "url" : "https://i.scdn.co/image/bfd350130bcdad90819611e8956c9e741a70ae3b",
+      "width" : 200
+    }, {
+      "height" : 75,
+      "url" : "https://i.scdn.co/image/4f774f556ec2c3ba1a492bd34f95b0b75ed47a73",
+      "width" : 64
+    } ],
+    "name" : "Georg Philipp Telemann",
+    "popularity" : 47,
+    "type" : "artist",
+    "uri" : "spotify:artist:2fg5h5pzleqI4RjFopWroj"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/2QOIawHpSlOwXDvSqQ9YJR"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 953630
+    },
+    "genres" : [ "baroque", "classical", "early music" ],
+    "href" : "https://api.spotify.com/v1/artists/2QOIawHpSlOwXDvSqQ9YJR",
+    "id" : "2QOIawHpSlOwXDvSqQ9YJR",
+    "images" : [ {
+      "height" : 1194,
+      "url" : "https://i.scdn.co/image/9785700bae86f991f78183076861c7342a4bcf90",
+      "width" : 1000
+    }, {
+      "height" : 764,
+      "url" : "https://i.scdn.co/image/12caee0d8c2843b37e2b19da99e385010a2f8c5b",
+      "width" : 640
+    }, {
+      "height" : 239,
+      "url" : "https://i.scdn.co/image/4bdf9bc839ae7d30e69f6399ac47c74c1bd62212",
+      "width" : 200
+    }, {
+      "height" : 76,
+      "url" : "https://i.scdn.co/image/30702c2e565f3c36fcc65673cf2f19fe852ca7c0",
+      "width" : 64
+    } ],
+    "name" : "Antonio Vivaldi",
+    "popularity" : 65,
+    "type" : "artist",
+    "uri" : "spotify:artist:2QOIawHpSlOwXDvSqQ9YJR"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/5dmMpIyAVaH6b9FLFgWPrF"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 39791
+    },
+    "genres" : [ "baroque", "classical", "early music" ],
+    "href" : "https://api.spotify.com/v1/artists/5dmMpIyAVaH6b9FLFgWPrF",
+    "id" : "5dmMpIyAVaH6b9FLFgWPrF",
+    "images" : [ {
+      "height" : 1000,
+      "url" : "https://i.scdn.co/image/53d4319bb9f9621d8ad12a6228c42c1433070d2d",
+      "width" : 1000
+    }, {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/0ae0253fe36151eea5dc09fb5731004c416c7a23",
+      "width" : 640
+    }, {
+      "height" : 200,
+      "url" : "https://i.scdn.co/image/f1fdbb55f74fb6967e894ddd3d4070b5d81c15b7",
+      "width" : 200
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/c88dd3c3f0f3214c551a3fd2f0b13c8e58e8b310",
+      "width" : 64
+    } ],
+    "name" : "Arcangelo Corelli",
+    "popularity" : 45,
+    "type" : "artist",
+    "uri" : "spotify:artist:5dmMpIyAVaH6b9FLFgWPrF"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/656RXuyw7CE0dtjdPgjJV6"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 248133
+    },
+    "genres" : [ "classical", "classical era", "early music" ],
+    "href" : "https://api.spotify.com/v1/artists/656RXuyw7CE0dtjdPgjJV6",
+    "id" : "656RXuyw7CE0dtjdPgjJV6",
+    "images" : [ {
+      "height" : 1264,
+      "url" : "https://i.scdn.co/image/e9a9521ffd11cf06717c699acc48c32ec6ac7d21",
+      "width" : 1000
+    }, {
+      "height" : 809,
+      "url" : "https://i.scdn.co/image/8bc90c4c7c7838a3ef80018b7b7e888a02d701eb",
+      "width" : 640
+    }, {
+      "height" : 253,
+      "url" : "https://i.scdn.co/image/58b78af9eed8c3e1766642bf8f74e021f360512c",
+      "width" : 200
+    }, {
+      "height" : 81,
+      "url" : "https://i.scdn.co/image/cbd6490e3dcb6150e8d7e331b20528d14eaea096",
+      "width" : 64
+    } ],
+    "name" : "Franz Joseph Haydn",
+    "popularity" : 54,
+    "type" : "artist",
+    "uri" : "spotify:artist:656RXuyw7CE0dtjdPgjJV6"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/6MF58APd3YV72Ln2eVg710"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 179563
+    },
+    "genres" : [ "classical", "romantic era" ],
+    "href" : "https://api.spotify.com/v1/artists/6MF58APd3YV72Ln2eVg710",
+    "id" : "6MF58APd3YV72Ln2eVg710",
+    "images" : [ {
+      "height" : 508,
+      "url" : "https://i.scdn.co/image/32bf53aa73dbb81c615a91324efea0bcfff4b440",
+      "width" : 443
+    }, {
+      "height" : 229,
+      "url" : "https://i.scdn.co/image/7f30d9306a73a4233125a3e6ef7680f18b7f6b15",
+      "width" : 200
+    }, {
+      "height" : 73,
+      "url" : "https://i.scdn.co/image/b7fd64d9cab12bfc120453780ee6bad0202fc05a",
+      "width" : 64
+    } ],
+    "name" : "Felix Mendelssohn",
+    "popularity" : 54,
+    "type" : "artist",
+    "uri" : "spotify:artist:6MF58APd3YV72Ln2eVg710"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/4NJhFmfw43RLBLjQvxDuRS"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 2328314
+    },
+    "genres" : [ "classical", "classical era" ],
+    "href" : "https://api.spotify.com/v1/artists/4NJhFmfw43RLBLjQvxDuRS",
+    "id" : "4NJhFmfw43RLBLjQvxDuRS",
+    "images" : [ {
+      "height" : 1470,
+      "url" : "https://i.scdn.co/image/9bf940bd1f89a20b349c0f74d06cff0106532f65",
+      "width" : 1000
+    }, {
+      "height" : 941,
+      "url" : "https://i.scdn.co/image/2f73a3b1dd946111dcef26f2b7f48c7511632266",
+      "width" : 640
+    }, {
+      "height" : 294,
+      "url" : "https://i.scdn.co/image/919b1b65c689fa96bbb1266de20f3e010e773eee",
+      "width" : 200
+    }, {
+      "height" : 94,
+      "url" : "https://i.scdn.co/image/839020265ee16720ffcf5348a1a49272c2ef1c78",
+      "width" : 64
+    } ],
+    "name" : "Wolfgang Amadeus Mozart",
+    "popularity" : 70,
+    "type" : "artist",
+    "uri" : "spotify:artist:4NJhFmfw43RLBLjQvxDuRS"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/6n7nd5iceYpXVwcx8VPpxF"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 171348
+    },
+    "genres" : [ "classical", "romantic era" ],
+    "href" : "https://api.spotify.com/v1/artists/6n7nd5iceYpXVwcx8VPpxF",
+    "id" : "6n7nd5iceYpXVwcx8VPpxF",
+    "images" : [ {
+      "height" : 1401,
+      "url" : "https://i.scdn.co/image/f1cd0eea7fb3b75bfad16a10af1dc0dd0763efba",
+      "width" : 1000
+    }, {
+      "height" : 897,
+      "url" : "https://i.scdn.co/image/ca35ee805231ffda36289d7672239a868690d8b5",
+      "width" : 640
+    }, {
+      "height" : 280,
+      "url" : "https://i.scdn.co/image/9ef8aaf1ff4a3d376f3584c6a671102350d59e70",
+      "width" : 200
+    }, {
+      "height" : 90,
+      "url" : "https://i.scdn.co/image/b8311c55a05e2784140cad2473844e0f539eab2b",
+      "width" : 64
+    } ],
+    "name" : "Antonín Dvořák",
+    "popularity" : 56,
+    "type" : "artist",
+    "uri" : "spotify:artist:6n7nd5iceYpXVwcx8VPpxF"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/0OzxPXyowUEQ532c9AmHUR"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 120881
+    },
+    "genres" : [ "classical", "romantic era" ],
+    "href" : "https://api.spotify.com/v1/artists/0OzxPXyowUEQ532c9AmHUR",
+    "id" : "0OzxPXyowUEQ532c9AmHUR",
+    "images" : [ {
+      "height" : 1000,
+      "url" : "https://i.scdn.co/image/98aef2b83b0148a90f9c60a163e08197f9d8606b",
+      "width" : 1000
+    }, {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/c0a873e1709b857606516f4945316b44f5a8b818",
+      "width" : 640
+    }, {
+      "height" : 200,
+      "url" : "https://i.scdn.co/image/d0dd39d8a6205b1fdd445d78a8416e0c87436e1a",
+      "width" : 200
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/82e3c5418108791f78ede0bbc90ada9580ee7548",
+      "width" : 64
+    } ],
+    "name" : "Giacomo Puccini",
+    "popularity" : 58,
+    "type" : "artist",
+    "uri" : "spotify:artist:0OzxPXyowUEQ532c9AmHUR"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/1C1x4MVkql8AiABuTw6DgE"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 213948
+    },
+    "genres" : [ "classical", "romantic era" ],
+    "href" : "https://api.spotify.com/v1/artists/1C1x4MVkql8AiABuTw6DgE",
+    "id" : "1C1x4MVkql8AiABuTw6DgE",
+    "images" : [ {
+      "height" : 1283,
+      "url" : "https://i.scdn.co/image/afcdec6dff345cdd37dad153f8016960b0ed65eb",
+      "width" : 1000
+    }, {
+      "height" : 821,
+      "url" : "https://i.scdn.co/image/a0b90036e672efe68dcafe9610dbe81b7d48f1d7",
+      "width" : 640
+    }, {
+      "height" : 257,
+      "url" : "https://i.scdn.co/image/222afb5b9ea4ec7da4531ef607113a1d100e3462",
+      "width" : 200
+    }, {
+      "height" : 82,
+      "url" : "https://i.scdn.co/image/ae277fce1078bbb5c4678d125ba43a13a74947e9",
+      "width" : 64
+    } ],
+    "name" : "Richard Wagner",
+    "popularity" : 53,
+    "type" : "artist",
+    "uri" : "spotify:artist:1C1x4MVkql8AiABuTw6DgE"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/3tMLo1k3iUo82coMLWXzxq"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 51045
+    },
+    "genres" : [ "baroque", "classical", "early music" ],
+    "href" : "https://api.spotify.com/v1/artists/3tMLo1k3iUo82coMLWXzxq",
+    "id" : "3tMLo1k3iUo82coMLWXzxq",
+    "images" : [ {
+      "height" : 1090,
+      "url" : "https://i.scdn.co/image/b1e56021e0af6da7c4dad6e677318c716f66a4c3",
+      "width" : 1000
+    }, {
+      "height" : 697,
+      "url" : "https://i.scdn.co/image/fb910add2dad582dafa0eb42db2a353103c54c76",
+      "width" : 640
+    }, {
+      "height" : 218,
+      "url" : "https://i.scdn.co/image/fc41cb8c39c0ff704167517256c52118a91ea86e",
+      "width" : 200
+    }, {
+      "height" : 70,
+      "url" : "https://i.scdn.co/image/59362e5b072116ef0f262af0e223e9be65eddf72",
+      "width" : 64
+    } ],
+    "name" : "Henry Purcell",
+    "popularity" : 46,
+    "type" : "artist",
+    "uri" : "spotify:artist:3tMLo1k3iUo82coMLWXzxq"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/1JOQXgYdQV2yfrhewqx96o"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 199823
+    },
+    "genres" : [ "classical", "romantic era" ],
+    "href" : "https://api.spotify.com/v1/artists/1JOQXgYdQV2yfrhewqx96o",
+    "id" : "1JOQXgYdQV2yfrhewqx96o",
+    "images" : [ {
+      "height" : 744,
+      "url" : "https://i.scdn.co/image/29dcc5fb26df65b722073e5246c6a430e9968aa7",
+      "width" : 586
+    }, {
+      "height" : 254,
+      "url" : "https://i.scdn.co/image/a1f0ab39a433a3f6b630107d460280502acecec4",
+      "width" : 200
+    }, {
+      "height" : 81,
+      "url" : "https://i.scdn.co/image/d3e0ab29f4a7da7073b7a39d47069de8d4ad634f",
+      "width" : 64
+    } ],
+    "name" : "Giuseppe Verdi",
+    "popularity" : 57,
+    "type" : "artist",
+    "uri" : "spotify:artist:1JOQXgYdQV2yfrhewqx96o"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/2p0UyoPfYfI76PCStuXfOP"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 438258
+    },
+    "genres" : [ "classical", "classical era", "romantic era" ],
+    "href" : "https://api.spotify.com/v1/artists/2p0UyoPfYfI76PCStuXfOP",
+    "id" : "2p0UyoPfYfI76PCStuXfOP",
+    "images" : [ {
+      "height" : 1229,
+      "url" : "https://i.scdn.co/image/ffd1ed5399935c49e9c34ba3681a899104998299",
+      "width" : 1000
+    }, {
+      "height" : 787,
+      "url" : "https://i.scdn.co/image/87eea77169f443e253f96c06dd98a631db96b356",
+      "width" : 640
+    }, {
+      "height" : 246,
+      "url" : "https://i.scdn.co/image/b2fb7dbe6300466d49d81501828cc89a062d411d",
+      "width" : 200
+    }, {
+      "height" : 79,
+      "url" : "https://i.scdn.co/image/168779da16912766ecdea068c5e53c946e5db485",
+      "width" : 64
+    } ],
+    "name" : "Franz Schubert",
+    "popularity" : 60,
+    "type" : "artist",
+    "uri" : "spotify:artist:2p0UyoPfYfI76PCStuXfOP"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/2wOqMjp9TyABvtHdOSOTUS"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 2190844
+    },
+    "genres" : [ "classical", "classical era", "romantic era" ],
+    "href" : "https://api.spotify.com/v1/artists/2wOqMjp9TyABvtHdOSOTUS",
+    "id" : "2wOqMjp9TyABvtHdOSOTUS",
+    "images" : [ {
+      "height" : 750,
+      "url" : "https://i.scdn.co/image/db022999443da6f89e250086329d98b17399b346",
+      "width" : 1000
+    }, {
+      "height" : 480,
+      "url" : "https://i.scdn.co/image/693030b2c7ee75d1fc095d9e6a7fe391a6b10f27",
+      "width" : 640
+    }, {
+      "height" : 150,
+      "url" : "https://i.scdn.co/image/348252c0e6722a55a05484b052ef010e71ca30ce",
+      "width" : 200
+    }, {
+      "height" : 48,
+      "url" : "https://i.scdn.co/image/621f978b2a436b0392478baccb8778d3a9842e38",
+      "width" : 64
+    } ],
+    "name" : "Ludwig van Beethoven",
+    "popularity" : 68,
+    "type" : "artist",
+    "uri" : "spotify:artist:2wOqMjp9TyABvtHdOSOTUS"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/2gClsBep1tt1rv1CN210SO"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 76420
+    },
+    "genres" : [ "classical", "romantic era" ],
+    "href" : "https://api.spotify.com/v1/artists/2gClsBep1tt1rv1CN210SO",
+    "id" : "2gClsBep1tt1rv1CN210SO",
+    "images" : [ {
+      "height" : 745,
+      "url" : "https://i.scdn.co/image/965d539c15af1d86ec4875f05ec21d32414c3e64",
+      "width" : 1000
+    }, {
+      "height" : 477,
+      "url" : "https://i.scdn.co/image/c0ee11a2481b76687afca183384b45a081eb7993",
+      "width" : 640
+    }, {
+      "height" : 149,
+      "url" : "https://i.scdn.co/image/b628adc617b1cb96963c9f41c9fd46f840a65e48",
+      "width" : 200
+    }, {
+      "height" : 48,
+      "url" : "https://i.scdn.co/image/779d55b7389b4ec732343e193f8a01442bb6ce8b",
+      "width" : 64
+    } ],
+    "name" : "Gabriel Fauré",
+    "popularity" : 56,
+    "type" : "artist",
+    "uri" : "spotify:artist:2gClsBep1tt1rv1CN210SO"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/430byzy0c5bPn5opiu0SRd"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 55698
+    },
+    "genres" : [ "classical", "romantic era" ],
+    "href" : "https://api.spotify.com/v1/artists/430byzy0c5bPn5opiu0SRd",
+    "id" : "430byzy0c5bPn5opiu0SRd",
+    "images" : [ {
+      "height" : 1000,
+      "url" : "https://i.scdn.co/image/8691898841248ffbc5e984334879337c81a268fd",
+      "width" : 1000
+    }, {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/c07fb39fa79823c9ca265112c9f7ba0b3d8773d0",
+      "width" : 640
+    }, {
+      "height" : 200,
+      "url" : "https://i.scdn.co/image/a0bbac937bcd54681292cc2acf43a1524d1643c9",
+      "width" : 200
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/31f083e7d0fb18f26c048fe5d9b46155ff17db49",
+      "width" : 64
+    } ],
+    "name" : "Edward Elgar",
+    "popularity" : 54,
+    "type" : "artist",
+    "uri" : "spotify:artist:430byzy0c5bPn5opiu0SRd"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/2D7RkvtKKb6E5UmbjQM1Jd"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 76462
+    },
+    "genres" : [ "classical", "romantic era" ],
+    "href" : "https://api.spotify.com/v1/artists/2D7RkvtKKb6E5UmbjQM1Jd",
+    "id" : "2D7RkvtKKb6E5UmbjQM1Jd",
+    "images" : [ {
+      "height" : 470,
+      "url" : "https://i.scdn.co/image/4a640bd1a558a58cc4dc3b8effec7747ae55ce17",
+      "width" : 470
+    }, {
+      "height" : 200,
+      "url" : "https://i.scdn.co/image/9e96d69df3601013cbbcc5b68b6d9e73df7155b8",
+      "width" : 200
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/9a14384dfe94da0ce9d8281831a6c5f72a934e42",
+      "width" : 64
+    } ],
+    "name" : "Georges Bizet",
+    "popularity" : 52,
+    "type" : "artist",
+    "uri" : "spotify:artist:2D7RkvtKKb6E5UmbjQM1Jd"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/3faEZMpTmZFXpELU1EwWNL"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 54480
+    },
+    "genres" : [ "choral", "classical", "classical performance", "early music", "early music ensemble", "orchestral performance", "viol" ],
+    "href" : "https://api.spotify.com/v1/artists/3faEZMpTmZFXpELU1EwWNL",
+    "id" : "3faEZMpTmZFXpELU1EwWNL",
+    "images" : [ {
+      "height" : 480,
+      "url" : "https://i.scdn.co/image/2b12050b97b0ab451013cebc8cd409cf5f0bdec4",
+      "width" : 319
+    }, {
+      "height" : 301,
+      "url" : "https://i.scdn.co/image/27a1b7e8927b97ec60621782f8bf92b9d4cffb19",
+      "width" : 200
+    }, {
+      "height" : 96,
+      "url" : "https://i.scdn.co/image/67e235ce52f928b9fef775fb635022f4cf2fa804",
+      "width" : 64
+    } ],
+    "name" : "Jordi Savall",
+    "popularity" : 51,
+    "type" : "artist",
+    "uri" : "spotify:artist:3faEZMpTmZFXpELU1EwWNL"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/60adCptqwRkANTtVja0bvf"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 13797
+    },
+    "genres" : [ "baroque ensemble", "choral", "classical", "classical performance", "historically informed performance", "orchestra" ],
+    "href" : "https://api.spotify.com/v1/artists/60adCptqwRkANTtVja0bvf",
+    "id" : "60adCptqwRkANTtVja0bvf",
+    "images" : [ {
+      "height" : 1000,
+      "url" : "https://i.scdn.co/image/3a6a449ffd9aaf44844f163fcca6f852b6432c98",
+      "width" : 1000
+    }, {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/76c5f166307736705c452e77cea9d3fc4d3b1ef6",
+      "width" : 640
+    }, {
+      "height" : 200,
+      "url" : "https://i.scdn.co/image/d8eeb0beecb682ae7f35e53067ac91ae2eb5a136",
+      "width" : 200
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/8521699bf57713a447e86eda3fa9fbb2d5efbcff",
+      "width" : 64
+    } ],
+    "name" : "Academy of Ancient Music",
+    "popularity" : 56,
+    "type" : "artist",
+    "uri" : "spotify:artist:60adCptqwRkANTtVja0bvf"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/3KYehrHWNpYfNMpJe0kBML"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 9525
+    },
+    "genres" : [ "baroque ensemble", "choral", "classical performance", "early music", "early music ensemble", "historically informed performance" ],
+    "href" : "https://api.spotify.com/v1/artists/3KYehrHWNpYfNMpJe0kBML",
+    "id" : "3KYehrHWNpYfNMpJe0kBML",
+    "images" : [ {
+      "height" : 1000,
+      "url" : "https://i.scdn.co/image/87f1911cf2bafc5a3b9240c04f93e8dad41befbd",
+      "width" : 1000
+    }, {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/c3ae22fd7197aa9d0f592a6b18bc2f49cacb264b",
+      "width" : 640
+    }, {
+      "height" : 200,
+      "url" : "https://i.scdn.co/image/54f62734278dcf75b630bb605f68f0b15edf4dce",
+      "width" : 200
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/8402c9941aa9fd0e40900a8a1852d2756deda605",
+      "width" : 64
+    } ],
+    "name" : "Musica Antiqua Köln",
+    "popularity" : 42,
+    "type" : "artist",
+    "uri" : "spotify:artist:3KYehrHWNpYfNMpJe0kBML"
+  } ]
+}

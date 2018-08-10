@@ -1,0 +1,87 @@
+{
+  "album" : {
+    "album_type" : "album",
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1QL7yTHrdahRMpvNtn6rI2"
+      },
+      "href" : "https://api.spotify.com/v1/artists/1QL7yTHrdahRMpvNtn6rI2",
+      "id" : "1QL7yTHrdahRMpvNtn6rI2",
+      "name" : "George Frideric Handel",
+      "type" : "artist",
+      "uri" : "spotify:artist:1QL7yTHrdahRMpvNtn6rI2"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1R1hwKrqqLqYiD53NtXEBJ"
+      },
+      "href" : "https://api.spotify.com/v1/artists/1R1hwKrqqLqYiD53NtXEBJ",
+      "id" : "1R1hwKrqqLqYiD53NtXEBJ",
+      "name" : "Akademie für Alte Musik Berlin",
+      "type" : "artist",
+      "uri" : "spotify:artist:1R1hwKrqqLqYiD53NtXEBJ"
+    } ],
+    "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN", "ZA" ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/0cxRAewBpYrtxOYH5fius3"
+    },
+    "href" : "https://api.spotify.com/v1/albums/0cxRAewBpYrtxOYH5fius3",
+    "id" : "0cxRAewBpYrtxOYH5fius3",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/a3e0a863ee2b83c6a22652f913986f13b13bbc95",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/03c39e60575a5cba00412067d538c7c52e93da21",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/7b1f59734e7ad7172d4d5533961d325372de6d8b",
+      "width" : 64
+    } ],
+    "name" : "Handel: Water Music",
+    "release_date" : "2016-02-05",
+    "release_date_precision" : "day",
+    "total_tracks" : 21,
+    "type" : "album",
+    "uri" : "spotify:album:0cxRAewBpYrtxOYH5fius3"
+  },
+  "artists" : [ {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/1QL7yTHrdahRMpvNtn6rI2"
+    },
+    "href" : "https://api.spotify.com/v1/artists/1QL7yTHrdahRMpvNtn6rI2",
+    "id" : "1QL7yTHrdahRMpvNtn6rI2",
+    "name" : "George Frideric Handel",
+    "type" : "artist",
+    "uri" : "spotify:artist:1QL7yTHrdahRMpvNtn6rI2"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/1R1hwKrqqLqYiD53NtXEBJ"
+    },
+    "href" : "https://api.spotify.com/v1/artists/1R1hwKrqqLqYiD53NtXEBJ",
+    "id" : "1R1hwKrqqLqYiD53NtXEBJ",
+    "name" : "Akademie für Alte Musik Berlin",
+    "type" : "artist",
+    "uri" : "spotify:artist:1R1hwKrqqLqYiD53NtXEBJ"
+  } ],
+  "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN", "ZA" ],
+  "disc_number" : 1,
+  "duration_ms" : 128599,
+  "explicit" : false,
+  "external_ids" : {
+    "isrc" : "FRZ141534020"
+  },
+  "external_urls" : {
+    "spotify" : "https://open.spotify.com/track/6H8kRwXYJhmz6y1AkbCwvD"
+  },
+  "href" : "https://api.spotify.com/v1/tracks/6H8kRwXYJhmz6y1AkbCwvD",
+  "id" : "6H8kRwXYJhmz6y1AkbCwvD",
+  "is_local" : false,
+  "name" : "Water Music, Suite No. 1, HWV 348: Water Music, Suite No. 1, HWV 348: II. Adagio e staccato",
+  "popularity" : 21,
+  "preview_url" : "https://p.scdn.co/mp3-preview/6b4f5b75a9d5d81400d2189e2aaf56a9bcc047af?cid=774b29d4f13844c495f206cafdad9c86",
+  "track_number" : 2,
+  "type" : "track",
+  "uri" : "spotify:track:6H8kRwXYJhmz6y1AkbCwvD"
+}

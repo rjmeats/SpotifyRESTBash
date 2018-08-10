@@ -1,0 +1,1327 @@
+{
+  "href" : "https://api.spotify.com/v1/artists/1QL7yTHrdahRMpvNtn6rI2/albums?offset=0&limit=20&include_groups=album,single,compilation,appears_on",
+  "items" : [ {
+    "album_group" : "album",
+    "album_type" : "album",
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1QL7yTHrdahRMpvNtn6rI2"
+      },
+      "href" : "https://api.spotify.com/v1/artists/1QL7yTHrdahRMpvNtn6rI2",
+      "id" : "1QL7yTHrdahRMpvNtn6rI2",
+      "name" : "George Frideric Handel",
+      "type" : "artist",
+      "uri" : "spotify:artist:1QL7yTHrdahRMpvNtn6rI2"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/5dNyzMWGdMRBdgCY3iwhEY"
+      },
+      "href" : "https://api.spotify.com/v1/artists/5dNyzMWGdMRBdgCY3iwhEY",
+      "id" : "5dNyzMWGdMRBdgCY3iwhEY",
+      "name" : "Musica Fiata",
+      "type" : "artist",
+      "uri" : "spotify:artist:5dNyzMWGdMRBdgCY3iwhEY"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/11z3L2Ifoxnu2AMp7EizS9"
+      },
+      "href" : "https://api.spotify.com/v1/artists/11z3L2Ifoxnu2AMp7EizS9",
+      "id" : "11z3L2Ifoxnu2AMp7EizS9",
+      "name" : "Roland Wilson",
+      "type" : "artist",
+      "uri" : "spotify:artist:11z3L2Ifoxnu2AMp7EizS9"
+    } ],
+    "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN", "ZA" ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/3Jzai1jeRqyMdJvoweF24i"
+    },
+    "href" : "https://api.spotify.com/v1/albums/3Jzai1jeRqyMdJvoweF24i",
+    "id" : "3Jzai1jeRqyMdJvoweF24i",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/04fe4af22e4b5a7f86e7505128e135d78c88309b",
+      "width" : 630
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/dde70d26e0d94d7b24cc053ee41bec84719be9c1",
+      "width" : 295
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/588d9a5504d5495ac910008b236a665a57e4ee10",
+      "width" : 63
+    } ],
+    "name" : "Handel: St. John Passion & Ach Herr, mich armen Sünder",
+    "release_date" : "2018-06-15",
+    "release_date_precision" : "day",
+    "total_tracks" : 51,
+    "type" : "album",
+    "uri" : "spotify:album:3Jzai1jeRqyMdJvoweF24i"
+  }, {
+    "album_group" : "album",
+    "album_type" : "album",
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1QL7yTHrdahRMpvNtn6rI2"
+      },
+      "href" : "https://api.spotify.com/v1/artists/1QL7yTHrdahRMpvNtn6rI2",
+      "id" : "1QL7yTHrdahRMpvNtn6rI2",
+      "name" : "George Frideric Handel",
+      "type" : "artist",
+      "uri" : "spotify:artist:1QL7yTHrdahRMpvNtn6rI2"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/2rVroQHeTHhGQ4JcZQIFSy"
+      },
+      "href" : "https://api.spotify.com/v1/artists/2rVroQHeTHhGQ4JcZQIFSy",
+      "id" : "2rVroQHeTHhGQ4JcZQIFSy",
+      "name" : "Orchester der Deutschen Händel -Solisten",
+      "type" : "artist",
+      "uri" : "spotify:artist:2rVroQHeTHhGQ4JcZQIFSy"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/5zqoHiU8nXWSfOOcsm0O1B"
+      },
+      "href" : "https://api.spotify.com/v1/artists/5zqoHiU8nXWSfOOcsm0O1B",
+      "id" : "5zqoHiU8nXWSfOOcsm0O1B",
+      "name" : "Anthony Bramall",
+      "type" : "artist",
+      "uri" : "spotify:artist:5zqoHiU8nXWSfOOcsm0O1B"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/40R0F7x3senon0SHMXdoz3"
+      },
+      "href" : "https://api.spotify.com/v1/artists/40R0F7x3senon0SHMXdoz3",
+      "id" : "40R0F7x3senon0SHMXdoz3",
+      "name" : "John Mark Ainsley",
+      "type" : "artist",
+      "uri" : "spotify:artist:40R0F7x3senon0SHMXdoz3"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/22gAgfyeeFBPtd5JqQwtkG"
+      },
+      "href" : "https://api.spotify.com/v1/artists/22gAgfyeeFBPtd5JqQwtkG",
+      "id" : "22gAgfyeeFBPtd5JqQwtkG",
+      "name" : "Michael George",
+      "type" : "artist",
+      "uri" : "spotify:artist:22gAgfyeeFBPtd5JqQwtkG"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/3yD09j029kXRkAp64m4kLG"
+      },
+      "href" : "https://api.spotify.com/v1/artists/3yD09j029kXRkAp64m4kLG",
+      "id" : "3yD09j029kXRkAp64m4kLG",
+      "name" : "Catherine Denley",
+      "type" : "artist",
+      "uri" : "spotify:artist:3yD09j029kXRkAp64m4kLG"
+    } ],
+    "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN", "ZA" ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/74TOUqBlpLL76IG1QnHTMu"
+    },
+    "href" : "https://api.spotify.com/v1/albums/74TOUqBlpLL76IG1QnHTMu",
+    "id" : "74TOUqBlpLL76IG1QnHTMu",
+    "images" : [ {
+      "height" : 600,
+      "url" : "https://i.scdn.co/image/a43606364590f923c5205bfd62e00e938d803fa1",
+      "width" : 600
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/7bcc9c32465be864c0bdf57b8abdaad19712ddee",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/46c5285c1b2579097ef45bc65ccc945886483e81",
+      "width" : 64
+    } ],
+    "name" : "Handel Edition, Vol. 9",
+    "release_date" : "2018-06-08",
+    "release_date_precision" : "day",
+    "total_tracks" : 55,
+    "type" : "album",
+    "uri" : "spotify:album:74TOUqBlpLL76IG1QnHTMu"
+  }, {
+    "album_group" : "album",
+    "album_type" : "album",
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1QL7yTHrdahRMpvNtn6rI2"
+      },
+      "href" : "https://api.spotify.com/v1/artists/1QL7yTHrdahRMpvNtn6rI2",
+      "id" : "1QL7yTHrdahRMpvNtn6rI2",
+      "name" : "George Frideric Handel",
+      "type" : "artist",
+      "uri" : "spotify:artist:1QL7yTHrdahRMpvNtn6rI2"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/5z2V4vaqN1pGU2j78v1RNM"
+      },
+      "href" : "https://api.spotify.com/v1/artists/5z2V4vaqN1pGU2j78v1RNM",
+      "id" : "5z2V4vaqN1pGU2j78v1RNM",
+      "name" : "Early Opera Company Orchestra",
+      "type" : "artist",
+      "uri" : "spotify:artist:5z2V4vaqN1pGU2j78v1RNM"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/4Dgt4brudJR4ikEF5YY4cj"
+      },
+      "href" : "https://api.spotify.com/v1/artists/4Dgt4brudJR4ikEF5YY4cj",
+      "id" : "4Dgt4brudJR4ikEF5YY4cj",
+      "name" : "Christian Curnyn",
+      "type" : "artist",
+      "uri" : "spotify:artist:4Dgt4brudJR4ikEF5YY4cj"
+    } ],
+    "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN", "ZA" ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/6j7aqpHcDgxfOuw3nyKZ5H"
+    },
+    "href" : "https://api.spotify.com/v1/albums/6j7aqpHcDgxfOuw3nyKZ5H",
+    "id" : "6j7aqpHcDgxfOuw3nyKZ5H",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/50df87e07912d11a657ee7ad8c06590d145359ee",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/e5f2537ac7b2f07c77ea02aefc42d81c0c87bb4d",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/7567256285bd75ec1aa6d64a30591e81cb36ae88",
+      "width" : 64
+    } ],
+    "name" : "Handel: Acis & Galatea, HWV 49a",
+    "release_date" : "2018-06-01",
+    "release_date_precision" : "day",
+    "total_tracks" : 29,
+    "type" : "album",
+    "uri" : "spotify:album:6j7aqpHcDgxfOuw3nyKZ5H"
+  }, {
+    "album_group" : "album",
+    "album_type" : "album",
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1QL7yTHrdahRMpvNtn6rI2"
+      },
+      "href" : "https://api.spotify.com/v1/artists/1QL7yTHrdahRMpvNtn6rI2",
+      "id" : "1QL7yTHrdahRMpvNtn6rI2",
+      "name" : "George Frideric Handel",
+      "type" : "artist",
+      "uri" : "spotify:artist:1QL7yTHrdahRMpvNtn6rI2"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/6QII1DnNwq2ZrJJp0qjUgm"
+      },
+      "href" : "https://api.spotify.com/v1/artists/6QII1DnNwq2ZrJJp0qjUgm",
+      "id" : "6QII1DnNwq2ZrJJp0qjUgm",
+      "name" : "Leonardo Vinci",
+      "type" : "artist",
+      "uri" : "spotify:artist:6QII1DnNwq2ZrJJp0qjUgm"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/0vo2ovp2PVDLDsTExmkFpo"
+      },
+      "href" : "https://api.spotify.com/v1/artists/0vo2ovp2PVDLDsTExmkFpo",
+      "id" : "0vo2ovp2PVDLDsTExmkFpo",
+      "name" : "Lautten Compagney",
+      "type" : "artist",
+      "uri" : "spotify:artist:0vo2ovp2PVDLDsTExmkFpo"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/33ykhwAtMM9S97TnMmLcpI"
+      },
+      "href" : "https://api.spotify.com/v1/artists/33ykhwAtMM9S97TnMmLcpI",
+      "id" : "33ykhwAtMM9S97TnMmLcpI",
+      "name" : "Wolfgang Katschner",
+      "type" : "artist",
+      "uri" : "spotify:artist:33ykhwAtMM9S97TnMmLcpI"
+    } ],
+    "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN", "ZA" ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/7332k1gQPvwfOuwG23uIDr"
+    },
+    "href" : "https://api.spotify.com/v1/albums/7332k1gQPvwfOuwG23uIDr",
+    "id" : "7332k1gQPvwfOuwG23uIDr",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/8d63459ddc2165ee85bcaf85cdbe120c57fcd070",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/c2f895a7c3e93e131e22e3a6d35408325e747ea4",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/52eabb5b173b60f79294d73c860fcba8798ef62e",
+      "width" : 64
+    } ],
+    "name" : "Händel, Vinci: Didone abbandonata",
+    "release_date" : "2018-06-01",
+    "release_date_precision" : "day",
+    "total_tracks" : 78,
+    "type" : "album",
+    "uri" : "spotify:album:7332k1gQPvwfOuwG23uIDr"
+  }, {
+    "album_group" : "album",
+    "album_type" : "album",
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1QL7yTHrdahRMpvNtn6rI2"
+      },
+      "href" : "https://api.spotify.com/v1/artists/1QL7yTHrdahRMpvNtn6rI2",
+      "id" : "1QL7yTHrdahRMpvNtn6rI2",
+      "name" : "George Frideric Handel",
+      "type" : "artist",
+      "uri" : "spotify:artist:1QL7yTHrdahRMpvNtn6rI2"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/6mJSP9ISM0Ag4eIRCUO3Ow"
+      },
+      "href" : "https://api.spotify.com/v1/artists/6mJSP9ISM0Ag4eIRCUO3Ow",
+      "id" : "6mJSP9ISM0Ag4eIRCUO3Ow",
+      "name" : "The Brook Street Band",
+      "type" : "artist",
+      "uri" : "spotify:artist:6mJSP9ISM0Ag4eIRCUO3Ow"
+    } ],
+    "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN", "ZA" ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/5qhLhvIHSaaCF31mxhFJc8"
+    },
+    "href" : "https://api.spotify.com/v1/albums/5qhLhvIHSaaCF31mxhFJc8",
+    "id" : "5qhLhvIHSaaCF31mxhFJc8",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/d95ddf9528d44557a3703cf46848a5f35bf47c33",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/743bea7c47728d39a3d4a0191b08cd7aef3b00c2",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/5879de643eee0aa7b55a5724a0004921d1799b45",
+      "width" : 64
+    } ],
+    "name" : "Sonatas for Violin and Basso Continuo",
+    "release_date" : "2018-06-01",
+    "release_date_precision" : "day",
+    "total_tracks" : 35,
+    "type" : "album",
+    "uri" : "spotify:album:5qhLhvIHSaaCF31mxhFJc8"
+  }, {
+    "album_group" : "album",
+    "album_type" : "album",
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1QL7yTHrdahRMpvNtn6rI2"
+      },
+      "href" : "https://api.spotify.com/v1/artists/1QL7yTHrdahRMpvNtn6rI2",
+      "id" : "1QL7yTHrdahRMpvNtn6rI2",
+      "name" : "George Frideric Handel",
+      "type" : "artist",
+      "uri" : "spotify:artist:1QL7yTHrdahRMpvNtn6rI2"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/5SNhfgtEpolVTm2c6FOmsA"
+      },
+      "href" : "https://api.spotify.com/v1/artists/5SNhfgtEpolVTm2c6FOmsA",
+      "id" : "5SNhfgtEpolVTm2c6FOmsA",
+      "name" : "Hollands Boys Choir",
+      "type" : "artist",
+      "uri" : "spotify:artist:5SNhfgtEpolVTm2c6FOmsA"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/0AuFi10vX49Nyu3OPV34j7"
+      },
+      "href" : "https://api.spotify.com/v1/artists/0AuFi10vX49Nyu3OPV34j7",
+      "id" : "0AuFi10vX49Nyu3OPV34j7",
+      "name" : "Dutch Baroque Orchestra",
+      "type" : "artist",
+      "uri" : "spotify:artist:0AuFi10vX49Nyu3OPV34j7"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/3adMGKhs0hyGuTVpe7hnqC"
+      },
+      "href" : "https://api.spotify.com/v1/artists/3adMGKhs0hyGuTVpe7hnqC",
+      "id" : "3adMGKhs0hyGuTVpe7hnqC",
+      "name" : "Sir David Willcocks",
+      "type" : "artist",
+      "uri" : "spotify:artist:3adMGKhs0hyGuTVpe7hnqC"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/4Db9NBQj3kY3WW9BSy4s30"
+      },
+      "href" : "https://api.spotify.com/v1/artists/4Db9NBQj3kY3WW9BSy4s30",
+      "id" : "4Db9NBQj3kY3WW9BSy4s30",
+      "name" : "Berliner Rundfunk-Sinfonie-Orchester",
+      "type" : "artist",
+      "uri" : "spotify:artist:4Db9NBQj3kY3WW9BSy4s30"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/6XCooPNQ2PpgwJaXggWFek"
+      },
+      "href" : "https://api.spotify.com/v1/artists/6XCooPNQ2PpgwJaXggWFek",
+      "id" : "6XCooPNQ2PpgwJaXggWFek",
+      "name" : "Helmut Koch",
+      "type" : "artist",
+      "uri" : "spotify:artist:6XCooPNQ2PpgwJaXggWFek"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1w324VbUHTUFmPyPdXUO9Q"
+      },
+      "href" : "https://api.spotify.com/v1/artists/1w324VbUHTUFmPyPdXUO9Q",
+      "id" : "1w324VbUHTUFmPyPdXUO9Q",
+      "name" : "Berliner Singakademie",
+      "type" : "artist",
+      "uri" : "spotify:artist:1w324VbUHTUFmPyPdXUO9Q"
+    } ],
+    "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN", "ZA" ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/4CtMCzKsN2uP34Hk5s4Uzx"
+    },
+    "href" : "https://api.spotify.com/v1/albums/4CtMCzKsN2uP34Hk5s4Uzx",
+    "id" : "4CtMCzKsN2uP34Hk5s4Uzx",
+    "images" : [ {
+      "height" : 600,
+      "url" : "https://i.scdn.co/image/626d11f993afd50f0548e0dea73eda8400c013c8",
+      "width" : 600
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/9fc579301be580bccfc6fceaaba854b1fef01627",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/2fb5149394f7911ef4778e96642704b348fc02fb",
+      "width" : 64
+    } ],
+    "name" : "Handel Edition, Vol. 7",
+    "release_date" : "2018-05-31",
+    "release_date_precision" : "day",
+    "total_tracks" : 112,
+    "type" : "album",
+    "uri" : "spotify:album:4CtMCzKsN2uP34Hk5s4Uzx"
+  }, {
+    "album_group" : "album",
+    "album_type" : "album",
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1QL7yTHrdahRMpvNtn6rI2"
+      },
+      "href" : "https://api.spotify.com/v1/artists/1QL7yTHrdahRMpvNtn6rI2",
+      "id" : "1QL7yTHrdahRMpvNtn6rI2",
+      "name" : "George Frideric Handel",
+      "type" : "artist",
+      "uri" : "spotify:artist:1QL7yTHrdahRMpvNtn6rI2"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/2jVt6p5IYNrOVLj2jzBJ2A"
+      },
+      "href" : "https://api.spotify.com/v1/artists/2jVt6p5IYNrOVLj2jzBJ2A",
+      "id" : "2jVt6p5IYNrOVLj2jzBJ2A",
+      "name" : "Roberto Loreggian",
+      "type" : "artist",
+      "uri" : "spotify:artist:2jVt6p5IYNrOVLj2jzBJ2A"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/0kPx20seCcMY7EnPtQNKvq"
+      },
+      "href" : "https://api.spotify.com/v1/artists/0kPx20seCcMY7EnPtQNKvq",
+      "id" : "0kPx20seCcMY7EnPtQNKvq",
+      "name" : "Michael Borgstede",
+      "type" : "artist",
+      "uri" : "spotify:artist:0kPx20seCcMY7EnPtQNKvq"
+    } ],
+    "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN", "ZA" ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/2QWwdQUYgqLcIf6yCO2agu"
+    },
+    "href" : "https://api.spotify.com/v1/albums/2QWwdQUYgqLcIf6yCO2agu",
+    "id" : "2QWwdQUYgqLcIf6yCO2agu",
+    "images" : [ {
+      "height" : 600,
+      "url" : "https://i.scdn.co/image/c2b0d5245bb79cac5cd3a0286ad2ac5a918cbf0f",
+      "width" : 600
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/18a6ca0b4f54a17e81234a5494e287aaa562e90c",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/e121b286cb00884237a339953a80056e04a1ce49",
+      "width" : 64
+    } ],
+    "name" : "Handel Edition, Vol. 3",
+    "release_date" : "2018-05-25",
+    "release_date_precision" : "day",
+    "total_tracks" : 97,
+    "type" : "album",
+    "uri" : "spotify:album:2QWwdQUYgqLcIf6yCO2agu"
+  }, {
+    "album_group" : "album",
+    "album_type" : "album",
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1QL7yTHrdahRMpvNtn6rI2"
+      },
+      "href" : "https://api.spotify.com/v1/artists/1QL7yTHrdahRMpvNtn6rI2",
+      "id" : "1QL7yTHrdahRMpvNtn6rI2",
+      "name" : "George Frideric Handel",
+      "type" : "artist",
+      "uri" : "spotify:artist:1QL7yTHrdahRMpvNtn6rI2"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/6KNbI1WhlsxIXZ0qZlT3xG"
+      },
+      "href" : "https://api.spotify.com/v1/artists/6KNbI1WhlsxIXZ0qZlT3xG",
+      "id" : "6KNbI1WhlsxIXZ0qZlT3xG",
+      "name" : "Marco Vitale",
+      "type" : "artist",
+      "uri" : "spotify:artist:6KNbI1WhlsxIXZ0qZlT3xG"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1udsMQtAJU2qHBK1pghvPk"
+      },
+      "href" : "https://api.spotify.com/v1/artists/1udsMQtAJU2qHBK1pghvPk",
+      "id" : "1udsMQtAJU2qHBK1pghvPk",
+      "name" : "Contrasto Armonico",
+      "type" : "artist",
+      "uri" : "spotify:artist:1udsMQtAJU2qHBK1pghvPk"
+    } ],
+    "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN", "ZA" ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/6sbVurmQCHo7CUucmrVBgU"
+    },
+    "href" : "https://api.spotify.com/v1/albums/6sbVurmQCHo7CUucmrVBgU",
+    "id" : "6sbVurmQCHo7CUucmrVBgU",
+    "images" : [ {
+      "height" : 600,
+      "url" : "https://i.scdn.co/image/ff962c72d79c1b7931de2ff43fbe86c9bf342b5e",
+      "width" : 600
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/13f6e6c551ac186a05a6eed8671d0b944e0229ac",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/d8a6b1812536f2e246c27ce63830260aef3fe8c5",
+      "width" : 64
+    } ],
+    "name" : "Handel Edition, Vol. 5",
+    "release_date" : "2018-05-25",
+    "release_date_precision" : "day",
+    "total_tracks" : 105,
+    "type" : "album",
+    "uri" : "spotify:album:6sbVurmQCHo7CUucmrVBgU"
+  }, {
+    "album_group" : "album",
+    "album_type" : "album",
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1QL7yTHrdahRMpvNtn6rI2"
+      },
+      "href" : "https://api.spotify.com/v1/artists/1QL7yTHrdahRMpvNtn6rI2",
+      "id" : "1QL7yTHrdahRMpvNtn6rI2",
+      "name" : "George Frideric Handel",
+      "type" : "artist",
+      "uri" : "spotify:artist:1QL7yTHrdahRMpvNtn6rI2"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/00HkIoA9mOhe2jPo4Nr5uJ"
+      },
+      "href" : "https://api.spotify.com/v1/artists/00HkIoA9mOhe2jPo4Nr5uJ",
+      "id" : "00HkIoA9mOhe2jPo4Nr5uJ",
+      "name" : "Mvsica Perdvta",
+      "type" : "artist",
+      "uri" : "spotify:artist:00HkIoA9mOhe2jPo4Nr5uJ"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/3qIT0wKMvQW4cQDFDSHz89"
+      },
+      "href" : "https://api.spotify.com/v1/artists/3qIT0wKMvQW4cQDFDSHz89",
+      "id" : "3qIT0wKMvQW4cQDFDSHz89",
+      "name" : "Renato Criscuolo",
+      "type" : "artist",
+      "uri" : "spotify:artist:3qIT0wKMvQW4cQDFDSHz89"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/16Rtmhhgle7inqFq48zQ6K"
+      },
+      "href" : "https://api.spotify.com/v1/artists/16Rtmhhgle7inqFq48zQ6K",
+      "id" : "16Rtmhhgle7inqFq48zQ6K",
+      "name" : "Valentina Varriale",
+      "type" : "artist",
+      "uri" : "spotify:artist:16Rtmhhgle7inqFq48zQ6K"
+    } ],
+    "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN", "ZA" ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/17lWyuKbuGeVFelVSg0UXy"
+    },
+    "href" : "https://api.spotify.com/v1/albums/17lWyuKbuGeVFelVSg0UXy",
+    "id" : "17lWyuKbuGeVFelVSg0UXy",
+    "images" : [ {
+      "height" : 600,
+      "url" : "https://i.scdn.co/image/047825226f3284dcf0aa14a50af24e31bd7b2ca4",
+      "width" : 600
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/7abb9448e0dc8f4fdd6cb29fb4f2e520ad88d697",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/e936e63f2fc7bf5b7fa19d65ad8f5b2f76ba9a5f",
+      "width" : 64
+    } ],
+    "name" : "Handel Edition, Vol. 6",
+    "release_date" : "2018-05-25",
+    "release_date_precision" : "day",
+    "total_tracks" : 104,
+    "type" : "album",
+    "uri" : "spotify:album:17lWyuKbuGeVFelVSg0UXy"
+  }, {
+    "album_group" : "album",
+    "album_type" : "album",
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1QL7yTHrdahRMpvNtn6rI2"
+      },
+      "href" : "https://api.spotify.com/v1/artists/1QL7yTHrdahRMpvNtn6rI2",
+      "id" : "1QL7yTHrdahRMpvNtn6rI2",
+      "name" : "George Frideric Handel",
+      "type" : "artist",
+      "uri" : "spotify:artist:1QL7yTHrdahRMpvNtn6rI2"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/2JtQnsUjsSyoaixZtFZ6ZE"
+      },
+      "href" : "https://api.spotify.com/v1/artists/2JtQnsUjsSyoaixZtFZ6ZE",
+      "id" : "2JtQnsUjsSyoaixZtFZ6ZE",
+      "name" : "Klaartje van Veldhoven",
+      "type" : "artist",
+      "uri" : "spotify:artist:2JtQnsUjsSyoaixZtFZ6ZE"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/4T1XmVqpFL8UddnKJ2mPYu"
+      },
+      "href" : "https://api.spotify.com/v1/artists/4T1XmVqpFL8UddnKJ2mPYu",
+      "id" : "4T1XmVqpFL8UddnKJ2mPYu",
+      "name" : "Stefanie True",
+      "type" : "artist",
+      "uri" : "spotify:artist:4T1XmVqpFL8UddnKJ2mPYu"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/40R0F7x3senon0SHMXdoz3"
+      },
+      "href" : "https://api.spotify.com/v1/artists/40R0F7x3senon0SHMXdoz3",
+      "id" : "40R0F7x3senon0SHMXdoz3",
+      "name" : "John Mark Ainsley",
+      "type" : "artist",
+      "uri" : "spotify:artist:40R0F7x3senon0SHMXdoz3"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1udsMQtAJU2qHBK1pghvPk"
+      },
+      "href" : "https://api.spotify.com/v1/artists/1udsMQtAJU2qHBK1pghvPk",
+      "id" : "1udsMQtAJU2qHBK1pghvPk",
+      "name" : "Contrasto Armonico",
+      "type" : "artist",
+      "uri" : "spotify:artist:1udsMQtAJU2qHBK1pghvPk"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/6KNbI1WhlsxIXZ0qZlT3xG"
+      },
+      "href" : "https://api.spotify.com/v1/artists/6KNbI1WhlsxIXZ0qZlT3xG",
+      "id" : "6KNbI1WhlsxIXZ0qZlT3xG",
+      "name" : "Marco Vitale",
+      "type" : "artist",
+      "uri" : "spotify:artist:6KNbI1WhlsxIXZ0qZlT3xG"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/2UVXU77knJMYOM6Avvw6Yx"
+      },
+      "href" : "https://api.spotify.com/v1/artists/2UVXU77knJMYOM6Avvw6Yx",
+      "id" : "2UVXU77knJMYOM6Avvw6Yx",
+      "name" : "RIAS Kammerchor",
+      "type" : "artist",
+      "uri" : "spotify:artist:2UVXU77knJMYOM6Avvw6Yx"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1R1hwKrqqLqYiD53NtXEBJ"
+      },
+      "href" : "https://api.spotify.com/v1/artists/1R1hwKrqqLqYiD53NtXEBJ",
+      "id" : "1R1hwKrqqLqYiD53NtXEBJ",
+      "name" : "Akademie für Alte Musik Berlin",
+      "type" : "artist",
+      "uri" : "spotify:artist:1R1hwKrqqLqYiD53NtXEBJ"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/2jyy7Q6sbWfKNCCwbu14oB"
+      },
+      "href" : "https://api.spotify.com/v1/artists/2jyy7Q6sbWfKNCCwbu14oB",
+      "id" : "2jyy7Q6sbWfKNCCwbu14oB",
+      "name" : "Marcus Creed",
+      "type" : "artist",
+      "uri" : "spotify:artist:2jyy7Q6sbWfKNCCwbu14oB"
+    } ],
+    "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN", "ZA" ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/189tcARMXGg8qAtsy2eVKT"
+    },
+    "href" : "https://api.spotify.com/v1/albums/189tcARMXGg8qAtsy2eVKT",
+    "id" : "189tcARMXGg8qAtsy2eVKT",
+    "images" : [ {
+      "height" : 600,
+      "url" : "https://i.scdn.co/image/13298f5eb561264a3d86e2fbabec9c982e351082",
+      "width" : 600
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/de538d13b6f463f19231dabc7a5af0dc39d4cea3",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/6f4a356fe43ea772d3d8c15c74235a483abb41b8",
+      "width" : 64
+    } ],
+    "name" : "Handel Edition, Vol. 8",
+    "release_date" : "2018-05-25",
+    "release_date_precision" : "day",
+    "total_tracks" : 98,
+    "type" : "album",
+    "uri" : "spotify:album:189tcARMXGg8qAtsy2eVKT"
+  }, {
+    "album_group" : "album",
+    "album_type" : "album",
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1QL7yTHrdahRMpvNtn6rI2"
+      },
+      "href" : "https://api.spotify.com/v1/artists/1QL7yTHrdahRMpvNtn6rI2",
+      "id" : "1QL7yTHrdahRMpvNtn6rI2",
+      "name" : "George Frideric Handel",
+      "type" : "artist",
+      "uri" : "spotify:artist:1QL7yTHrdahRMpvNtn6rI2"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/6esV49hvNq55CMWHuKSHIl"
+      },
+      "href" : "https://api.spotify.com/v1/artists/6esV49hvNq55CMWHuKSHIl",
+      "id" : "6esV49hvNq55CMWHuKSHIl",
+      "name" : "Michala Petri",
+      "type" : "artist",
+      "uri" : "spotify:artist:6esV49hvNq55CMWHuKSHIl"
+    } ],
+    "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN", "ZA" ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/2RCUgTzze7tFQ5yXnRDjjY"
+    },
+    "href" : "https://api.spotify.com/v1/albums/2RCUgTzze7tFQ5yXnRDjjY",
+    "id" : "2RCUgTzze7tFQ5yXnRDjjY",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/e5287a23a19ec9332fb9ee9a4191678ddd19ee6c",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/e9107e14b28b75ceb443ae4d6e87d0f15105f069",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/79968b21e633f632a5cc422496399b032a1762eb",
+      "width" : 64
+    } ],
+    "name" : "Händel: Sonatas",
+    "release_date" : "2018-05-11",
+    "release_date_precision" : "day",
+    "total_tracks" : 26,
+    "type" : "album",
+    "uri" : "spotify:album:2RCUgTzze7tFQ5yXnRDjjY"
+  }, {
+    "album_group" : "album",
+    "album_type" : "album",
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1QL7yTHrdahRMpvNtn6rI2"
+      },
+      "href" : "https://api.spotify.com/v1/artists/1QL7yTHrdahRMpvNtn6rI2",
+      "id" : "1QL7yTHrdahRMpvNtn6rI2",
+      "name" : "George Frideric Handel",
+      "type" : "artist",
+      "uri" : "spotify:artist:1QL7yTHrdahRMpvNtn6rI2"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/2jVt6p5IYNrOVLj2jzBJ2A"
+      },
+      "href" : "https://api.spotify.com/v1/artists/2jVt6p5IYNrOVLj2jzBJ2A",
+      "id" : "2jVt6p5IYNrOVLj2jzBJ2A",
+      "name" : "Roberto Loreggian",
+      "type" : "artist",
+      "uri" : "spotify:artist:2jVt6p5IYNrOVLj2jzBJ2A"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/0mltzBgVByhllq4LxUz0fM"
+      },
+      "href" : "https://api.spotify.com/v1/artists/0mltzBgVByhllq4LxUz0fM",
+      "id" : "0mltzBgVByhllq4LxUz0fM",
+      "name" : "Massimo Gabba",
+      "type" : "artist",
+      "uri" : "spotify:artist:0mltzBgVByhllq4LxUz0fM"
+    } ],
+    "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN", "ZA" ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/6FJWPXFw5uEa2rwIeMpXB8"
+    },
+    "href" : "https://api.spotify.com/v1/albums/6FJWPXFw5uEa2rwIeMpXB8",
+    "id" : "6FJWPXFw5uEa2rwIeMpXB8",
+    "images" : [ {
+      "height" : 600,
+      "url" : "https://i.scdn.co/image/8f736763eb8ca7c78725b9f44b448c3fcc818192",
+      "width" : 600
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/93cc79400e1814109fb60a25087a4c3e7180bd78",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/83b4cdbea9418949168cf81bc508f7e81c1e075f",
+      "width" : 64
+    } ],
+    "name" : "Handel Edition, Vol. 4",
+    "release_date" : "2018-05-03",
+    "release_date_precision" : "day",
+    "total_tracks" : 102,
+    "type" : "album",
+    "uri" : "spotify:album:6FJWPXFw5uEa2rwIeMpXB8"
+  }, {
+    "album_group" : "album",
+    "album_type" : "album",
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1QL7yTHrdahRMpvNtn6rI2"
+      },
+      "href" : "https://api.spotify.com/v1/artists/1QL7yTHrdahRMpvNtn6rI2",
+      "id" : "1QL7yTHrdahRMpvNtn6rI2",
+      "name" : "George Frideric Handel",
+      "type" : "artist",
+      "uri" : "spotify:artist:1QL7yTHrdahRMpvNtn6rI2"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/6V0wyvlcCWlmHrHwYVhdEA"
+      },
+      "href" : "https://api.spotify.com/v1/artists/6V0wyvlcCWlmHrHwYVhdEA",
+      "id" : "6V0wyvlcCWlmHrHwYVhdEA",
+      "name" : "Thurston Dart",
+      "type" : "artist",
+      "uri" : "spotify:artist:6V0wyvlcCWlmHrHwYVhdEA"
+    } ],
+    "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN", "ZA" ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/04287DCk49hrlLSpJLZ9rl"
+    },
+    "href" : "https://api.spotify.com/v1/albums/04287DCk49hrlLSpJLZ9rl",
+    "id" : "04287DCk49hrlLSpJLZ9rl",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/a8ac4eb384964df4a17ff79fb6063b87d63d5194",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/e2f3d061f8095b6341fe99fbbc4aba1e62ced1aa",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/8a9abcafbf920d00fc366cd8f46e052f218c2f5f",
+      "width" : 64
+    } ],
+    "name" : "Thurston Dart's Handel",
+    "release_date" : "2018-04-24",
+    "release_date_precision" : "day",
+    "total_tracks" : 38,
+    "type" : "album",
+    "uri" : "spotify:album:04287DCk49hrlLSpJLZ9rl"
+  }, {
+    "album_group" : "album",
+    "album_type" : "album",
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1QL7yTHrdahRMpvNtn6rI2"
+      },
+      "href" : "https://api.spotify.com/v1/artists/1QL7yTHrdahRMpvNtn6rI2",
+      "id" : "1QL7yTHrdahRMpvNtn6rI2",
+      "name" : "George Frideric Handel",
+      "type" : "artist",
+      "uri" : "spotify:artist:1QL7yTHrdahRMpvNtn6rI2"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/412D50pCog2OPxx4gOkcti"
+      },
+      "href" : "https://api.spotify.com/v1/artists/412D50pCog2OPxx4gOkcti",
+      "id" : "412D50pCog2OPxx4gOkcti",
+      "name" : "Karl Richter Chamber Orchestra",
+      "type" : "artist",
+      "uri" : "spotify:artist:412D50pCog2OPxx4gOkcti"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/3iamDPaou6RYgX0C43Qm6j"
+      },
+      "href" : "https://api.spotify.com/v1/artists/3iamDPaou6RYgX0C43Qm6j",
+      "id" : "3iamDPaou6RYgX0C43Qm6j",
+      "name" : "Karl Richter",
+      "type" : "artist",
+      "uri" : "spotify:artist:3iamDPaou6RYgX0C43Qm6j"
+    } ],
+    "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN", "ZA" ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/4SFzpq37EwxWiK6mF75l9N"
+    },
+    "href" : "https://api.spotify.com/v1/albums/4SFzpq37EwxWiK6mF75l9N",
+    "id" : "4SFzpq37EwxWiK6mF75l9N",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/7f1acd82f058f636055217a7ed440d109e22ce8d",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/ca2cb469fd053bc0e6a050e58d1db9dc1c268412",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/84e4eb1fc6156fff5e2c1ae297053f7c275b6a4e",
+      "width" : 64
+    } ],
+    "name" : "Handel: Organ Concertos",
+    "release_date" : "2018-04-20",
+    "release_date_precision" : "day",
+    "total_tracks" : 46,
+    "type" : "album",
+    "uri" : "spotify:album:4SFzpq37EwxWiK6mF75l9N"
+  }, {
+    "album_group" : "album",
+    "album_type" : "album",
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1QL7yTHrdahRMpvNtn6rI2"
+      },
+      "href" : "https://api.spotify.com/v1/artists/1QL7yTHrdahRMpvNtn6rI2",
+      "id" : "1QL7yTHrdahRMpvNtn6rI2",
+      "name" : "George Frideric Handel",
+      "type" : "artist",
+      "uri" : "spotify:artist:1QL7yTHrdahRMpvNtn6rI2"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/4TX18kuXShGB6K2Cm3E3e6"
+      },
+      "href" : "https://api.spotify.com/v1/artists/4TX18kuXShGB6K2Cm3E3e6",
+      "id" : "4TX18kuXShGB6K2Cm3E3e6",
+      "name" : "Cantillation",
+      "type" : "artist",
+      "uri" : "spotify:artist:4TX18kuXShGB6K2Cm3E3e6"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/2s0glS8XIjXg5OXSom6Eug"
+      },
+      "href" : "https://api.spotify.com/v1/artists/2s0glS8XIjXg5OXSom6Eug",
+      "id" : "2s0glS8XIjXg5OXSom6Eug",
+      "name" : "Orchestra of the Antipodes",
+      "type" : "artist",
+      "uri" : "spotify:artist:2s0glS8XIjXg5OXSom6Eug"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/2nlnrn7sL4BWmQ2Pk5TAo1"
+      },
+      "href" : "https://api.spotify.com/v1/artists/2nlnrn7sL4BWmQ2Pk5TAo1",
+      "id" : "2nlnrn7sL4BWmQ2Pk5TAo1",
+      "name" : "Erin Helyard",
+      "type" : "artist",
+      "uri" : "spotify:artist:2nlnrn7sL4BWmQ2Pk5TAo1"
+    } ],
+    "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN", "ZA" ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/4AoFSdFeqZ13PqRq40eIYw"
+    },
+    "href" : "https://api.spotify.com/v1/albums/4AoFSdFeqZ13PqRq40eIYw",
+    "id" : "4AoFSdFeqZ13PqRq40eIYw",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/67a6f682a0289b4e3d2dade3da1a962dc10ee843",
+      "width" : 635
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/06c59d671b8242b528facb154c74e2604926d844",
+      "width" : 298
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/a73bb4df90ab0193c66f220dd73b6701d6c6a202",
+      "width" : 64
+    } ],
+    "name" : "Handel: Theodora, HWV 68 (Live)",
+    "release_date" : "2018-04-20",
+    "release_date_precision" : "day",
+    "total_tracks" : 69,
+    "type" : "album",
+    "uri" : "spotify:album:4AoFSdFeqZ13PqRq40eIYw"
+  }, {
+    "album_group" : "album",
+    "album_type" : "album",
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1QL7yTHrdahRMpvNtn6rI2"
+      },
+      "href" : "https://api.spotify.com/v1/artists/1QL7yTHrdahRMpvNtn6rI2",
+      "id" : "1QL7yTHrdahRMpvNtn6rI2",
+      "name" : "George Frideric Handel",
+      "type" : "artist",
+      "uri" : "spotify:artist:1QL7yTHrdahRMpvNtn6rI2"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/5dj2TPLbKWFIMkfUgXdPul"
+      },
+      "href" : "https://api.spotify.com/v1/artists/5dj2TPLbKWFIMkfUgXdPul",
+      "id" : "5dj2TPLbKWFIMkfUgXdPul",
+      "name" : "Christian Schmitt",
+      "type" : "artist",
+      "uri" : "spotify:artist:5dj2TPLbKWFIMkfUgXdPul"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/51RiZjPgKKJ1uDsZVmntmF"
+      },
+      "href" : "https://api.spotify.com/v1/artists/51RiZjPgKKJ1uDsZVmntmF",
+      "id" : "51RiZjPgKKJ1uDsZVmntmF",
+      "name" : "Stuttgart Chamber Orchestra",
+      "type" : "artist",
+      "uri" : "spotify:artist:51RiZjPgKKJ1uDsZVmntmF"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/6yAWv145sy4X8JuioX2niU"
+      },
+      "href" : "https://api.spotify.com/v1/artists/6yAWv145sy4X8JuioX2niU",
+      "id" : "6yAWv145sy4X8JuioX2niU",
+      "name" : "Nicol Matt",
+      "type" : "artist",
+      "uri" : "spotify:artist:6yAWv145sy4X8JuioX2niU"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/6GD0USGupJSZ0qsldrq3Z2"
+      },
+      "href" : "https://api.spotify.com/v1/artists/6GD0USGupJSZ0qsldrq3Z2",
+      "id" : "6GD0USGupJSZ0qsldrq3Z2",
+      "name" : "New Bach Collegium Musicum Leipzig",
+      "type" : "artist",
+      "uri" : "spotify:artist:6GD0USGupJSZ0qsldrq3Z2"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/7KTFZSAt2pE7UwCLseG81I"
+      },
+      "href" : "https://api.spotify.com/v1/artists/7KTFZSAt2pE7UwCLseG81I",
+      "id" : "7KTFZSAt2pE7UwCLseG81I",
+      "name" : "Max Pommer",
+      "type" : "artist",
+      "uri" : "spotify:artist:7KTFZSAt2pE7UwCLseG81I"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/6dxdut9Mhu7r7SM9HZB5Ob"
+      },
+      "href" : "https://api.spotify.com/v1/artists/6dxdut9Mhu7r7SM9HZB5Ob",
+      "id" : "6dxdut9Mhu7r7SM9HZB5Ob",
+      "name" : "Concerto Köln",
+      "type" : "artist",
+      "uri" : "spotify:artist:6dxdut9Mhu7r7SM9HZB5Ob"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/15QTSK7NBFJawaoxQALt9s"
+      },
+      "href" : "https://api.spotify.com/v1/artists/15QTSK7NBFJawaoxQALt9s",
+      "id" : "15QTSK7NBFJawaoxQALt9s",
+      "name" : "Rundfunk Sinfonieorchester Berlin",
+      "type" : "artist",
+      "uri" : "spotify:artist:15QTSK7NBFJawaoxQALt9s"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1TEaO9h5h0PoR8uTbnlMQZ"
+      },
+      "href" : "https://api.spotify.com/v1/artists/1TEaO9h5h0PoR8uTbnlMQZ",
+      "id" : "1TEaO9h5h0PoR8uTbnlMQZ",
+      "name" : "Anton Steck",
+      "type" : "artist",
+      "uri" : "spotify:artist:1TEaO9h5h0PoR8uTbnlMQZ"
+    } ],
+    "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN", "ZA" ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/3PgzwbfLmXx69KLxXTGi8V"
+    },
+    "href" : "https://api.spotify.com/v1/albums/3PgzwbfLmXx69KLxXTGi8V",
+    "id" : "3PgzwbfLmXx69KLxXTGi8V",
+    "images" : [ {
+      "height" : 600,
+      "url" : "https://i.scdn.co/image/785734e13c0cf3260a987d3d779c584ea09eb03a",
+      "width" : 600
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/807be9c166384c9343ecfa42ac3155cf30230512",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/bea005414254a350953315ba098af49a3fa7c9d3",
+      "width" : 64
+    } ],
+    "name" : "Handel Edition, Vol. 1",
+    "release_date" : "2018-04-01",
+    "release_date_precision" : "day",
+    "total_tracks" : 103,
+    "type" : "album",
+    "uri" : "spotify:album:3PgzwbfLmXx69KLxXTGi8V"
+  }, {
+    "album_group" : "album",
+    "album_type" : "album",
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1QL7yTHrdahRMpvNtn6rI2"
+      },
+      "href" : "https://api.spotify.com/v1/artists/1QL7yTHrdahRMpvNtn6rI2",
+      "id" : "1QL7yTHrdahRMpvNtn6rI2",
+      "name" : "George Frideric Handel",
+      "type" : "artist",
+      "uri" : "spotify:artist:1QL7yTHrdahRMpvNtn6rI2"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+      },
+      "href" : "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+      "id" : "0LyfQWJT6nXafLPZqxe9Of",
+      "name" : "Various Artists",
+      "type" : "artist",
+      "uri" : "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/4fgDrYK3Ua8O0eV4cU8Pl2"
+      },
+      "href" : "https://api.spotify.com/v1/artists/4fgDrYK3Ua8O0eV4cU8Pl2",
+      "id" : "4fgDrYK3Ua8O0eV4cU8Pl2",
+      "name" : "Nicholas Ward",
+      "type" : "artist",
+      "uri" : "spotify:artist:4fgDrYK3Ua8O0eV4cU8Pl2"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/6yAWv145sy4X8JuioX2niU"
+      },
+      "href" : "https://api.spotify.com/v1/artists/6yAWv145sy4X8JuioX2niU",
+      "id" : "6yAWv145sy4X8JuioX2niU",
+      "name" : "Nicol Matt",
+      "type" : "artist",
+      "uri" : "spotify:artist:6yAWv145sy4X8JuioX2niU"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/4JKHXlntTvmZnLxjbeRcPL"
+      },
+      "href" : "https://api.spotify.com/v1/artists/4JKHXlntTvmZnLxjbeRcPL",
+      "id" : "4JKHXlntTvmZnLxjbeRcPL",
+      "name" : "City of London Sinfonia",
+      "type" : "artist",
+      "uri" : "spotify:artist:4JKHXlntTvmZnLxjbeRcPL"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/51RiZjPgKKJ1uDsZVmntmF"
+      },
+      "href" : "https://api.spotify.com/v1/artists/51RiZjPgKKJ1uDsZVmntmF",
+      "id" : "51RiZjPgKKJ1uDsZVmntmF",
+      "name" : "Stuttgart Chamber Orchestra",
+      "type" : "artist",
+      "uri" : "spotify:artist:51RiZjPgKKJ1uDsZVmntmF"
+    } ],
+    "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN", "ZA" ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/1EwkUToHyURWQdJ3rlhV75"
+    },
+    "href" : "https://api.spotify.com/v1/albums/1EwkUToHyURWQdJ3rlhV75",
+    "id" : "1EwkUToHyURWQdJ3rlhV75",
+    "images" : [ {
+      "height" : 600,
+      "url" : "https://i.scdn.co/image/5ef8a29a387d457ed08b1db2c02522c74bd8ca07",
+      "width" : 600
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/f761247edaf52273b57e49122dde9d54d5626ae0",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/566cece90c3ee36f9ab5ee1767662414b0b540a2",
+      "width" : 64
+    } ],
+    "name" : "Handel Edition, Vol. 2",
+    "release_date" : "2018-04-01",
+    "release_date_precision" : "day",
+    "total_tracks" : 85,
+    "type" : "album",
+    "uri" : "spotify:album:1EwkUToHyURWQdJ3rlhV75"
+  }, {
+    "album_group" : "album",
+    "album_type" : "album",
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1QL7yTHrdahRMpvNtn6rI2"
+      },
+      "href" : "https://api.spotify.com/v1/artists/1QL7yTHrdahRMpvNtn6rI2",
+      "id" : "1QL7yTHrdahRMpvNtn6rI2",
+      "name" : "George Frideric Handel",
+      "type" : "artist",
+      "uri" : "spotify:artist:1QL7yTHrdahRMpvNtn6rI2"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/4mzV4d8t6t3NFm6fKmqULx"
+      },
+      "href" : "https://api.spotify.com/v1/artists/4mzV4d8t6t3NFm6fKmqULx",
+      "id" : "4mzV4d8t6t3NFm6fKmqULx",
+      "name" : "Yoshihiro Fukunaga",
+      "type" : "artist",
+      "uri" : "spotify:artist:4mzV4d8t6t3NFm6fKmqULx"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/4KO2NyLlpqh0Yx4AUOKYOO"
+      },
+      "href" : "https://api.spotify.com/v1/artists/4KO2NyLlpqh0Yx4AUOKYOO",
+      "id" : "4KO2NyLlpqh0Yx4AUOKYOO",
+      "name" : "Naoki Ueo",
+      "type" : "artist",
+      "uri" : "spotify:artist:4KO2NyLlpqh0Yx4AUOKYOO"
+    } ],
+    "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN", "ZA" ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/5tRBxplBWLAfogIftwY2gN"
+    },
+    "href" : "https://api.spotify.com/v1/albums/5tRBxplBWLAfogIftwY2gN",
+    "id" : "5tRBxplBWLAfogIftwY2gN",
+    "images" : [ {
+      "height" : 632,
+      "url" : "https://i.scdn.co/image/39203b3d4449986e7f49166e657438cc1bcb36db",
+      "width" : 640
+    }, {
+      "height" : 296,
+      "url" : "https://i.scdn.co/image/66a080b4b6825b85c2f1f1515d9c794623ea0250",
+      "width" : 300
+    }, {
+      "height" : 63,
+      "url" : "https://i.scdn.co/image/1e660d8a4a70c484ea0db2b380098764987e7a49",
+      "width" : 64
+    } ],
+    "name" : "Handel: Flute Sonatas",
+    "release_date" : "2018-03-16",
+    "release_date_precision" : "day",
+    "total_tracks" : 33,
+    "type" : "album",
+    "uri" : "spotify:album:5tRBxplBWLAfogIftwY2gN"
+  }, {
+    "album_group" : "album",
+    "album_type" : "album",
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1QL7yTHrdahRMpvNtn6rI2"
+      },
+      "href" : "https://api.spotify.com/v1/artists/1QL7yTHrdahRMpvNtn6rI2",
+      "id" : "1QL7yTHrdahRMpvNtn6rI2",
+      "name" : "George Frideric Handel",
+      "type" : "artist",
+      "uri" : "spotify:artist:1QL7yTHrdahRMpvNtn6rI2"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/54CHheFaySZabvo76k6U1P"
+      },
+      "href" : "https://api.spotify.com/v1/artists/54CHheFaySZabvo76k6U1P",
+      "id" : "54CHheFaySZabvo76k6U1P",
+      "name" : "Ensemble Amarillis",
+      "type" : "artist",
+      "uri" : "spotify:artist:54CHheFaySZabvo76k6U1P"
+    } ],
+    "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN", "ZA" ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/1OvJ29SZdrXYPo2eoWydlR"
+    },
+    "href" : "https://api.spotify.com/v1/albums/1OvJ29SZdrXYPo2eoWydlR",
+    "id" : "1OvJ29SZdrXYPo2eoWydlR",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/57c703b77d9c1d671f64973e043598780d4da574",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/d1ab3063f97d00060503ac739f893c5fce9e89e4",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/6831968f43029b0cb2dac2eb0f949413b6b6e8c9",
+      "width" : 64
+    } ],
+    "name" : "Handel: Melodies in Mind (Suites & Trio Sonatas)",
+    "release_date" : "2018-03-16",
+    "release_date_precision" : "day",
+    "total_tracks" : 27,
+    "type" : "album",
+    "uri" : "spotify:album:1OvJ29SZdrXYPo2eoWydlR"
+  }, {
+    "album_group" : "album",
+    "album_type" : "album",
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1QL7yTHrdahRMpvNtn6rI2"
+      },
+      "href" : "https://api.spotify.com/v1/artists/1QL7yTHrdahRMpvNtn6rI2",
+      "id" : "1QL7yTHrdahRMpvNtn6rI2",
+      "name" : "George Frideric Handel",
+      "type" : "artist",
+      "uri" : "spotify:artist:1QL7yTHrdahRMpvNtn6rI2"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/0pxGHEwQy65kO81yaSZoG8"
+      },
+      "href" : "https://api.spotify.com/v1/artists/0pxGHEwQy65kO81yaSZoG8",
+      "id" : "0pxGHEwQy65kO81yaSZoG8",
+      "name" : "Benno Schachtner",
+      "type" : "artist",
+      "uri" : "spotify:artist:0pxGHEwQy65kO81yaSZoG8"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/2lKbDcQJawiFHTOIiIimDB"
+      },
+      "href" : "https://api.spotify.com/v1/artists/2lKbDcQJawiFHTOIiIimDB",
+      "id" : "2lKbDcQJawiFHTOIiIimDB",
+      "name" : "Bernhard Forck",
+      "type" : "artist",
+      "uri" : "spotify:artist:2lKbDcQJawiFHTOIiIimDB"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/3XyHVSLu9NU3Lhfd9wEfQh"
+      },
+      "href" : "https://api.spotify.com/v1/artists/3XyHVSLu9NU3Lhfd9wEfQh",
+      "id" : "3XyHVSLu9NU3Lhfd9wEfQh",
+      "name" : "Händelfestspielorchester Halle",
+      "type" : "artist",
+      "uri" : "spotify:artist:3XyHVSLu9NU3Lhfd9wEfQh"
+    } ],
+    "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN", "ZA" ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/3XtiMLuwigB9RlzJXufpq3"
+    },
+    "href" : "https://api.spotify.com/v1/albums/3XtiMLuwigB9RlzJXufpq3",
+    "id" : "3XtiMLuwigB9RlzJXufpq3",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/076ce180b920113f186a9161ab8c51abe5a41527",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/b905fbbbcbd25297e03dc994acb17fc4736b3a43",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/f9e7d35e7aeaabdad5c3b838c526dd1090a1c611",
+      "width" : 64
+    } ],
+    "name" : "Haendeliana hallensis 1",
+    "release_date" : "2018-03-14",
+    "release_date_precision" : "day",
+    "total_tracks" : 19,
+    "type" : "album",
+    "uri" : "spotify:album:3XtiMLuwigB9RlzJXufpq3"
+  } ],
+  "limit" : 20,
+  "next" : "https://api.spotify.com/v1/artists/1QL7yTHrdahRMpvNtn6rI2/albums?offset=20&limit=20&include_groups=album,single,compilation,appears_on",
+  "offset" : 0,
+  "previous" : null,
+  "total" : 1284
+}

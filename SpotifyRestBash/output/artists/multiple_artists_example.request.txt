@@ -1,0 +1,1 @@
+GET request to https://api.spotify.com/v1/artists?ids=1QL7yTHrdahRMpvNtn6rI2%2C0oSGxfWSnnOXhD2fKuz2Gy

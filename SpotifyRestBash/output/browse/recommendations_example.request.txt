@@ -1,0 +1,1 @@
+GET request to https://api.spotify.com/v1/recommendations?seed_genres=metal&max_duration_ms=300000

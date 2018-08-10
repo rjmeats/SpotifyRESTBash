@@ -1,0 +1,651 @@
+{
+  "playlists" : {
+    "href" : "https://api.spotify.com/v1/browse/categories/metal/playlists?offset=0&limit=20",
+    "items" : [ {
+      "collaborative" : false,
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/user/spotify/playlist/37i9dQZF1DWTcqUzwhNmKv"
+      },
+      "href" : "https://api.spotify.com/v1/users/spotify/playlists/37i9dQZF1DWTcqUzwhNmKv",
+      "id" : "37i9dQZF1DWTcqUzwhNmKv",
+      "images" : [ {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/4b520217f40dd7e0bc1bd181a2d4294f1144c92a",
+        "width" : 300
+      } ],
+      "name" : "Kickass Metal",
+      "owner" : {
+        "display_name" : "Spotify",
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/spotify"
+        },
+        "href" : "https://api.spotify.com/v1/users/spotify",
+        "id" : "spotify",
+        "type" : "user",
+        "uri" : "spotify:user:spotify"
+      },
+      "primary_color" : null,
+      "public" : null,
+      "snapshot_id" : "MTUzMzI0NzMyMCwwMDAwMDA5NDAwMDAwMTY0ZmNhOTcwM2MwMDAwMDE2NGZhZWEyOWJk",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/users/spotify/playlists/37i9dQZF1DWTcqUzwhNmKv/tracks",
+        "total" : 61
+      },
+      "type" : "playlist",
+      "uri" : "spotify:user:spotify:playlist:37i9dQZF1DWTcqUzwhNmKv"
+    }, {
+      "collaborative" : false,
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/user/spotify/playlist/37i9dQZF1DX5J7FIl4q56G"
+      },
+      "href" : "https://api.spotify.com/v1/users/spotify/playlists/37i9dQZF1DX5J7FIl4q56G",
+      "id" : "37i9dQZF1DX5J7FIl4q56G",
+      "images" : [ {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/66a55887cc6ebe280e314bc7d12a26e22c07c619",
+        "width" : 300
+      } ],
+      "name" : "New Metal Tracks",
+      "owner" : {
+        "display_name" : "Spotify",
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/spotify"
+        },
+        "href" : "https://api.spotify.com/v1/users/spotify",
+        "id" : "spotify",
+        "type" : "user",
+        "uri" : "spotify:user:spotify"
+      },
+      "primary_color" : null,
+      "public" : null,
+      "snapshot_id" : "MTUzMzg5Mzc5OSwwMDAwMDE5NTAwMDAwMTY1MjMzMWVlZmMwMDAwMDE2NTIyZmZhNTU4",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/users/spotify/playlists/37i9dQZF1DX5J7FIl4q56G/tracks",
+        "total" : 60
+      },
+      "type" : "playlist",
+      "uri" : "spotify:user:spotify:playlist:37i9dQZF1DX5J7FIl4q56G"
+    }, {
+      "collaborative" : false,
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/user/spotify/playlist/37i9dQZF1DWX8U2dv7jidc"
+      },
+      "href" : "https://api.spotify.com/v1/users/spotify/playlists/37i9dQZF1DWX8U2dv7jidc",
+      "id" : "37i9dQZF1DWX8U2dv7jidc",
+      "images" : [ {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/771b3f8df95072b36635ebc965a1727c8a999f61",
+        "width" : 300
+      } ],
+      "name" : "Alt Metal",
+      "owner" : {
+        "display_name" : "Spotify",
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/spotify"
+        },
+        "href" : "https://api.spotify.com/v1/users/spotify",
+        "id" : "spotify",
+        "type" : "user",
+        "uri" : "spotify:user:spotify"
+      },
+      "primary_color" : null,
+      "public" : null,
+      "snapshot_id" : "MTUzMzg5NjE3MCwwMDAwMDA1NTAwMDAwMTY1MTkyNTFhZjcwMDAwMDE2NGQ1Y2YxMzQy",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/users/spotify/playlists/37i9dQZF1DWX8U2dv7jidc/tracks",
+        "total" : 62
+      },
+      "type" : "playlist",
+      "uri" : "spotify:user:spotify:playlist:37i9dQZF1DWX8U2dv7jidc"
+    }, {
+      "collaborative" : false,
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/user/spotify/playlist/37i9dQZF1DWXIcbzpLauPS"
+      },
+      "href" : "https://api.spotify.com/v1/users/spotify/playlists/37i9dQZF1DWXIcbzpLauPS",
+      "id" : "37i9dQZF1DWXIcbzpLauPS",
+      "images" : [ {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/4dc204883fb90e69b693c196df95c82fe9b09bf9",
+        "width" : 300
+      } ],
+      "name" : "New Core",
+      "owner" : {
+        "display_name" : "Spotify",
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/spotify"
+        },
+        "href" : "https://api.spotify.com/v1/users/spotify",
+        "id" : "spotify",
+        "type" : "user",
+        "uri" : "spotify:user:spotify"
+      },
+      "primary_color" : null,
+      "public" : null,
+      "snapshot_id" : "MTUzMzg5NjE5MSwwMDAwMDBmNjAwMDAwMTY1MjMzYmIwYzcwMDAwMDE2NTIzM2IzOTcw",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/users/spotify/playlists/37i9dQZF1DWXIcbzpLauPS/tracks",
+        "total" : 100
+      },
+      "type" : "playlist",
+      "uri" : "spotify:user:spotify:playlist:37i9dQZF1DWXIcbzpLauPS"
+    }, {
+      "collaborative" : false,
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/user/spotify/playlist/37i9dQZF1DXdiUbJTV2anj"
+      },
+      "href" : "https://api.spotify.com/v1/users/spotify/playlists/37i9dQZF1DXdiUbJTV2anj",
+      "id" : "37i9dQZF1DXdiUbJTV2anj",
+      "images" : [ {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/699ae5efd82dc02ce39a6db065d080cf2c85f5cc",
+        "width" : 300
+      } ],
+      "name" : "New Blood",
+      "owner" : {
+        "display_name" : "Spotify",
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/spotify"
+        },
+        "href" : "https://api.spotify.com/v1/users/spotify",
+        "id" : "spotify",
+        "type" : "user",
+        "uri" : "spotify:user:spotify"
+      },
+      "primary_color" : null,
+      "public" : null,
+      "snapshot_id" : "MTUzMzg5NjE5OCwwMDAwMDA0NjAwMDAwMTY0ZmNhYTVhNTUwMDAwMDE2NGY5ZmEzNTYy",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/users/spotify/playlists/37i9dQZF1DXdiUbJTV2anj/tracks",
+        "total" : 55
+      },
+      "type" : "playlist",
+      "uri" : "spotify:user:spotify:playlist:37i9dQZF1DXdiUbJTV2anj"
+    }, {
+      "collaborative" : false,
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/user/spotify/playlist/37i9dQZF1DX2LTcinqsO68"
+      },
+      "href" : "https://api.spotify.com/v1/users/spotify/playlists/37i9dQZF1DX2LTcinqsO68",
+      "id" : "37i9dQZF1DX2LTcinqsO68",
+      "images" : [ {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/85ec439d48da6ab30b0311b69feb95ae76ab3c8a",
+        "width" : 300
+      } ],
+      "name" : "Old School Metal",
+      "owner" : {
+        "display_name" : "Spotify",
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/spotify"
+        },
+        "href" : "https://api.spotify.com/v1/users/spotify",
+        "id" : "spotify",
+        "type" : "user",
+        "uri" : "spotify:user:spotify"
+      },
+      "primary_color" : null,
+      "public" : null,
+      "snapshot_id" : "MTUzMTMxMTE4MSwwMDAwMDAzMjAwMDAwMTY0ODk0MjRkMTgwMDAwMDE2MmYyYjBlOGQ4",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/users/spotify/playlists/37i9dQZF1DX2LTcinqsO68/tracks",
+        "total" : 78
+      },
+      "type" : "playlist",
+      "uri" : "spotify:user:spotify:playlist:37i9dQZF1DX2LTcinqsO68"
+    }, {
+      "collaborative" : false,
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/user/spotify/playlist/37i9dQZF1DWWOaP4H0w5b0"
+      },
+      "href" : "https://api.spotify.com/v1/users/spotify/playlists/37i9dQZF1DWWOaP4H0w5b0",
+      "id" : "37i9dQZF1DWWOaP4H0w5b0",
+      "images" : [ {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/dfdf65ab69e3a5e38b1c08bd53fae4b93db6f613",
+        "width" : 300
+      } ],
+      "name" : "Metal Essentials",
+      "owner" : {
+        "display_name" : "Spotify",
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/spotify"
+        },
+        "href" : "https://api.spotify.com/v1/users/spotify",
+        "id" : "spotify",
+        "type" : "user",
+        "uri" : "spotify:user:spotify"
+      },
+      "primary_color" : null,
+      "public" : null,
+      "snapshot_id" : "MTUzMzg5NjE3NiwwMDAwMDA0ZDAwMDAwMTY0ZDVlZWQ1ZjUwMDAwMDE2NGQ1ZWUxYWU3",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/users/spotify/playlists/37i9dQZF1DWWOaP4H0w5b0/tracks",
+        "total" : 61
+      },
+      "type" : "playlist",
+      "uri" : "spotify:user:spotify:playlist:37i9dQZF1DWWOaP4H0w5b0"
+    }, {
+      "collaborative" : false,
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/user/spotify/playlist/37i9dQZF1DXcfZ6moR6J0G"
+      },
+      "href" : "https://api.spotify.com/v1/users/spotify/playlists/37i9dQZF1DXcfZ6moR6J0G",
+      "id" : "37i9dQZF1DXcfZ6moR6J0G",
+      "images" : [ {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/e4d6502b3f7dff43f225de8e5f2411da0746d01a",
+        "width" : 300
+      } ],
+      "name" : "Nu Metal Generation",
+      "owner" : {
+        "display_name" : "Spotify",
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/spotify"
+        },
+        "href" : "https://api.spotify.com/v1/users/spotify",
+        "id" : "spotify",
+        "type" : "user",
+        "uri" : "spotify:user:spotify"
+      },
+      "primary_color" : null,
+      "public" : null,
+      "snapshot_id" : "MTUzMzg5NjE4OCwwMDAwMDAzODAwMDAwMTY0Yjg1NjgyOGEwMDAwMDE2NGI4NTY2NjFh",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/users/spotify/playlists/37i9dQZF1DXcfZ6moR6J0G/tracks",
+        "total" : 50
+      },
+      "type" : "playlist",
+      "uri" : "spotify:user:spotify:playlist:37i9dQZF1DXcfZ6moR6J0G"
+    }, {
+      "collaborative" : false,
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/user/spotify/playlist/37i9dQZF1DXe6bgV3TmZOL"
+      },
+      "href" : "https://api.spotify.com/v1/users/spotify/playlists/37i9dQZF1DXe6bgV3TmZOL",
+      "id" : "37i9dQZF1DXe6bgV3TmZOL",
+      "images" : [ {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/4227893751a57ff252ee8a91ab0c0991911fa130",
+        "width" : 300
+      } ],
+      "name" : "Adrenaline Workout",
+      "owner" : {
+        "display_name" : "Spotify",
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/spotify"
+        },
+        "href" : "https://api.spotify.com/v1/users/spotify",
+        "id" : "spotify",
+        "type" : "user",
+        "uri" : "spotify:user:spotify"
+      },
+      "primary_color" : null,
+      "public" : null,
+      "snapshot_id" : "MTUzMzg5NjE5NiwwMDAwMDA1NzAwMDAwMTY0ZmFlY2UyNjcwMDAwMDE2MmYyYjBlOGQ4",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/users/spotify/playlists/37i9dQZF1DXe6bgV3TmZOL/tracks",
+        "total" : 70
+      },
+      "type" : "playlist",
+      "uri" : "spotify:user:spotify:playlist:37i9dQZF1DXe6bgV3TmZOL"
+    }, {
+      "collaborative" : false,
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/user/spotify/playlist/37i9dQZF1DWY3PJWG3ogmJ"
+      },
+      "href" : "https://api.spotify.com/v1/users/spotify/playlists/37i9dQZF1DWY3PJWG3ogmJ",
+      "id" : "37i9dQZF1DWY3PJWG3ogmJ",
+      "images" : [ {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/632797c8c92d317b274356b1cea14c365968961b",
+        "width" : 300
+      } ],
+      "name" : "Extreme Metal Workout",
+      "owner" : {
+        "display_name" : "Spotify",
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/spotify"
+        },
+        "href" : "https://api.spotify.com/v1/users/spotify",
+        "id" : "spotify",
+        "type" : "user",
+        "uri" : "spotify:user:spotify"
+      },
+      "primary_color" : null,
+      "public" : null,
+      "snapshot_id" : "MTUzMzg5NjE1MywwMDAwMDA0NzAwMDAwMTY0ZTVmMDFmMzUwMDAwMDE2MmYyYjBlOGQ4",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/users/spotify/playlists/37i9dQZF1DWY3PJWG3ogmJ/tracks",
+        "total" : 71
+      },
+      "type" : "playlist",
+      "uri" : "spotify:user:spotify:playlist:37i9dQZF1DWY3PJWG3ogmJ"
+    }, {
+      "collaborative" : false,
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/user/spotify/playlist/37i9dQZF1DXdF699XuZIvg"
+      },
+      "href" : "https://api.spotify.com/v1/users/spotify/playlists/37i9dQZF1DXdF699XuZIvg",
+      "id" : "37i9dQZF1DXdF699XuZIvg",
+      "images" : [ {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/b07198d8a565692d5c66d4624f664c5f8bad65b8",
+        "width" : 300
+      } ],
+      "name" : "Metal Road Trip",
+      "owner" : {
+        "display_name" : "Spotify",
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/spotify"
+        },
+        "href" : "https://api.spotify.com/v1/users/spotify",
+        "id" : "spotify",
+        "type" : "user",
+        "uri" : "spotify:user:spotify"
+      },
+      "primary_color" : null,
+      "public" : null,
+      "snapshot_id" : "MTUzMzg5NjE4NSwwMDAwMDAwZjAwMDAwMTY0ZmI3YjBmMDgwMDAwMDE2M2I2Nzg5MGRk",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/users/spotify/playlists/37i9dQZF1DXdF699XuZIvg/tracks",
+        "total" : 56
+      },
+      "type" : "playlist",
+      "uri" : "spotify:user:spotify:playlist:37i9dQZF1DXdF699XuZIvg"
+    }, {
+      "collaborative" : false,
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/user/spotify/playlist/37i9dQZF1DX1kydukZhLms"
+      },
+      "href" : "https://api.spotify.com/v1/users/spotify/playlists/37i9dQZF1DX1kydukZhLms",
+      "id" : "37i9dQZF1DX1kydukZhLms",
+      "images" : [ {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/3b5377d7bf056d453849eadca84d8809d836b0f5",
+        "width" : 300
+      } ],
+      "name" : "Metal Ballads",
+      "owner" : {
+        "display_name" : "Spotify",
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/spotify"
+        },
+        "href" : "https://api.spotify.com/v1/users/spotify",
+        "id" : "spotify",
+        "type" : "user",
+        "uri" : "spotify:user:spotify"
+      },
+      "primary_color" : null,
+      "public" : null,
+      "snapshot_id" : "MTUzMzg5NjE4NSwwMDAwMDAxYjAwMDAwMTY0ZDcxNWJhYjcwMDAwMDE2MmRkZjgwNjZh",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/users/spotify/playlists/37i9dQZF1DX1kydukZhLms/tracks",
+        "total" : 66
+      },
+      "type" : "playlist",
+      "uri" : "spotify:user:spotify:playlist:37i9dQZF1DX1kydukZhLms"
+    }, {
+      "collaborative" : false,
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/user/spotify/playlist/37i9dQZF1DWZdFtcHGe8ED"
+      },
+      "href" : "https://api.spotify.com/v1/users/spotify/playlists/37i9dQZF1DWZdFtcHGe8ED",
+      "id" : "37i9dQZF1DWZdFtcHGe8ED",
+      "images" : [ {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/700ad6b7f7cc9ac9129d18027dfef2607f39f67f",
+        "width" : 300
+      } ],
+      "name" : "Thrash Metal - Big 4 & Friends",
+      "owner" : {
+        "display_name" : "Spotify",
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/spotify"
+        },
+        "href" : "https://api.spotify.com/v1/users/spotify",
+        "id" : "spotify",
+        "type" : "user",
+        "uri" : "spotify:user:spotify"
+      },
+      "primary_color" : null,
+      "public" : null,
+      "snapshot_id" : "MTUzMzg5NjE1MSwwMDAwMDAxMTAwMDAwMTY0MWQ3ODdhNzkwMDAwMDE2MzhjMzQ2ODA4",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/users/spotify/playlists/37i9dQZF1DWZdFtcHGe8ED/tracks",
+        "total" : 37
+      },
+      "type" : "playlist",
+      "uri" : "spotify:user:spotify:playlist:37i9dQZF1DWZdFtcHGe8ED"
+    }, {
+      "collaborative" : false,
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/user/spotify/playlist/37i9dQZF1DX9qNs32fujYe"
+      },
+      "href" : "https://api.spotify.com/v1/users/spotify/playlists/37i9dQZF1DX9qNs32fujYe",
+      "id" : "37i9dQZF1DX9qNs32fujYe",
+      "images" : [ {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/37973f17bde43ece154c6d6330b30d26e8a09736",
+        "width" : 300
+      } ],
+      "name" : "Heavy Metal",
+      "owner" : {
+        "display_name" : "Spotify",
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/spotify"
+        },
+        "href" : "https://api.spotify.com/v1/users/spotify",
+        "id" : "spotify",
+        "type" : "user",
+        "uri" : "spotify:user:spotify"
+      },
+      "primary_color" : null,
+      "public" : null,
+      "snapshot_id" : "MTUzMzg5NjE3OCwwMDAwMDA0NDAwMDAwMTY0ZmNhYTVhNTMwMDAwMDE2NGZhZDY5ZTBj",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/users/spotify/playlists/37i9dQZF1DX9qNs32fujYe/tracks",
+        "total" : 92
+      },
+      "type" : "playlist",
+      "uri" : "spotify:user:spotify:playlist:37i9dQZF1DX9qNs32fujYe"
+    }, {
+      "collaborative" : false,
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/user/spotify/playlist/37i9dQZF1DWXDJDWnzE39E"
+      },
+      "href" : "https://api.spotify.com/v1/users/spotify/playlists/37i9dQZF1DWXDJDWnzE39E",
+      "id" : "37i9dQZF1DWXDJDWnzE39E",
+      "images" : [ {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/f7d4c0ac7e9ff46e6e541dc352417d01b9c6693f",
+        "width" : 300
+      } ],
+      "name" : "Heavy Queens",
+      "owner" : {
+        "display_name" : "Spotify",
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/spotify"
+        },
+        "href" : "https://api.spotify.com/v1/users/spotify",
+        "id" : "spotify",
+        "type" : "user",
+        "uri" : "spotify:user:spotify"
+      },
+      "primary_color" : null,
+      "public" : null,
+      "snapshot_id" : "MTUzMzg5NjE2MCwwMDAwMDA2MzAwMDAwMTY1MjMwNTk5NTMwMDAwMDE2NDY5YWUwMjcz",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/users/spotify/playlists/37i9dQZF1DWXDJDWnzE39E/tracks",
+        "total" : 100
+      },
+      "type" : "playlist",
+      "uri" : "spotify:user:spotify:playlist:37i9dQZF1DWXDJDWnzE39E"
+    }, {
+      "collaborative" : false,
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/user/spotify/playlist/37i9dQZF1DWXHwQpcoF2cC"
+      },
+      "href" : "https://api.spotify.com/v1/users/spotify/playlists/37i9dQZF1DWXHwQpcoF2cC",
+      "id" : "37i9dQZF1DWXHwQpcoF2cC",
+      "images" : [ {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/1b5d4452080d836e35cbcc04b9a7783a8332d9e5",
+        "width" : 300
+      } ],
+      "name" : "Ultimate Metal",
+      "owner" : {
+        "display_name" : "Spotify",
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/spotify"
+        },
+        "href" : "https://api.spotify.com/v1/users/spotify",
+        "id" : "spotify",
+        "type" : "user",
+        "uri" : "spotify:user:spotify"
+      },
+      "primary_color" : null,
+      "public" : null,
+      "snapshot_id" : "MTUzMzg5NjE2MSwwMDAwMDAwYzAwMDAwMTY0NmFhZmU3MmIwMDAwMDE2NDZhYWZiZGI2",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/users/spotify/playlists/37i9dQZF1DWXHwQpcoF2cC/tracks",
+        "total" : 60
+      },
+      "type" : "playlist",
+      "uri" : "spotify:user:spotify:playlist:37i9dQZF1DWXHwQpcoF2cC"
+    }, {
+      "collaborative" : false,
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/user/spotify/playlist/37i9dQZF1DWT9SRKhOEUYj"
+      },
+      "href" : "https://api.spotify.com/v1/users/spotify/playlists/37i9dQZF1DWT9SRKhOEUYj",
+      "id" : "37i9dQZF1DWT9SRKhOEUYj",
+      "images" : [ {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/7ee04de0810d1299d9ba7d892a0f4c8d13317bab",
+        "width" : 300
+      } ],
+      "name" : "Death Metal & Beyond",
+      "owner" : {
+        "display_name" : "Spotify",
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/spotify"
+        },
+        "href" : "https://api.spotify.com/v1/users/spotify",
+        "id" : "spotify",
+        "type" : "user",
+        "uri" : "spotify:user:spotify"
+      },
+      "primary_color" : null,
+      "public" : null,
+      "snapshot_id" : "MTUzMzg5NjIwNCwwMDAwMDA1ODAwMDAwMTY1MjMzNmUyZjcwMDAwMDE2NTIzMzZiNTk2",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/users/spotify/playlists/37i9dQZF1DWT9SRKhOEUYj/tracks",
+        "total" : 120
+      },
+      "type" : "playlist",
+      "uri" : "spotify:user:spotify:playlist:37i9dQZF1DWT9SRKhOEUYj"
+    }, {
+      "collaborative" : false,
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/user/spotify/playlist/37i9dQZF1DX37bXS7EGI3f"
+      },
+      "href" : "https://api.spotify.com/v1/users/spotify/playlists/37i9dQZF1DX37bXS7EGI3f",
+      "id" : "37i9dQZF1DX37bXS7EGI3f",
+      "images" : [ {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/05afb072f35e5f44929239941d692e8caa30a363",
+        "width" : 300
+      } ],
+      "name" : "Epic & Melodic",
+      "owner" : {
+        "display_name" : "Spotify",
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/spotify"
+        },
+        "href" : "https://api.spotify.com/v1/users/spotify",
+        "id" : "spotify",
+        "type" : "user",
+        "uri" : "spotify:user:spotify"
+      },
+      "primary_color" : null,
+      "public" : null,
+      "snapshot_id" : "MTUzMzg5NjE3MiwwMDAwMDAxMTAwMDAwMTY0ZmNhYTVhNGIwMDAwMDE2NDIyYWY4Njk4",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/users/spotify/playlists/37i9dQZF1DX37bXS7EGI3f/tracks",
+        "total" : 67
+      },
+      "type" : "playlist",
+      "uri" : "spotify:user:spotify:playlist:37i9dQZF1DX37bXS7EGI3f"
+    }, {
+      "collaborative" : false,
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/user/spotify/playlist/37i9dQZF1DX1cJWWyylDuw"
+      },
+      "href" : "https://api.spotify.com/v1/users/spotify/playlists/37i9dQZF1DX1cJWWyylDuw",
+      "id" : "37i9dQZF1DX1cJWWyylDuw",
+      "images" : [ {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/35e5c86076eb6b72dea12100c2f833552e998571",
+        "width" : 300
+      } ],
+      "name" : "Deathcore",
+      "owner" : {
+        "display_name" : "Spotify",
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/spotify"
+        },
+        "href" : "https://api.spotify.com/v1/users/spotify",
+        "id" : "spotify",
+        "type" : "user",
+        "uri" : "spotify:user:spotify"
+      },
+      "primary_color" : null,
+      "public" : null,
+      "snapshot_id" : "MTUzMzg5NjE1NywwMDAwMDA0YzAwMDAwMTY0ZWIxODVhNzkwMDAwMDE2NGViMTgzMjJm",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/users/spotify/playlists/37i9dQZF1DX1cJWWyylDuw/tracks",
+        "total" : 68
+      },
+      "type" : "playlist",
+      "uri" : "spotify:user:spotify:playlist:37i9dQZF1DX1cJWWyylDuw"
+    }, {
+      "collaborative" : false,
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/user/spotify/playlist/37i9dQZF1DX4jCqmsDQR1i"
+      },
+      "href" : "https://api.spotify.com/v1/users/spotify/playlists/37i9dQZF1DX4jCqmsDQR1i",
+      "id" : "37i9dQZF1DX4jCqmsDQR1i",
+      "images" : [ {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/2737b73b5f08268904dce86716b2cf8a4e6aa90d",
+        "width" : 300
+      } ],
+      "name" : "Metal Empire",
+      "owner" : {
+        "display_name" : "Spotify",
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/spotify"
+        },
+        "href" : "https://api.spotify.com/v1/users/spotify",
+        "id" : "spotify",
+        "type" : "user",
+        "uri" : "spotify:user:spotify"
+      },
+      "primary_color" : null,
+      "public" : null,
+      "snapshot_id" : "MTUzMzg5NjE2OSwwMDAwMDAwYzAwMDAwMTYzNGU5ZTkxYmIwMDAwMDE2MzAxNjY1Mjdi",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/users/spotify/playlists/37i9dQZF1DX4jCqmsDQR1i/tracks",
+        "total" : 89
+      },
+      "type" : "playlist",
+      "uri" : "spotify:user:spotify:playlist:37i9dQZF1DX4jCqmsDQR1i"
+    } ],
+    "limit" : 20,
+    "next" : "https://api.spotify.com/v1/browse/categories/metal/playlists?offset=20&limit=20",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 28
+  }
+}

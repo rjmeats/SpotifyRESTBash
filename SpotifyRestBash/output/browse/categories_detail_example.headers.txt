@@ -1,0 +1,13 @@
+HTTP/2 200 
+content-type: application/json; charset=utf-8
+cache-control: public, max-age=600
+access-control-allow-origin: *
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type, Retry-After
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+access-control-allow-credentials: true
+access-control-max-age: 604800
+content-length: 265
+date: Fri, 10 Aug 2018 10:16:47 GMT
+via: 1.1 google
+alt-svc: clear
+
