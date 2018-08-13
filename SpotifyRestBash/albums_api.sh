@@ -23,6 +23,8 @@ ALBUMS_TRACKS_ENDPOINT="v1/albums/${ALBUM_ID1}/tracks"
 callCurl "GET" "${ALBUMS_TRACKS_ENDPOINT}" "${OUTDIR}/albums_tracks_example.json"
 
 # Multiple album request passes in an 'ids' parameter, with comma-separated ID values
-MULTIPLE_ALBUMS_ENDPOINT="v1/albums?ids=${ALBUM_ID1},${ALBUM_ID2}"
+ID_PARAM="${ALBUM_ID1},${ALBUM_ID2}"
+PROTECTED_ID_PARAM=$(protectURLParameter "${ID_PARAM}")
+MULTIPLE_ALBUMS_ENDPOINT="v1/albums?ids=${PROTECTED_ID_PARAM}"
 callCurl "GET" "${MULTIPLE_ALBUMS_ENDPOINT}" "${OUTDIR}/multiple_albums_example.json"
 

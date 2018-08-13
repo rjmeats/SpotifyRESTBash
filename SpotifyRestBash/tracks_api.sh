@@ -20,7 +20,9 @@ TRACKS_ENDPOINT="v1/tracks/${TRACK_ID1}"
 callCurl "GET" "${TRACKS_ENDPOINT}" "${OUTDIR}/tracks_example.json"
 
 # Multiple track request passes in an 'ids' parameter, with comma-separated ID values
-MULTIPLE_TRACKS_ENDPOINT="v1/tracks?ids=${TRACK_ID1},${TRACK_ID2}"
+ID_PARAM="${TRACK_ID1},${TRACK_ID2}"
+PROTECTED_ID_PARAM=$(protectURLParameter "${ID_PARAM}")
+MULTIPLE_TRACKS_ENDPOINT="v1/tracks?ids=${PROTECTED_ID_PARAM}"
 callCurl "GET" "${MULTIPLE_TRACKS_ENDPOINT}" "${OUTDIR}/multiple_tracks_example.json"
 
 AUDIO_ANALYSIS_ENDPOINT="v1/audio-analysis/${TRACK_ID1}"
@@ -30,6 +32,6 @@ AUDIO_FEATURES_ENDPOINT="v1/audio-features/${TRACK_ID1}"
 callCurl "GET" "${AUDIO_FEATURES_ENDPOINT}" "${OUTDIR}/tracks_audio_features_example.json"
 
 # Multiple audio features request passes in an 'ids' parameter, with comma-separated ID values
-MULTIPLE_AUDIO_FEATURES_ENDPOINT="v1/audio-features?ids=${TRACK_ID1},${TRACK_ID2}"
+MULTIPLE_AUDIO_FEATURES_ENDPOINT="v1/audio-features?ids=${PROTECTED_ID_PARAM}"
 callCurl "GET" "${MULTIPLE_AUDIO_FEATURES_ENDPOINT}" "${OUTDIR}/multiple_tracks_audio_features_example.json"
 

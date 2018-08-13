@@ -21,7 +21,9 @@ ARTISTS_ENDPOINT="v1/artists/${ARTIST_ID1}"
 callCurl "GET" "${ARTISTS_ENDPOINT}" "${OUTDIR}/artists_example.json"
 
 # Multiple artists request passes in an 'ids' parameter, with comma-separated ID values
-MULTIPLE_ARTISTS_ENDPOINT="v1/artists?ids=${ARTIST_ID1},${ARTIST_ID2}"
+ID_PARAM="${ARTIST_ID1},${ARTIST_ID2}"
+PROTECTED_ID_PARAM=$(protectURLParameter "${ID_PARAM}")
+MULTIPLE_ARTISTS_ENDPOINT="v1/artists?ids=${PROTECTED_ID_PARAM}"
 callCurl "GET" "${MULTIPLE_ARTISTS_ENDPOINT}" "${OUTDIR}/multiple_artists_example.json"
 
 
