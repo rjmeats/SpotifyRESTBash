@@ -1,5 +1,6 @@
 #set -x
 
+. ./jqutils.sh
 . ./callcurl.sh
 
 OUTDIR="./output/browse"
@@ -58,6 +59,47 @@ echo
 echo "Found $(echo \\"$NEW_RELEASES\\" | wc -l) new releases:"
 echo
 echo "$NEW_RELEASES"
+
+echo
+echo " .. repeat with paging .. "
+
+callCurlPaging "GET" "${NEW_RELEASES_ENDPOINT}"? "${OUTDIR}/new_releases_paged.json" 800
+if [[ $? -ne 0 ]]
+then
+	echo
+	echo "Search failed"
+exit 1
+else
+	echo
+	echo "... searching completed"
+fi
+
+ITEMS_TO_DISPLAY=60
+echo
+echo "Showing names of first ${ITEMS_TO_DISPLAY} items of results output (sorted by name):"
+
+for ITEM_TYPE in albums 
+do
+	FOUND_ITEMS=$(cat ${OUTDIR}/new_releases_paged.json | jq ".${ITEM_TYPE}.items[]?.name")
+	declare -i FOUND_ITEM_COUNT
+
+	if isEmptyArrayJQOutput "${FOUND_ITEMS}"
+	then
+		FOUND_ITEMS=""
+		FOUND_ITEM_COUNT=0
+	else
+		FOUND_ITEM_COUNT=$(echo "$FOUND_ITEMS" | wc -l)
+	fi
+	
+	echo
+	echo "${FOUND_ITEM_COUNT} ${ITEM_TYPE} found"
+	
+	if (( FOUND_ITEM_COUNT > 0 ))
+	then
+		echo
+		echo "${FOUND_ITEMS}" | sort | head -${ITEMS_TO_DISPLAY}
+	fi
+done
 
 RECOMMENDATIONS_AVAILABLE_SEEDS_ENDPOINT="v1/recommendations/available-genre-seeds"
 callCurl "GET" "${RECOMMENDATIONS_AVAILABLE_SEEDS_ENDPOINT}" "${OUTDIR}/recommendations_available_seeds_example.json"
