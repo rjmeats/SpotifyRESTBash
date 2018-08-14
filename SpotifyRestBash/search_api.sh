@@ -12,6 +12,7 @@ function doSearch() {
 
 	local PROTECTED_QUERY=$(protectURLParameter "${QUERY}")
 	local PROTECTED_TYPE=$(protectURLParameter "${TYPE}")
+
 	local SEARCH_ENDPOINT="v1/search"
 	local SEARCH_PARAMS="q=${PROTECTED_QUERY}&type=${PROTECTED_TYPE}"
 
