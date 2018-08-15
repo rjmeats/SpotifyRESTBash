@@ -89,9 +89,9 @@ function callCurl() {
 		RETURN_STATUS=1
 	fi
 
-	# If the HTTP headers reference HTML, then we've probably got the Spotify API returning an HTML error page.
 	if [[ -f ${HEADER_OUTFILE} ]]
 	then
+		# If the HTTP headers reference HTML, then we've probably got the Spotify API returning an HTML error page.
 		if grep -q -i "text/html" "${HEADER_OUTFILE}"
 		then
 			echo
@@ -101,6 +101,17 @@ function callCurl() {
 			echo "renamed output file as .html"
 			echo "*****************************************"
 			echo
+		fi
+
+		# Also check for a 'not found' 404 response in the header file.
+		if grep -i "HTTP" "${HEADER_OUTFILE}" | grep -q -i "404"
+		then
+			echo
+			echo "***********************************************"
+			echo "HTTP 404 not found reported in response headers"
+			echo "***********************************************"
+			echo
+			RETURN_STATUS=1
 		fi
 	fi
 
@@ -171,8 +182,13 @@ function callCurlPaging() {
 	local BATCHSIZE=50				# Max allowed by the Spotify API is 50 per page
 
 	# Add the batchsize parameter to the URL endpoint.
-	ENDPOINT="${ENDPOINT}&limit=${BATCHSIZE}"
+	# May need to add a '?' if this is the first parameter (i.e. no '?' already present)
+	if [[ "${ENDPOINT}" != *\?* ]]
+	then
+		ENDPOINT="${ENDPOINT}?"
+	fi
 
+	ENDPOINT="${ENDPOINT}&limit=${BATCHSIZE}"
 
 	# We're going to use intermediate files with a modified name for each paging step, appending the output
 	# into these final files cover the full set of pagings.
@@ -206,11 +222,17 @@ function callCurlPaging() {
 			# would need to look at tracks/artists/albums individually, perhaps as separate loops after the initial search result 
 			# has been received, and do next-handling separately for each.
 			# How many items in the 'items' array ?
-			ITEMS_RETURNED=$(cat ${MY_OUTFILE} | jq ".tracks.items, .artists.items, .albums.items | arrays | length")
+			ITEMS_RETURNED=$(cat ${MY_OUTFILE} | jq ".tracks.items, .artists.items, .albums.items, .playlists.items, .categories.items | arrays | length")
 			# How many total items found by this search ?
-			TOTAL_ITEMS=$(cat ${MY_OUTFILE} | jq ".tracks.total?, .artists.total?, .albums.total? | numbers")
+			TOTAL_ITEMS=$(cat ${MY_OUTFILE} | jq ".tracks.total?, .artists.total?, .albums.total?, .playlists.total, .categories.total? | numbers")
 			let ITEMS_SO_FAR+=${ITEMS_RETURNED}
-			echo "Call ${CALL_COUNT}: retrieved ${ITEMS_RETURNED} more items, ${ITEMS_SO_FAR} items so far out of ${TOTAL_ITEMS}, stopping after ${MAXITEMS}"
+
+			STOPPING_AFTER_TEXT=""
+			if (( TOTAL_ITEMS > MAXITEMS ))
+			then
+				STOPPING_AFTER_TEXT=", stopping after ${MAXITEMS}"
+			fi
+			echo "Call ${CALL_COUNT}: retrieved ${ITEMS_RETURNED} items, ${ITEMS_SO_FAR} items so far out of ${TOTAL_ITEMS}${STOPPING_AFTER_TEXT}"
 
 			# Append file output
 			cat ${OUTFILE} | unix2dos >> $FINAL_OUTFILE
@@ -218,7 +240,7 @@ function callCurlPaging() {
 			cat ${REQUEST_OUTFILE} | unix2dos >> $FINAL_REQUEST_OUTFILE
 
 			# Extract a next URL. null means we've got everything
-			NEXT_URL=$(cat ${MY_OUTFILE} | jq '.tracks.next, .artists.next, .albums.next | strings')
+			NEXT_URL=$(cat ${MY_OUTFILE} | jq '.tracks.next, .artists.next, .albums.next, .playlists.next, .categories.next | strings')
 			if [[ -z "${NEXT_URL}" ]]
 			then
 				echo "Reached end of results after ${ITEMS_SO_FAR} out of ${TOTAL_ITEMS} fetched"

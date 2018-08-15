@@ -2,6 +2,7 @@
 
 . ./jqutils.sh
 . ./callcurl.sh
+. ./formatutils.sh
 
 # Format a search query and summarise the output
 function doSearch() {
@@ -31,30 +32,9 @@ function doSearch() {
 		echo "... searching completed"
 	fi
 
-	local ITEMS_TO_DISPLAY=100
-	echo
-	echo "Showing names of first ${ITEMS_TO_DISPLAY} items of results output (sorted by name):"
-
 	for ITEM_TYPE in artists albums tracks
 	do
-		local FOUND_ITEMS=$(cat ${OUTDIR}/search.json | jq ".${ITEM_TYPE}.items[]?.name")
-		declare -i FOUND_ITEM_COUNT
-		
-		if isEmptyArrayJQOutput "${FOUND_ITEMS}"
-		then
-			FOUND_ITEMS=""
-			FOUND_ITEM_COUNT=0
-		else
-			FOUND_ITEM_COUNT=$(echo "$FOUND_ITEMS" | wc -l)
-		fi
-
-		echo
-		echo "${FOUND_ITEM_COUNT} ${ITEM_TYPE} found"
-		if (( FOUND_ITEM_COUNT > 0 ))
-		then
-			echo
-			echo "${FOUND_ITEMS}" | sort | head -${ITEMS_TO_DISPLAY}
-		fi
+		showItemNames ${OUTDIR}/search.json $ITEM_TYPE 1000
 	done
 }
 
@@ -95,6 +75,6 @@ SEARCH_DETAIL="q=Minuetto%20Allegretto&type=track"
 
 # doSearch "track:\"Alison *\" NOT track:\"Alison Gross\"" "track"
 #doSearch "track:\"* Alison *\" NOT track:\"Alison Gross\"" "track"
-doSearch "Beethoven Moonlight" "album" 500
+doSearch "Beethoven Moonlight" "album" 70
 #doSearch "artist:Beethoven" "artist"
 

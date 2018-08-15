@@ -2,6 +2,7 @@
 
 . ./jqutils.sh
 . ./callcurl.sh
+. ./formatutils.sh
 
 OUTDIR="./output/browse"
 if [[ ! -d ${OUTDIR} ]]
@@ -18,10 +19,10 @@ fi
 ALBUM_ID1="0cxRAewBpYrtxOYH5fius3"		# Handel's Water Music by Akadamie fur Alte Musik Berlin
 ALBUM_ID2="1ay9Z4R5ZYI2TY7WiDhNYQ"		# David Bowie Space Oddity
 
-CATEGORIES_LIST_ENDPOINT="v1/browse/categories?limit=20"
+CATEGORIES_LIST_ENDPOINT="v1/browse/categories?&country=GB&limit=20"
 callCurl "GET" "${CATEGORIES_LIST_ENDPOINT}" "${OUTDIR}/categories_list_1_20_example.json"
 
-CATEGORIES_LIST_ENDPOINT="v1/browse/categories?offset=20&limit=20"
+CATEGORIES_LIST_ENDPOINT="v1/browse/categories?&country=GB&offset=20&limit=20"
 callCurl "GET" "${CATEGORIES_LIST_ENDPOINT}" "${OUTDIR}/categories_list_21_40_example.json"
 
 # List out the categories for interest
@@ -29,7 +30,27 @@ CATEGORIES=$(cat ${OUTDIR}/categories_list_*_example.json | jq '.categories.item
 echo
 echo "Found $(echo \\"$CATEGORIES\\" | wc -l) categories:"
 echo
-echo "$CATEGORIES"
+echo "$CATEGORIES" | sort
+
+# Repeat using paging
+CATEGORIES_LIST_ENDPOINT="v1/browse/categories?&country=GB"
+
+echo
+echo "Categories using paging request ..."
+echo
+
+callCurlPaging "GET" "${CATEGORIES_LIST_ENDPOINT}" "${OUTDIR}/categories_list_paged.json" 800
+if [[ $? -ne 0 ]]
+then
+	echo
+	echo "Listing failed"
+exit 1
+else
+	echo
+	echo "... Listing completed"
+fi
+
+showItemNames ${OUTDIR}/categories_list_paged.json categories 60 
 
 CATEGORIES_DETAIL_ENDPOINT="v1/browse/categories/metal"
 callCurl "GET" "${CATEGORIES_DETAIL_ENDPOINT}" "${OUTDIR}/categories_detail_example.json"
@@ -41,6 +62,22 @@ echo
 echo "Found $(echo \\"$CATEGORIES_PLAYLIST\\" | wc -l) category playlists:"
 echo
 echo "$CATEGORIES_PLAYLIST"
+
+echo
+echo " .. repeat with paging .. "
+
+callCurlPaging "GET" "${CATEGORIES_PLAYLISTS_ENDPOINT}" "${OUTDIR}/categories_playlists_paged.json" 800
+if [[ $? -ne 0 ]]
+then
+	echo
+	echo "Listing failed"
+exit 1
+else
+	echo
+	echo "... Listing completed"
+fi
+
+showItemNames ${OUTDIR}/categories_playlists_paged.json playlists 60 
 
 FEATURED_PLAYLISTS_ENDPOINT="v1/browse/featured-playlists"
 callCurl "GET" "${FEATURED_PLAYLISTS_ENDPOINT}" "${OUTDIR}/featured_playlists_example.json"
@@ -67,39 +104,14 @@ callCurlPaging "GET" "${NEW_RELEASES_ENDPOINT}"? "${OUTDIR}/new_releases_paged.j
 if [[ $? -ne 0 ]]
 then
 	echo
-	echo "Search failed"
+	echo "Listing failed"
 exit 1
 else
 	echo
-	echo "... searching completed"
+	echo "... Listing completed"
 fi
 
-ITEMS_TO_DISPLAY=60
-echo
-echo "Showing names of first ${ITEMS_TO_DISPLAY} items of results output (sorted by name):"
-
-for ITEM_TYPE in albums 
-do
-	FOUND_ITEMS=$(cat ${OUTDIR}/new_releases_paged.json | jq ".${ITEM_TYPE}.items[]?.name")
-	declare -i FOUND_ITEM_COUNT
-
-	if isEmptyArrayJQOutput "${FOUND_ITEMS}"
-	then
-		FOUND_ITEMS=""
-		FOUND_ITEM_COUNT=0
-	else
-		FOUND_ITEM_COUNT=$(echo "$FOUND_ITEMS" | wc -l)
-	fi
-	
-	echo
-	echo "${FOUND_ITEM_COUNT} ${ITEM_TYPE} found"
-	
-	if (( FOUND_ITEM_COUNT > 0 ))
-	then
-		echo
-		echo "${FOUND_ITEMS}" | sort | head -${ITEMS_TO_DISPLAY}
-	fi
-done
+showItemNames ${OUTDIR}/new_releases_paged.json albums 60 
 
 RECOMMENDATIONS_AVAILABLE_SEEDS_ENDPOINT="v1/recommendations/available-genre-seeds"
 callCurl "GET" "${RECOMMENDATIONS_AVAILABLE_SEEDS_ENDPOINT}" "${OUTDIR}/recommendations_available_seeds_example.json"
