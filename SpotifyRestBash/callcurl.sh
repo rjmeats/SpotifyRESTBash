@@ -70,6 +70,7 @@ function callCurl() {
 	then
 		echo "${SUMMARY}" > "${REQUEST_OUTFILE}"
 	else
+		echo
 		echo "----------------------------------------------------------------------------------------------------"
 		echo
 		echo "${SUMMARY}" | tee "${REQUEST_OUTFILE}"
@@ -181,6 +182,19 @@ function callCurlPaging() {
 	declare -i MAXITEMS=${4:-100}			# Default to returning a maximum of 100 items
 	local BATCHSIZE=50				# Max allowed by the Spotify API is 50 per page
 
+	local SUMMARY="${VERB} paging request to ${ENDPOINT}"
+
+	echo
+	echo "----------------------------------------------------------------------------------------------------"
+	echo
+	echo "${SUMMARY}"
+	echo
+
+	if (( ${BATCHSIZE} > MAXITEMS ))
+	then
+		BATCHSIZE="${MAXITEMS}"
+	fi
+
 	# Add the batchsize parameter to the URL endpoint.
 	# May need to add a '?' if this is the first parameter (i.e. no '?' already present)
 	if [[ "${ENDPOINT}" != *\?* ]]
@@ -197,83 +211,122 @@ function callCurlPaging() {
 	local FINAL_HEADER_OUTFILE="${HEADER_OUTFILE}"
 	local FINAL_REQUEST_OUTFILE="${REQUEST_OUTFILE}"
 
-	local CONTINUE=Y
-	declare -i ITEMS_SO_FAR=0
-	declare -i ITEMS_RETURNED=0
-	declare -i TOTAL_ITEMS=0
 	declare -i CALL_COUNT=0
-	local NEXT_URL=""
 	local RETURN_STATUS=0
+	# Do initial search call, which can return multiple item lists in combined json response (e.g. for search can hold albums, tracks, artists separately).
+	# Then for each item type, do a separate check for 'next' processing in turn.
 
-	while [[ ${CONTINUE} == "Y" ]]
-	do
-		let CALL_COUNT+=1
-		local MY_OUTFILE=${FINAL_OUTFILE}.${CALL_COUNT}
+	let CALL_COUNT+=1
+	local MY_OUTFILE=${FINAL_OUTFILE}.${CALL_COUNT}
 
-		callCurl "${VERB}" "${ENDPOINT}" "${MY_OUTFILE}" Y
+	callCurl "${VERB}" "${ENDPOINT}" "${MY_OUTFILE}" Y
 
-		if [[ $? -eq 0 ]]
-		then
-			# Called Curl OK, 
-			# Count items return
-			# Expect the results to have only one of tracks, artists or albums, using the 'paging object' Spotify json structure.
-			# This is only true if the query only specifies a single type. If multiple types are specified, then there are multiple
-			# items arrays, and the code below doesn't work. Note also that there are multiple nexts too. So to handle this properly,
-			# would need to look at tracks/artists/albums individually, perhaps as separate loops after the initial search result 
-			# has been received, and do next-handling separately for each.
-			# How many items in the 'items' array ?
-			ITEMS_RETURNED=$(cat ${MY_OUTFILE} | jq ".tracks.items, .artists.items, .albums.items, .playlists.items, .categories.items | arrays | length")
-			# How many total items found by this search ?
-			TOTAL_ITEMS=$(cat ${MY_OUTFILE} | jq ".tracks.total?, .artists.total?, .albums.total?, .playlists.total, .categories.total? | numbers")
-			let ITEMS_SO_FAR+=${ITEMS_RETURNED}
+	if [[ $? -eq 0 ]]
+	then
+		# Initial call to CURL succeeded
 
-			STOPPING_AFTER_TEXT=""
-			if (( TOTAL_ITEMS > MAXITEMS ))
+		# Append file output
+		local INITIAL_OUTFILE="${OUTFILE}"
+		cat ${OUTFILE} | unix2dos >> $FINAL_OUTFILE
+		cat ${HEADER_OUTFILE} | unix2dos >> $FINAL_HEADER_OUTFILE
+		cat ${REQUEST_OUTFILE} | unix2dos >> $FINAL_REQUEST_OUTFILE
+
+		# Process each known item type in turn
+		for ITEM_TYPE in tracks artists albums playlists categories
+		do
+			if [[ $ITEM_TYPE == "categories" ]]
 			then
-				STOPPING_AFTER_TEXT=", stopping after ${MAXITEMS}"
-			fi
-			echo "Call ${CALL_COUNT}: retrieved ${ITEMS_RETURNED} items, ${ITEMS_SO_FAR} items so far out of ${TOTAL_ITEMS}${STOPPING_AFTER_TEXT}"
-
-			# Append file output
-			cat ${OUTFILE} | unix2dos >> $FINAL_OUTFILE
-			cat ${HEADER_OUTFILE} | unix2dos >> $FINAL_HEADER_OUTFILE
-			cat ${REQUEST_OUTFILE} | unix2dos >> $FINAL_REQUEST_OUTFILE
-
-			# Extract a next URL. null means we've got everything
-			NEXT_URL=$(cat ${MY_OUTFILE} | jq '.tracks.next, .artists.next, .albums.next, .playlists.next, .categories.next | strings')
-			if [[ -z "${NEXT_URL}" ]]
-			then
-				echo "Reached end of results after ${ITEMS_SO_FAR} out of ${TOTAL_ITEMS} fetched"
-				CONTINUE=N
+				ITEM_TYPE_SINGULAR="category"
 			else
-				# jq output has double quotes around it. Need to remove these before using the URL:q
-				# echo "${NEXT_URL} is the next URL"
-				NEXT_URL=$(removeSurroundingDoubleQuotes ${NEXT_URL})
-				# echo "${NEXT_URL} is the next URL"
-				ENDPOINT="${NEXT_URL}"
-
-				if (( ITEMS_SO_FAR < MAXITEMS ))
-				then
-					# Can fetch some more
-					:
-				else
-					echo
-					echo "No more results paging: reached max items limit of ${MAXITEMS}"
-					CONTINUE=N
-				fi
+				ITEM_TYPE_SINGULAR=${ITEM_TYPE%s}
 			fi
 
-			rm -f ${OUTFILE}
-			rm -f ${HEADER_OUTFILE} 
-			rm -f ${REQUEST_OUTFILE}
-		else
-			echo
-			echo "Called curl - failed"
-			echo
-			RETURN_STATUS=1
-			CONTINUE=N
-		fi
-	done
+			local CONTINUE=Y
+			MY_OUTFILE="${INITIAL_OUTFILE}"
+			declare -i ITEMS_SO_FAR=0
+			declare -i ITEMS_RETURNED=0
+			declare -i TOTAL_ITEMS=0
+			local NEXT_URL=""
+
+			while [[ ${CONTINUE} == "Y" ]]
+			do
+				# Process results from previous call
+				ITEMS_RETURNED=$(cat ${MY_OUTFILE} | jq ".${ITEM_TYPE}.items | arrays | length")
+				TOTAL_ITEMS=$(cat ${MY_OUTFILE} | jq ".${ITEM_TYPE}.total? | numbers")
+				let ITEMS_SO_FAR+=${ITEMS_RETURNED}
+
+				STOPPING_AFTER_TEXT=""
+				if (( TOTAL_ITEMS > MAXITEMS ))
+				then
+					STOPPING_AFTER_TEXT=", stopping after ${MAXITEMS}"
+				fi
+					
+				if (( ITEMS_RETURNED > 0 ))
+				then
+					echo "Call ${CALL_COUNT}: retrieved ${ITEMS_RETURNED} ${ITEM_TYPE_SINGULAR} items, ${ITEMS_SO_FAR} items so far out of ${TOTAL_ITEMS}${STOPPING_AFTER_TEXT}"
+				fi
+
+				NEXT_URL=$(cat ${MY_OUTFILE} | jq ".${ITEM_TYPE}.next | strings")
+				if [[ -z "${NEXT_URL}" ]]
+				then
+					if (( TOTAL_ITEMS > 0 ))
+					then
+						echo "Reached end of ${ITEM_TYPE_SINGULAR} results after ${ITEMS_SO_FAR} out of ${TOTAL_ITEMS} fetched"
+					fi
+					CONTINUE=N
+				else
+					# jq output has double quotes around it. Need to remove these before using the URL:q
+					# echo "${NEXT_URL} is the next URL"
+					NEXT_URL=$(removeSurroundingDoubleQuotes ${NEXT_URL})
+					# echo "${NEXT_URL} is the next URL"
+					ENDPOINT="${NEXT_URL}"
+
+					if (( ITEMS_SO_FAR < MAXITEMS ))
+					then
+						:
+					else
+						echo "No more ${ITEM_TYPE_SINGULAR} results paging: reached max items limit of ${MAXITEMS}"
+						CONTINUE=N
+					fi
+				fi
+				
+				if [[ "${OUTFILE}" != "${INITIAL_OUTFILE}" ]]
+				then
+					rm -f ${OUTFILE}
+					rm -f ${HEADER_OUTFILE} 
+					rm -f ${REQUEST_OUTFILE}i
+				fi
+
+				if [[ $CONTINUE == "Y" ]]
+				then
+					# Fetch some more
+					let CALL_COUNT+=1
+					local MY_OUTFILE=${FINAL_OUTFILE}.${CALL_COUNT}
+					callCurl "${VERB}" "${ENDPOINT}" "${MY_OUTFILE}" Y
+					
+					if [[ $? -eq 0 ]]
+					then
+						cat ${OUTFILE} | unix2dos >> $FINAL_OUTFILE
+						cat ${HEADER_OUTFILE} | unix2dos >> $FINAL_HEADER_OUTFILE
+						cat ${REQUEST_OUTFILE} | unix2dos >> $FINAL_REQUEST_OUTFILE
+					else
+						echo
+						echo "Called curl - failed"
+						echo
+						RETURN_STATUS=1
+						CONTINUE=N
+					fi
+				fi
+
+			done
+
+		done
+	else
+		echo
+		echo "Called curl - failed"
+		echo
+		RETURN_STATUS=1
+	fi
 
 	return ${RETURN_STATUS}
 }

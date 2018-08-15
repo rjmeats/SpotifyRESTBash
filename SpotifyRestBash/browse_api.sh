@@ -100,7 +100,7 @@ echo "$NEW_RELEASES"
 echo
 echo " .. repeat with paging .. "
 
-callCurlPaging "GET" "${NEW_RELEASES_ENDPOINT}"? "${OUTDIR}/new_releases_paged.json" 800
+callCurlPaging "GET" "${NEW_RELEASES_ENDPOINT}" "${OUTDIR}/new_releases_paged.json" 800
 if [[ $? -ne 0 ]]
 then
 	echo

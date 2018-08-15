@@ -15,7 +15,7 @@ function doSearch() {
 	local PROTECTED_TYPE=$(protectURLParameter "${TYPE}")
 
 	local SEARCH_ENDPOINT="v1/search"
-	local SEARCH_PARAMS="q=${PROTECTED_QUERY}&type=${PROTECTED_TYPE}"
+	local SEARCH_PARAMS="&q=${PROTECTED_QUERY}&type=${PROTECTED_TYPE}"
 
 	echo
 	echo "Doing search for '${QUERY}' and type '${TYPE}' ..."
@@ -34,7 +34,7 @@ function doSearch() {
 
 	for ITEM_TYPE in artists albums tracks
 	do
-		showItemNames ${OUTDIR}/search.json $ITEM_TYPE 1000
+		showItemNames ${OUTDIR}/search.json $ITEM_TYPE 200
 	done
 }
 
@@ -75,6 +75,10 @@ SEARCH_DETAIL="q=Minuetto%20Allegretto&type=track"
 
 # doSearch "track:\"Alison *\" NOT track:\"Alison Gross\"" "track"
 #doSearch "track:\"* Alison *\" NOT track:\"Alison Gross\"" "track"
-doSearch "Beethoven Moonlight" "album" 70
-#doSearch "artist:Beethoven" "artist"
+#doSearch "Beethoven Moonlight" "album,track" 20
+#doSearch "artist:Beethoven" "artist,track,album" 500
+#doSearch "artist:Balsom" "artist,track,album" 500
+doSearch "\"Cygnet committee\"" "track" 500
+doSearch "Cygnet" "album,artist,track" 500
+#doSearch "Cygnet" "album,artist,track" 500
 

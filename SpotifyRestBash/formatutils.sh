@@ -10,7 +10,15 @@ function showItemNames() {
 	local ITEM_TYPE="$2"	# The name of the element which contains the items[] array, e.g. albums
 	local MAX_ITEMS_TO_DISPLAY="$3"
 
+	if [[ $ITEM_TYPE == "categories" ]]
+	then
+		ITEM_TYPE_SINGULAR="category"
+	else
+		ITEM_TYPE_SINGULAR=${ITEM_TYPE%s}
+	fi	
+
 	local FOUND_ITEMS=$(cat ${OUTPUT_FILE} | jq ".${ITEM_TYPE}.items[]?.name")
+
 	declare -i FOUND_ITEM_COUNT
 
 	if isEmptyArrayJQOutput "${FOUND_ITEMS}"
@@ -24,7 +32,7 @@ function showItemNames() {
 	echo
 	if (( FOUND_ITEM_COUNT == 1 ))
 	then
-		echo "${FOUND_ITEM_COUNT} ${ITEM_TYPE%s} found"
+		echo "${FOUND_ITEM_COUNT} ${ITEM_TYPE_SINGULAR} found"
 	else
 		echo "${FOUND_ITEM_COUNT} ${ITEM_TYPE} found"
 	fi
@@ -39,7 +47,7 @@ function showItemNames() {
 			VTEXT="all ${FOUND_ITEM_COUNT}"
 		fi
 		echo
-		echo "Showing ${VTEXT} ${ITEM_TYPE%s} names from results output (sorted by name):"
+		echo "Showing ${VTEXT} ${ITEM_TYPE_SINGULAR} names from results output (sorted by name):"
 		echo
 		echo "${FOUND_ITEMS}" | sort | head -${MAX_ITEMS_TO_DISPLAY}
 	fi
