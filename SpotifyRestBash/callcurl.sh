@@ -251,11 +251,14 @@ function callCurlPaging() {
 		cat ${REQUEST_OUTFILE} | unix2dos >> $FINAL_REQUEST_OUTFILE
 
 		# Process each known item type in turn
-		for ITEM_TYPE in tracks artists albums playlists categories
+		for ITEM_TYPE in tracks artists albums playlists categories '.'
 		do
 			if [[ $ITEM_TYPE == "categories" ]]
 			then
 				ITEM_TYPE_SINGULAR="category"
+			elif [[ $ITEM_TYPE == '.' ]]
+			then
+				ITEM_TYPE_SINGULAR=item
 			else
 				ITEM_TYPE_SINGULAR=${ITEM_TYPE%s}
 			fi
@@ -270,8 +273,14 @@ function callCurlPaging() {
 			while [[ ${CONTINUE} == "Y" ]]
 			do
 				# Process results from previous call
-				ITEMS_RETURNED=$(cat ${MY_OUTFILE} | jq ".${ITEM_TYPE}.items | arrays | length")
-				TOTAL_ITEMS=$(cat ${MY_OUTFILE} | jq ".${ITEM_TYPE}.total? | numbers")
+				if [[ $ITEM_TYPE != '.' ]]
+				then
+					ITEMS_RETURNED=$(cat ${MY_OUTFILE} | jq ".${ITEM_TYPE}.items | arrays | length")
+					TOTAL_ITEMS=$(cat ${MY_OUTFILE} | jq ".${ITEM_TYPE}.total? | numbers")
+				else
+					ITEMS_RETURNED=$(cat ${MY_OUTFILE} | jq ".items | arrays | length")
+					TOTAL_ITEMS=$(cat ${MY_OUTFILE} | jq ".total? | numbers")
+				fi
 				let ITEMS_SO_FAR+=${ITEMS_RETURNED}
 
 				STOPPING_AFTER_TEXT=""
@@ -285,7 +294,13 @@ function callCurlPaging() {
 					echo "Call ${CALL_COUNT}: retrieved ${ITEMS_RETURNED} ${ITEM_TYPE_SINGULAR} items, ${ITEMS_SO_FAR} items so far out of ${TOTAL_ITEMS}${STOPPING_AFTER_TEXT}"
 				fi
 
-				NEXT_URL=$(cat ${MY_OUTFILE} | jq ".${ITEM_TYPE}.next | strings")
+				if [[ $ITEM_TYPE != '.' ]]
+				then
+					NEXT_URL=$(cat ${MY_OUTFILE} | jq ".${ITEM_TYPE}.next | strings")
+				else
+					NEXT_URL=$(cat ${MY_OUTFILE} | jq ".next | strings")
+				fi
+
 				if [[ -z "${NEXT_URL}" ]]
 				then
 					if (( TOTAL_ITEMS > 0 ))
