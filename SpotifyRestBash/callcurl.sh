@@ -60,6 +60,11 @@ function callCurlFull() {
 
 	local RETURN_STATUS=0
 
+	# Global showing HTTP response status found in headers.
+	# -1 indicates the value is not filled in - some other error prevented HTTP response status processing from taking place.
+	# -1 can also indicate that no HTTP response status was found.
+	CURL_HTTP_RESPONSE="-1"
+
 	outputFilePreparation "${OUTFILE_PARAM}"
 
 	# Check whether we need to add the URL_BASE value to the URL (if this is a relative URL) 
@@ -133,6 +138,47 @@ function callCurlFull() {
 			echo
 			RETURN_STATUS=1
 		fi
+
+		if [[ ${CURLSTATUS} -eq 0 ]]
+		then
+			# Set up HTTP response code as a variable. Search in the header response file, expecting a line similar to
+			#	HTTP/2 200 
+			# Search for lines starting HTTP, put its words into an array. If the array has two elements, use the second
+			# as the response. Expect response codes to be 3-digit numbers 1xx - 5xx
+
+			declare -a aHTTP
+			aHTTP=(`grep "^HTTP" "${HEADER_OUTFILE}"`)
+			if [[ ${#aHTTP[*]} -eq 2 ]]
+			then
+
+				CURL_HTTP_RESPONSE="${aHTTP[1]}"
+				if [[ "${CURL_HTTP_RESPONSE}" != [1-5][0-9][0-9] ]]
+				then
+					echo
+					echo "***********************************************"				
+					echo "Unexpected HTTP response value of ${CURL_HTTP_RESPONSE}"
+					echo "***********************************************"				
+					echo
+					RETURN_STATUS=1
+				else
+					if [[ ${QUIETMODE} != "Y" ]]
+					then
+						echo
+						echo "HTTP response value is ${CURL_HTTP_RESPONSE}"
+					fi
+				fi
+			else
+				echo
+				echo "***********************************************"				
+				echo "Failed to find expected HTTP response code in:"
+				echo
+				cat "${HEADER_OUTFILE}"
+				echo
+				echo "***********************************************"				
+				echo
+				RETURN_STATUS=1
+			fi
+		fi
 	fi
 
 	if [[ -f ${OUTFILE} ]]
@@ -146,7 +192,8 @@ function callCurlFull() {
 			ls -lt ${OUTFILE} 
 		fi
 
-		# See whether the output json was an error message, in which case we expect an "error" field to be present
+		# See whether the output json was an error message, in which case we expect an "error" field to be present in
+		# Spotify's json
 		if grep -q -i "\"error\"" ${OUTFILE} 
 		then
 			echo
