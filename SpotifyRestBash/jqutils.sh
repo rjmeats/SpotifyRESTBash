@@ -8,6 +8,13 @@ function removeSurroundingDoubleQuotes() {
 	echo "${S_OUT}"
 }
 
+function removeSurroundingSquareBrackets() {
+	local S_IN="$1"
+	local S_OUT="${S_IN%\]}"		# Remove right square bracket if present
+	S_OUT="${S_OUT#\[}"			# Remove left square bracket if present
+	echo "${S_OUT}"
+}
+
 # Not sure how to suppress some cases of jq returning json consisting of just empty arrays as []. Strip them out here.
 function isEmptyArrayJQOutput() {
 	local STRIPPED=$(echo "$1" | tr -d '\[\]\012\015')

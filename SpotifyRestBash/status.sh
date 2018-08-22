@@ -16,6 +16,7 @@ fi
 
 QUIET=Y
 
+
 ######################################################################################
 
 # Process 'device object' JSON and extract some fields from it into variables. The
@@ -91,6 +92,89 @@ function contextInfo {
 				PLAYLIST_CONTEXT_TRACK_COUNT=$(echo "$PLAYLIST_CONTEXT_JSON" | jq -r ".tracks.total")
 				PLAYLIST_CONTEXT_FOLLOWER_COUNT=$(echo "$PLAYLIST_CONTEXT_JSON" | jq -r ".followers.total")
 			fi
+		fi
+
+		if [[ $CONTEXT_TYPE == "artist" ]]
+		then
+			PLAYLISTS_ENDPOINT="v1/artists/${CONTEXT_ID}"
+			callCurl "GET" "${PLAYLISTS_ENDPOINT}" "${OUTDIR}/artist_context.json" $QUIET 
+			if [[ $? -ne 0 ]]
+			then
+				echo "Get artist API call failed"
+			elif [[ ${CURL_HTTP_RESPONSE} -ne 200 ]]
+			then
+				echo "Unexpected HTTP Response fetching artist context: ${CURL_HTTP_RESPONSE}"
+			else
+				ARTIST_CONTEXT_JSON=$(cat "${OUTDIR}/artist_context.json")
+				ARTIST_CONTEXT_NAME=$(echo "$ARTIST_CONTEXT_JSON" | jq -r ".name")
+				ARTIST_CONTEXT_POPULARITY=$(echo "$ARTIST_CONTEXT_JSON" | jq -r ".popularity")
+				ARTIST_CONTEXT_FOLLOWERS_COUNT=$(echo "$ARTIST_CONTEXT_JSON" | jq -r ".followers.total")
+				ARTIST_CONTEXT_GENRES=$(echo "$ARTIST_CONTEXT_JSON" | jq -cr ".genres")
+			fi
+		fi
+
+		if [[ $CONTEXT_TYPE == "album" ]]
+		then
+			PLAYLISTS_ENDPOINT="v1/albums/${CONTEXT_ID}"
+			callCurl "GET" "${PLAYLISTS_ENDPOINT}" "${OUTDIR}/album_context.json" $QUIET 
+			if [[ $? -ne 0 ]]
+			then
+				echo "Get album API call failed"
+			elif [[ ${CURL_HTTP_RESPONSE} -ne 200 ]]
+			then
+				echo "Unexpected HTTP Response fetching album context: ${CURL_HTTP_RESPONSE}"
+			else
+				ALBUM_CONTEXT_JSON=$(cat "${OUTDIR}/album_context.json")
+				ALBUM_CONTEXT_NAME=$(echo "$ALBUM_CONTEXT_JSON" | jq -r ".name")
+				ALBUM_CONTEXT_ALBUM_TYPE=$(echo "$ALBUM_CONTEXT_JSON" | jq -r ".album_type")
+				ALBUM_CONTEXT_LABEL=$(echo "$ALBUM_CONTEXT_JSON" | jq -r ".label")
+				ALBUM_CONTEXT_TRACK_COUNT=$(echo "$ALBUM_CONTEXT_JSON" | jq -r ".total_tracks")
+				ALBUM_CONTEXT_POPULARITY=$(echo "$ALBUM_CONTEXT_JSON" | jq -r ".popularity")
+				ALBUM_CONTEXT_GENRES=$(echo "$ALBUM_CONTEXT_JSON" | jq -cr ".genres")
+				ALBUM_CONTEXT_ARTIST_NAMES=$(echo "$ALBUM_CONTEXT_JSON" | jq -cjr "[ .artists[].name ]")
+			fi
+		fi
+	fi
+}
+
+function trackInfo {
+	MY_TRACK_JSON="$1"
+	GET_TRACK_DETAIL=$2
+	TRACK_NAME=$(echo "$MY_TRACK_JSON" | jq -r ".name")
+	TRACK_ID=$(echo "$MY_TRACK_JSON" | jq -r ".id")
+	TRACK_ARTIST_NAMES=$(echo "$MY_TRACK_JSON" | jq -cjr "[ .artists[].name ]")
+	TRACK_POPULARITY=$(echo "$MY_TRACK_JSON" | jq -r ".popularity")
+	TRACK_DURATION_MS=$(echo "$MY_TRACK_JSON" | jq -r ".duration_ms")
+	TRACK_DISK_NUMBER=$(echo "$MY_TRACK_JSON" | jq -r ".disc_number")
+	TRACK_NUMBER=$(echo "$MY_TRACK_JSON" | jq -r ".track_number")
+	TRACK_ALBUM_NAME=$(echo "$MY_TRACK_JSON" | jq -r ".album.name")
+	TRACK_ALBUM_ID=$(echo "$MY_TRACK_JSON" | jq -r ".album.id")
+	TRACK_ALBUM_TRACK_COUNT=$(echo "$MY_TRACK_JSON" | jq -r ".album.total_tracks")
+
+	if [[ $GET_TRACK_DETAIL == "Y" || $GET_TRACK_DETAIL == "y" ]]
+	then
+		TRACK_FEATURES_ENDPOINT="v1/audio-features/${TRACK_ID}"
+		callCurl "GET" "${TRACK_FEATURES_ENDPOINT}" "${OUTDIR}/track_features.json" $QUIET 
+		if [[ $? -ne 0 ]]
+		then
+			echo "Get track features API call failed"
+		elif [[ ${CURL_HTTP_RESPONSE} -ne 200 ]]
+		then
+			echo "Unexpected HTTP Response fetching track features: ${CURL_HTTP_RESPONSE}"
+		else
+			TRACK_FEATURES_JSON=$(cat "${OUTDIR}/track_features.json")
+			TRACK_FEATURES_DANCEABILITY=$(echo "$TRACK_FEATURES_JSON" | jq -r ".danceability")
+			TRACK_FEATURES_ENERGY=$(echo "$TRACK_FEATURES_JSON" | jq -r ".energy")
+			TRACK_FEATURES_KEY=$(echo "$TRACK_FEATURES_JSON" | jq -r ".key")
+			TRACK_FEATURES_LOUDNESS=$(echo "$TRACK_FEATURES_JSON" | jq -r ".loudness")
+			TRACK_FEATURES_MODE=$(echo "$TRACK_FEATURES_JSON" | jq -r ".mode")
+			TRACK_FEATURES_SPEECHINESS=$(echo "$TRACK_FEATURES_JSON" | jq -r ".speechiness")
+			TRACK_FEATURES_ACOUSTICNESS=$(echo "$TRACK_FEATURES_JSON" | jq -r ".acousticness")
+			TRACK_FEATURES_INSTRUMENTALNESS=$(echo "$TRACK_FEATURES_JSON" | jq -r ".instrumentalness")
+			TRACK_FEATURES_LIVENESS=$(echo "$TRACK_FEATURES_JSON" | jq -r ".liveness")
+			TRACK_FEATURES_VALENCE=$(echo "$TRACK_FEATURES_JSON" | jq -r ".valence")
+			TRACK_FEATURES_TEMPO=$(echo "$TRACK_FEATURES_JSON" | jq -r ".tempo")
+			TRACK_FEATURES_TIME_SIGNATURE=$(echo "$TRACK_FEATURES_JSON" | jq -r ".time_signature")
 		fi
 	fi
 }
@@ -223,37 +307,84 @@ else
 		then
 			echo "- description: $PLAYLIST_CONTEXT_DESCRIPTION"
 		fi
+	elif [[ $CONTEXT_TYPE == "artist" ]]
+	then
+		echo "- type:        $CONTEXT_TYPE"
+		echo "- ID:          $CONTEXT_ID"
+		echo "- name:        $ARTIST_CONTEXT_NAME"				
+		echo "- genres:      $ARTIST_CONTEXT_GENRES"				
+		echo "- followers:   $ARTIST_CONTEXT_FOLLOWERS_COUNT"
+		echo "- popularity:  $ARTIST_CONTEXT_POPULARITY"
+	elif [[ $CONTEXT_TYPE == "album" ]]
+	then
+		ARTISTS_NAMES=$(removeSurroundingSquareBrackets "${ALBUM_CONTEXT_ARTIST_NAMES}")
+		echo "- type:        $CONTEXT_TYPE"
+		echo "- ID:          $CONTEXT_ID"
+		echo "- name:        $ALBUM_CONTEXT_NAME"				
+		echo "- album type:  $ALBUM_CONTEXT_ALBUM_TYPE"				
+		echo "- artists:     $ARTISTS_NAMES"				
+		echo "- label:       $ALBUM_CONTEXT_LABEL"				
+		echo "- tracks:      $ALBUM_CONTEXT_TRACK_COUNT"				
+		# echo "- genres:      $ALBUM_CONTEXT_GENRES"		# Not filled in for albums
+		echo "- popularity:  $ALBUM_CONTEXT_POPULARITY"
 	else
-# Todo - other contexts - artist, album
-	echo "- type:           $CONTEXT_TYPE"
-	echo "- href:           $CONTEXT_HREF"
-	echo "- uri:            $CONTEXT_URI"
-	echo "- external URL:   $CONTEXT_EXTERNAL_URL"
-	echo "- context ID:     $CONTEXT_ID"
+		echo "- type:        $CONTEXT_TYPE"
+		echo "- context ID:  $CONTEXT_ID"
 	fi
 
-# Todo Current track has its own album (+album-type) and artist(s) info 
+	# Current track info
+	TRACK_JSON=$(echo $JSON | jq ".item")
 
-	# Track
+	if [[ "$TRACK_JSON" == "null" ]]
+	then
+		echo
+		echo "No track currently playing"
+	else
+		PROGRESS_MS=$(echo $JSON | jq -r ".progress_ms")
+		trackInfo "${TRACK_JSON}" "${GET_DETAIL}"
 
+		ARTISTS_NAMES=$(removeSurroundingSquareBrackets "${TRACK_ARTIST_NAMES}")
+		echo
+		echo "Current track:"
+		echo
+		echo "- name:             $TRACK_NAME"
+		echo "- id:               $TRACK_ID"
+		echo "- artist(s):        $ARTISTS_NAMES"
+		echo "- popularity        $TRACK_POPULARITY"
+		echo "- progress/duration $PROGRESS_MS / $TRACK_DURATION_MS"
+		echo "- album name:       $TRACK_ALBUM_NAME"
+		echo "- album id:         $TRACK_ALBUM_ID"
+		echo "- disk no:          $TRACK_DISK_NUMBER"
+		echo "- track no:         $TRACK_NUMBER"
+		echo "- tracks in album:  $TRACK_ALBUM_TRACK_COUNT"
 
-#	echo
-#	INFO=$(echo ${OJ} | jq "{ device: .device.name, playing: .is_playing, album: .item.album.name, item: .item.name }")
-#	echo "Player info is ${INFO}"
+		declare -i SECONDS_PLAYING SECONDS_TO_GO SECONDS_DURATION PERCENT_PLAYED
+		let SECONDS_PLAYING=$PROGRESS_MS/1000
+		let SECONDS_DURATION=$TRACK_DURATION_MS/1000
+		let SECONDS_TO_GO=($TRACK_DURATION_MS - $PROGRESS_MS)/1000
+		let PERCENT_PLAYED=SECONDS_PLAYING*100/SECONDS_DURATION
 
+		echo
+		echo "- playing for $SECONDS_PLAYING seconds out of $SECONDS_DURATION, ${PERCENT_PLAYED}% of track played, $SECONDS_TO_GO seconds to go"
+		echo
+		echo "'Features'"
+		echo
+		echo "- danceability:        $TRACK_FEATURES_DANCEABILITY"
+		echo "- energy:              $TRACK_FEATURES_ENERGY"
+		echo "- speechiness:         $TRACK_FEATURES_SPEECHINESS"
+		echo "- acousticness:        $TRACK_FEATURES_ACOUSTICNESS"
+		echo "- instrumentalness:    $TRACK_FEATURES_INSTRUMENTALNESS"
+		echo "- liveness:            $TRACK_FEATURES_LIVENESS"
+		echo "- valence:             $TRACK_FEATURES_VALENCE"
+		echo "- loudness:            $TRACK_FEATURES_LOUDNESS"
+		echo "- mode:                $TRACK_FEATURES_MODE"
+		echo "- key:                 $TRACK_FEATURES_KEY"
+		echo "- tempo:               $TRACK_FEATURES_TEMPO"
+		echo "- time signature:      $TRACK_FEATURES_TIME_SIGNATURE"
+	fi
+
+	# Show Audio features of current track ?
 fi
-
-######################################################################################
-
-#	echo
-#	cat "${OUTDIR}/user_devices.json" | 
-#		jq -r '.devices[] | .id + " : " + .type + " : " + .name + " : " + if .is_active == true then "active" else "inactive" end + " : " + (.volume_percent | tostring)'
-
-# Show currently playing
-# Not the normal paging structure, so below doesn't do any next processing
-
-exit 0
-
 
 ######################################################################################
 
