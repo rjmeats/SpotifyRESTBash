@@ -86,6 +86,7 @@ function contextInfo {
 			else
 				PLAYLIST_CONTEXT_JSON=$(cat "${OUTDIR}/playlist_context.json")
 				PLAYLIST_CONTEXT_NAME=$(echo "$PLAYLIST_CONTEXT_JSON" | jq -r ".name")
+				PLAYLIST_CONTEXT_SPOTIFY_URL=$(echo "$PLAYLIST_CONTEXT_JSON" | jq -r ".external_urls.spotify")
 				PLAYLIST_CONTEXT_DESCRIPTION=$(echo "$PLAYLIST_CONTEXT_JSON" | jq -r ".description")
 				PLAYLIST_CONTEXT_PUBLIC=$(echo "$PLAYLIST_CONTEXT_JSON" | jq -r ".public")
 				PLAYLIST_CONTEXT_OWNER_NAME=$(echo "$PLAYLIST_CONTEXT_JSON" | jq -r ".owner.display_name")
@@ -107,6 +108,7 @@ function contextInfo {
 			else
 				ARTIST_CONTEXT_JSON=$(cat "${OUTDIR}/artist_context.json")
 				ARTIST_CONTEXT_NAME=$(echo "$ARTIST_CONTEXT_JSON" | jq -r ".name")
+				ARTIST_CONTEXT_SPOTIFY_URL=$(echo "$ARTIST_CONTEXT_JSON" | jq -r ".external_urls.spotify")
 				ARTIST_CONTEXT_POPULARITY=$(echo "$ARTIST_CONTEXT_JSON" | jq -r ".popularity")
 				ARTIST_CONTEXT_FOLLOWERS_COUNT=$(echo "$ARTIST_CONTEXT_JSON" | jq -r ".followers.total")
 				ARTIST_CONTEXT_GENRES=$(echo "$ARTIST_CONTEXT_JSON" | jq -cr ".genres")
@@ -126,6 +128,7 @@ function contextInfo {
 			else
 				ALBUM_CONTEXT_JSON=$(cat "${OUTDIR}/album_context.json")
 				ALBUM_CONTEXT_NAME=$(echo "$ALBUM_CONTEXT_JSON" | jq -r ".name")
+				ALBUM_CONTEXT_SPOTIFY_URL=$(echo "$ALBUM_CONTEXT_JSON" | jq -r ".external_urls.spotify")
 				ALBUM_CONTEXT_ALBUM_TYPE=$(echo "$ALBUM_CONTEXT_JSON" | jq -r ".album_type")
 				ALBUM_CONTEXT_LABEL=$(echo "$ALBUM_CONTEXT_JSON" | jq -r ".label")
 				ALBUM_CONTEXT_TRACK_COUNT=$(echo "$ALBUM_CONTEXT_JSON" | jq -r ".total_tracks")
@@ -149,6 +152,7 @@ function trackInfo {
 	TRACK_NUMBER=$(echo "$MY_TRACK_JSON" | jq -r ".track_number")
 	TRACK_ALBUM_NAME=$(echo "$MY_TRACK_JSON" | jq -r ".album.name")
 	TRACK_ALBUM_ID=$(echo "$MY_TRACK_JSON" | jq -r ".album.id")
+	TRACK_ALBUM_SPOTIFY_URL=$(echo "$MY_TRACK_JSON" | jq -r ".album.external_urls.spotify")
 	TRACK_ALBUM_TRACK_COUNT=$(echo "$MY_TRACK_JSON" | jq -r ".album.total_tracks")
 
 	if [[ $GET_TRACK_DETAIL == "Y" || $GET_TRACK_DETAIL == "y" ]]
@@ -296,37 +300,40 @@ else
 	echo
 	if [[ $CONTEXT_TYPE == "playlist" ]]
 	then
-		echo "- type:        $CONTEXT_TYPE"
-		echo "- ID:          $CONTEXT_ID"
-		echo "- name:        $PLAYLIST_CONTEXT_NAME"
-		echo "- owner:       $PLAYLIST_CONTEXT_OWNER_NAME"
-		echo "- public:      $PLAYLIST_CONTEXT_PUBLIC"
-		echo "- tracks:      $PLAYLIST_CONTEXT_TRACK_COUNT"
-		echo "- followers:   $PLAYLIST_CONTEXT_FOLLOWER_COUNT"
+		echo "- context type:          $CONTEXT_TYPE"
+		echo "- ID:                    $CONTEXT_ID"
+		echo "- name:                  $PLAYLIST_CONTEXT_NAME"
+		echo "- Spotify playlist URL:  $PLAYLIST_CONTEXT_SPOTIFY_URL"
+		echo "- owner:                 $PLAYLIST_CONTEXT_OWNER_NAME"
+		echo "- public:                $PLAYLIST_CONTEXT_PUBLIC"
+		echo "- tracks:                $PLAYLIST_CONTEXT_TRACK_COUNT"
+		echo "- followers:             $PLAYLIST_CONTEXT_FOLLOWER_COUNT"
 		if [[ ! -z $PLAYLIST_CONTEXT_DESCRIPTION ]]
 		then
 			echo "- description: $PLAYLIST_CONTEXT_DESCRIPTION"
 		fi
 	elif [[ $CONTEXT_TYPE == "artist" ]]
 	then
-		echo "- type:        $CONTEXT_TYPE"
-		echo "- ID:          $CONTEXT_ID"
-		echo "- name:        $ARTIST_CONTEXT_NAME"				
-		echo "- genres:      $ARTIST_CONTEXT_GENRES"				
-		echo "- followers:   $ARTIST_CONTEXT_FOLLOWERS_COUNT"
-		echo "- popularity:  $ARTIST_CONTEXT_POPULARITY"
+		echo "- context type:        $CONTEXT_TYPE"
+		echo "- ID:                  $CONTEXT_ID"
+		echo "- name:                $ARTIST_CONTEXT_NAME"				
+		echo "- Spotify artist URL:  $ARTIST_CONTEXT_SPOTIFY_URL"
+		echo "- genres:              $ARTIST_CONTEXT_GENRES"				
+		echo "- followers:           $ARTIST_CONTEXT_FOLLOWERS_COUNT"
+		echo "- popularity:          $ARTIST_CONTEXT_POPULARITY"
 	elif [[ $CONTEXT_TYPE == "album" ]]
 	then
 		ARTISTS_NAMES=$(removeSurroundingSquareBrackets "${ALBUM_CONTEXT_ARTIST_NAMES}")
-		echo "- type:        $CONTEXT_TYPE"
-		echo "- ID:          $CONTEXT_ID"
-		echo "- name:        $ALBUM_CONTEXT_NAME"				
-		echo "- album type:  $ALBUM_CONTEXT_ALBUM_TYPE"				
-		echo "- artists:     $ARTISTS_NAMES"				
-		echo "- label:       $ALBUM_CONTEXT_LABEL"				
-		echo "- tracks:      $ALBUM_CONTEXT_TRACK_COUNT"				
-		# echo "- genres:      $ALBUM_CONTEXT_GENRES"		# Not filled in for albums
-		echo "- popularity:  $ALBUM_CONTEXT_POPULARITY"
+		echo "- context type:       $CONTEXT_TYPE"
+		echo "- ID:                 $CONTEXT_ID"
+		echo "- name:               $ALBUM_CONTEXT_NAME"				
+		echo "- Spotify album URL:  $ARTIST_CONTEXT_SPOTIFY_URL"
+		echo "- album type:         $ALBUM_CONTEXT_ALBUM_TYPE"				
+		echo "- artists:            $ARTISTS_NAMES"				
+		echo "- LABEL:              $ALBUM_CONTEXT_LABEL"				
+		echo "- tracks:             $ALBUM_CONTEXT_TRACK_COUNT"				
+		# echo "- genres:     # Not filled in by Spotify for albums
+		echo "- popularity:         $ALBUM_CONTEXT_POPULARITY"
 	else
 		echo "- type:        $CONTEXT_TYPE"
 		echo "- context ID:  $CONTEXT_ID"
@@ -347,16 +354,17 @@ else
 		echo
 		echo "Current track:"
 		echo
-		echo "- name:             $TRACK_NAME"
-		echo "- id:               $TRACK_ID"
-		echo "- artist(s):        $ARTISTS_NAMES"
-		echo "- popularity        $TRACK_POPULARITY"
-		echo "- progress/duration $PROGRESS_MS / $TRACK_DURATION_MS"
-		echo "- album name:       $TRACK_ALBUM_NAME"
-		echo "- album id:         $TRACK_ALBUM_ID"
-		echo "- disk no:          $TRACK_DISK_NUMBER"
-		echo "- track no:         $TRACK_NUMBER"
-		echo "- tracks in album:  $TRACK_ALBUM_TRACK_COUNT"
+		echo "- name:               $TRACK_NAME"
+		echo "- id:                 $TRACK_ID"
+		echo "- artist(s):          $ARTISTS_NAMES"
+		echo "- popularity          $TRACK_POPULARITY"
+		echo "- progress/duration   $PROGRESS_MS / $TRACK_DURATION_MS"
+		echo "- album name:         $TRACK_ALBUM_NAME"
+		echo "- album id:           $TRACK_ALBUM_ID"
+		echo "- Spotify album URL:  $TRACK_ALBUM_SPOTIFY_URL"
+		echo "- disk no:            $TRACK_DISK_NUMBER"
+		echo "- track no:           $TRACK_NUMBER"
+		echo "- tracks in album:    $TRACK_ALBUM_TRACK_COUNT"
 
 		declare -i SECONDS_PLAYING SECONDS_TO_GO SECONDS_DURATION PERCENT_PLAYED
 		let SECONDS_PLAYING=$PROGRESS_MS/1000
@@ -367,7 +375,7 @@ else
 		echo
 		echo "- playing for $SECONDS_PLAYING seconds out of $SECONDS_DURATION, ${PERCENT_PLAYED}% of track played, $SECONDS_TO_GO seconds to go"
 		echo
-		echo "'Features'"
+		echo "Track 'Features':"
 		echo
 		echo "- danceability:        $TRACK_FEATURES_DANCEABILITY"
 		echo "- energy:              $TRACK_FEATURES_ENERGY"
@@ -387,19 +395,3 @@ else
 fi
 
 ######################################################################################
-
-# Show recently played
-# Not the normal paging structure, so below doesn't do any next processing
-
-#RECENTLY_PLAYED_ENDPOINT="v1/me/player/recently-played"
-#callCurlPaging "GET" "${RECENTLY_PLAYED_ENDPOINT}" "${OUTDIR}/user_recently_played.json" 100
-#
-#if [[ $? -ne 0 ]]
-#then
-#	echo "Get recently-played call failed"
-#else
-#	echo
-#	RECENT=$(cat ${OUTDIR}/user_recently_played.json | jq '.items[] | .played_at+" - "+.track.name')
-#	echo "${RECENT}"
-#fi
-#

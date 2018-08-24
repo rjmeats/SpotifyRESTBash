@@ -246,15 +246,19 @@ function callCurlPaging() {
 	local ENDPOINT="$2"
 	local OUTFILE_PARAM="$3"			# Expected to end .json and include path info
 	declare -i MAXITEMS=${4:-100}			# Default to returning a maximum of 100 items
+	local QUIETMODE="${5:-N}"			# Suppress some output e.g. if called within a paging operation
 	local BATCHSIZE=50				# Max allowed by the Spotify API is 50 per page
 
 	local SUMMARY="${VERB} paging request to ${ENDPOINT}"
 
-	echo
-	echo "----------------------------------------------------------------------------------------------------"
-	echo
-	echo "${SUMMARY}"
-	echo
+	if [[ "${QUIETMODE}" -ne "Y" ]]
+	then
+		echo
+		echo "----------------------------------------------------------------------------------------------------"
+		echo
+		echo "${SUMMARY}"
+		echo
+	fi
 
 	if (( ${BATCHSIZE} > MAXITEMS ))
 	then
@@ -338,7 +342,10 @@ function callCurlPaging() {
 					
 				if (( ITEMS_RETURNED > 0 ))
 				then
-					echo "Call ${CALL_COUNT}: retrieved ${ITEMS_RETURNED} ${ITEM_TYPE_SINGULAR} items, ${ITEMS_SO_FAR} items so far out of ${TOTAL_ITEMS}${STOPPING_AFTER_TEXT}"
+					if [[ "${QUIETMODE}" -ne "Y" ]]
+					then
+						 echo "Call ${CALL_COUNT}: retrieved ${ITEMS_RETURNED} ${ITEM_TYPE_SINGULAR} items, ${ITEMS_SO_FAR} items so far out of ${TOTAL_ITEMS}${STOPPING_AFTER_TEXT}"
+					fi
 				fi
 
 				if [[ $ITEM_TYPE != '.' ]]
@@ -352,7 +359,10 @@ function callCurlPaging() {
 				then
 					if (( TOTAL_ITEMS > 0 ))
 					then
-						echo "Reached end of ${ITEM_TYPE_SINGULAR} results after ${ITEMS_SO_FAR} out of ${TOTAL_ITEMS} fetched"
+						if [[ "${QUIETMODE}" -ne "Y" ]]
+						then						
+							echo "Reached end of ${ITEM_TYPE_SINGULAR} results after ${ITEMS_SO_FAR} out of ${TOTAL_ITEMS} fetched"
+						fi
 					fi
 					CONTINUE=N
 				else
@@ -365,7 +375,10 @@ function callCurlPaging() {
 					then
 						:
 					else
-						echo "No more ${ITEM_TYPE_SINGULAR} results paging: reached max items limit of ${MAXITEMS}"
+						if [[ "${QUIETMODE}" -ne "Y" ]]
+						then
+							echo "No more ${ITEM_TYPE_SINGULAR} results paging: reached max items limit of ${MAXITEMS}"
+						fi
 						CONTINUE=N
 					fi
 				fi
