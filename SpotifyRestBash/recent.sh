@@ -14,13 +14,26 @@ then
 	fi
 fi
 
+function recentInfo {
+	MY_RECENT_ITEM_JSON=$1
+	PLAYED_AT=$(echo "$MY_RECENT_ITEM_JSON" | jq -r ".played_at")
+	CONTEXT_TYPE=$(echo "$MY_RECENT_ITEM_JSON" | jq -r ".context.type")
+	if [[ "$CONTEXT_TYPE" == "null" ]]
+	then
+		CONTEXT_TYPE="?"
+	fi
+	
+	TRACK_NAME=$(echo "$MY_RECENT_ITEM_JSON" | jq -r ".track.name")
+	ALBUM_NAME=$(echo "$MY_RECENT_ITEM_JSON" | jq -r ".track.album.name")
+}
+
 ######################################################################################
 
 # Show recently played
 # Request 100 but the API only returns 50 (regardless of batch size/next processing)
 
 RECENTLY_PLAYED_ENDPOINT="v1/me/player/recently-played"
-callCurlPaging "GET" "${RECENTLY_PLAYED_ENDPOINT}" "${OUTDIR}/recent.json" 100
+callCurlPaging "GET" "${RECENTLY_PLAYED_ENDPOINT}" "${OUTDIR}/recent.json" 50
 
 if [[ $? -ne 0 ]]
 then
@@ -34,7 +47,30 @@ else
 	echo
 	echo "Recently played tracks:"
 	echo
-	RECENT=$(cat ${OUTDIR}/recent.json | jq -r '.items[] | .played_at+" - "+.context.type+" - "+.track.name')
+	RECENT=$(cat ${OUTDIR}/recent.json | jq -r '.items[] | .played_at+" - "+.context.type+" - "+.track.name+" - "+.track.album.name')
 	echo "${RECENT}"
+
+	JSON=$(cat "${OUTDIR}/recent.json")
+	RECENT_TRACK_COUNT=$(echo "$JSON" | jq -r '.items | length')
+
+	if [[ $RECENT_TRACK_COUNT -eq 0 ]]
+	then
+		echo "- no recent items found"
+	else
+		echo "Found $RECENT_TRACK_COUNT recent tracks:"
+		echo
+		declare -i RECENT_TRACK_NO=1
+		printf "%-24s %-12s %-40.40s   %-40.40s\n" "Played at" "Context" "Track name" "Album name"
+		printf "%-24s %-12s %-40.40s   %-40.40s\n" "=========" "=======" "==========" "=========="
+		while [[ $RECENT_TRACK_NO -le $RECENT_TRACK_COUNT ]]
+		do
+			declare -i TRACK_INDEX=$RECENT_TRACK_NO-1
+			ITEM_JSON=$(echo $JSON | jq ".items[${TRACK_INDEX}]")
+			recentInfo "${ITEM_JSON}"
+			printf "%-24s %-12s %-40.40s   %-40.40s\n" "${PLAYED_AT}" "${CONTEXT_TYPE}" "${TRACK_NAME}" "${ALBUM_NAME}"
+			let RECENT_TRACK_NO=RECENT_TRACK_NO+1
+		done
+	fi
+
 fi
 
