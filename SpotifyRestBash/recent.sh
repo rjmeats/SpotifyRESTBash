@@ -21,6 +21,15 @@ function recentInfo {
 	if [[ "$CONTEXT_TYPE" == "null" ]]
 	then
 		CONTEXT_TYPE="?"
+		CONTEXT_URI=""
+		CONTEXT_ID=""
+	else
+		if [[ "$CONTEXT_TYPE" == "playlist_v2" ]]
+		then
+			CONTEXT_TYPE="playlist"
+		fi
+		CONTEXT_URI=$(echo "$MY_RECENT_ITEM_JSON" | jq -r ".context.uri")
+		CONTEXT_ID="${CONTEXT_URI##*:}"
 	fi
 	
 	TRACK_NAME=$(echo "$MY_RECENT_ITEM_JSON" | jq -r ".track.name")
@@ -60,14 +69,23 @@ else
 		echo "Found $RECENT_TRACK_COUNT recent tracks:"
 		echo
 		declare -i RECENT_TRACK_NO=1
-		printf "%-24s %-12s %-40.40s   %-40.40s\n" "Played at" "Context" "Track name" "Album name"
-		printf "%-24s %-12s %-40.40s   %-40.40s\n" "=========" "=======" "==========" "=========="
+		printf "%-24s %-12s %-20.20s %-40.40s   %-40.40s\n" "Played at" "Context" "Context ID" "Track name" "Album name"
+		printf "%-24s %-12s %-20.20s %-40.40s   %-40.40s\n" "=========" "=======" "==========" "==========" "=========="
+		LAST_CONTEXT_ID="-"
 		while [[ $RECENT_TRACK_NO -le $RECENT_TRACK_COUNT ]]
 		do
 			declare -i TRACK_INDEX=$RECENT_TRACK_NO-1
 			ITEM_JSON=$(echo $JSON | jq ".items[${TRACK_INDEX}]")
 			recentInfo "${ITEM_JSON}"
-			printf "%-24s %-12s %-40.40s   %-40.40s\n" "${PLAYED_AT}" "${CONTEXT_TYPE}" "${TRACK_NAME}" "${ALBUM_NAME}"
+			if [[ "$LAST_CONTEXT_ID" == "${CONTEXT_ID}" ]]
+			then
+				DISPLAY_CONTEXT_ID=""				
+			else
+				DISPLAY_CONTEXT_ID="${CONTEXT_ID}"				
+			fi
+			LAST_CONTEXT_ID="${CONTEXT_ID}"
+
+			printf "%-24s %-12s %-20.20s %-40.40s   %-40.40s\n" "${PLAYED_AT}" "${CONTEXT_TYPE}" "${DISPLAY_CONTEXT_ID}" "${TRACK_NAME}" "${ALBUM_NAME}"
 			let RECENT_TRACK_NO=RECENT_TRACK_NO+1
 		done
 	fi
