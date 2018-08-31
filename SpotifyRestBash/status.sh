@@ -2,6 +2,7 @@
 
 . ./callcurl.sh
 . ./formatutils.sh
+. ./contextinfo.sh
 
 OUTDIR="./user_output/status"
 if [[ ! -d ${OUTDIR} ]]
@@ -62,7 +63,7 @@ function deviceInfo {
 #	"uri" : "spotify:user:spotify:playlist:XXXXXXXX"
 # }
 
-function contextInfo {
+function xcontextInfo {
 	MY_CONTEXT_JSON="$1"
 	GET_CONTEXT_DETAIL=$2
 	CONTEXT_TYPE=$(echo "$MY_CONTEXT_JSON" | jq -r ".type")
@@ -327,7 +328,7 @@ else
 		echo "- context type:       $CONTEXT_TYPE"
 		echo "- ID:                 $CONTEXT_ID"
 		echo "- name:               $ALBUM_CONTEXT_NAME"				
-		echo "- Spotify album URL:  $ARTIST_CONTEXT_SPOTIFY_URL"
+		echo "- Spotify album URL:  $ALBUM_CONTEXT_SPOTIFY_URL"
 		echo "- album type:         $ALBUM_CONTEXT_ALBUM_TYPE"				
 		echo "- artists:            $ARTISTS_NAMES"				
 		echo "- LABEL:              $ALBUM_CONTEXT_LABEL"				
