@@ -25,19 +25,54 @@ function recentInfoItem {
 	PLAYED_AT=$(echo "$MY_RECENT_ITEM_JSON" | jq -r ".played_at")
 	PLAYED_AT2=$(printf "%-19.19s" "$PLAYED_AT" | tr 'T' ' ')
 
-	TRACK_NAME=$(echo "$MY_RECENT_ITEM_JSON" | jq -r ".track.name")
-	ALBUM_NAME=$(echo "$MY_RECENT_ITEM_JSON" | jq -r ".track.album.name")
-	ARTIST_NAMES=$(echo "$MY_RECENT_ITEM_JSON" | jq -cjr "[ .track.artists[].name ]")
+	TRACK_NAME=$(echo "$MY_RECENT_ITEM_JSON" | jq -r ".track.name" | declutterNames)
+	ALBUM_NAME=$(echo "$MY_RECENT_ITEM_JSON" | jq -r ".track.album.name" | declutterNames)
+	ARTIST_NAMES=$(echo "$MY_RECENT_ITEM_JSON" | jq -cjr "[ .track.artists[].name ]" | declutterArtists)
 
 	CONTEXT_JSON=$(echo "$MY_RECENT_ITEM_JSON" | jq ".context")
 	LOOKUP_CONTEXT_DETAILS=N
 	contextInfo "${CONTEXT_JSON}" "CHECK_ID" "$MY_LAST_CONTEXT_ID"
+	CONTEXT_MAIN_NAME=$(echo "$CONTEXT_MAIN_NAME" | declutterNames)
+}
+
+function declutterNames {
+	read SOURCE
+	SOURCE="${SOURCE/- Live}"
+	SOURCE="${SOURCE/\[Live\]}"
+	SOURCE="${SOURCE/\(Live\)}"
+	echo "$SOURCE"
+}
+
+function declutterArtists {
+	read SOURCE
+	SOURCE="${SOURCE/Wolfgang Amadeus Mozart/Mozart}"
+	SOURCE="${SOURCE/George Fr[ie]deric Handel/Handel}"
+	SOURCE="${SOURCE/Jean-Philippe Rameau/Rameau}"
+	SOURCE="${SOURCE/Hector Berlioz/Berlioz}"
+	SOURCE="${SOURCE/Henry Purcell/Purcell}"
+	SOURCE="${SOURCE//\"}"
+	echo "$SOURCE"
 }
 
 function calcPrintfLen {
 	local REQUIRED_CHAR_LEN="$1"
 	local VALUE="$2"
-	local TRUNC_VALUE="${VALUE:0:${REQUIRED_CHAR_LEN}}"	# Produces value truncated to this number of characters (not bytes)
+	local FROM_RIGHT="${3:-N}"
+
+	if [[ $FROM_RIGHT == "Y" ]]
+	then
+		local VALUE_LENGTH=${#VALUE}
+		if [[ $VALUE_LENGTH -gt $REQUIRED_CHAR_LEN ]] 
+		then
+			let START_POS=$((VALUE_LENGTH-REQUIRED_CHAR_LEN))
+		else
+			let START_POS=0
+		fi
+		local TRUNC_VALUE="${VALUE:${START_POS}:${REQUIRED_CHAR_LEN}}"	
+		FROM_RIGHT_VALUE="${TRUNC_VALUE}"
+	else
+		local TRUNC_VALUE="${VALUE:0:${REQUIRED_CHAR_LEN}}"	# Produces value truncated to this number of characters (not bytes)
+	fi
 
 	# Determine the length of the field in characters and bytes 
 	local CHAR_LENGTH=${#TRUNC_VALUE}
@@ -83,15 +118,35 @@ else
 	else
 		echo "Found $RECENT_TRACK_COUNT recent tracks:"
 		echo
-		declare -i RECENT_TRACK_NO=1
-		printf "%-19s %-12s %-32.32s   %-40.40s   %-40.40s   %-40.40s\n" "Played at" "Context" "Context Name" "Track name" "Album name" "Artist(s)"
-		printf "%-19s %-12s %-32.32s   %-40.40s   %-40.40s   %-40.40s\n" "=========" "=======" "============" "==========" "==========" "========="
+
+		CONTEXT_LENGTH=10
+		CONTEXT_NAME_FIELD_LENGTH=38
+		let TRACK_FIELD_LENGTH=38
+		ALBUM_FIELD_LENGTH=38
+		ARTIST_FIELD_LENGTH=38
+		printf "%-19s %-*.*s %-*.*s   %-*.*s   %-*.*s   %-*.*s\n" \
+			"Played at" \
+			$CONTEXT_LENGTH $CONTEXT_LENGTH "Context" \
+			$CONTEXT_NAME_FIELD_LENGTH $CONTEXT_NAME_FIELD_LENGTH "Context Name" \
+			$TRACK_FIELD_LENGTH $TRACK_FIELD_LENGTH "Track name" \
+			$ALBUM_FIELD_LENGTH $ALBUM_FIELD_LENGTH "Album name" \
+			$ARTIST_FIELD_LENGTH $ARTIST_FIELD_LENGTH "Artist(s)"
+		printf "%-19s %-*.*s %-*.*s   %-*.*s   %-*.*s   %-*.*s\n" \
+			"=========" \
+			$CONTEXT_LENGTH $CONTEXT_LENGTH "=======" \
+			$CONTEXT_NAME_FIELD_LENGTH $CONTEXT_NAME_FIELD_LENGTH "============" \
+			$TRACK_FIELD_LENGTH $TRACK_FIELD_LENGTH "==========" \
+			$ALBUM_FIELD_LENGTH $ALBUM_FIELD_LENGTH "==========" \
+			$ARTIST_FIELD_LENGTH $ARTIST_FIELD_LENGTH "========="
+
 		LAST_CONTEXT_ID="-"
+		declare -i RECENT_TRACK_NO=1
 		while [[ $RECENT_TRACK_NO -le $RECENT_TRACK_COUNT ]]
 		do
 			declare -i TRACK_INDEX=$RECENT_TRACK_NO-1
 			ITEM_JSON=$(echo $JSON | jq ".items[${TRACK_INDEX}]")
 			recentInfoItem "${ITEM_JSON}" "$LAST_CONTEXT_ID"
+
 			if [[ "$LAST_CONTEXT_ID" == "${CONTEXT_ID}" ]]
 			then
 				DISPLAY_CONTEXT_ID=""				
@@ -110,19 +165,39 @@ else
 			# So make field widths dynamic, allowing for extra characters. Can do this because $# returns character count whereas wc -c returns byte count. Can use the
 			# difference to work out how much to adjust the printf width by, and then make this variable via %*.*s. 
 			#
-			TRACK_FIELD_LENGTH=40
-			calcPrintfLen $TRACK_FIELD_LENGTH "${TRACK_NAME}"
+
+			calcPrintfLen $CONTEXT_NAME_FIELD_LENGTH "${DISPLAY_CONTEXT_NAME}"
+			CONTEXT_NAME_PRINTF_FIELD_LENGTH=$PRINTF_FIELD_LENGTH
+
+			# If continuing with an album context, give more space to the track field and less to the album name (which is just a repeat)
+			USE_FROM_RIGHT=N
+			TRACK_FIELD_LENGTH_TO_USE=TRACK_FIELD_LENGTH
+			ALBUM_FIELD_LENGTH_TO_USE=ALBUM_FIELD_LENGTH
+			if [[ "$CONTEXT_TYPE" == "album" ]]
+			then
+				let TRACK_FIELD_LENGTH_TO_USE=$((TRACK_FIELD_LENGTH+ALBUM_FIELD_LENGTH))
+				ALBUM_FIELD_LENGTH_TO_USE=0			
+				USE_FROM_RIGHT=Y
+			fi
+
+			calcPrintfLen $TRACK_FIELD_LENGTH_TO_USE "${TRACK_NAME}" "$USE_FROM_RIGHT"
 			TRACK_PRINTF_FIELD_LENGTH=$PRINTF_FIELD_LENGTH
+			if [[ "$CONTEXT_TYPE" == "album" ]]
+			then
+				:
+				TRACK_NAME="$FROM_RIGHT_VALUE"
+			fi
 			
-			ALBUM_FIELD_LENGTH=40
-			calcPrintfLen $ALBUM_FIELD_LENGTH "${ALBUM_NAME}"
+			calcPrintfLen $ALBUM_FIELD_LENGTH_TO_USE "${ALBUM_NAME}"
 			ALBUM_PRINTF_FIELD_LENGTH=$PRINTF_FIELD_LENGTH
 			
-			ARTIST_FIELD_LENGTH=40
+			ARTIST_NAMES=$(removeSurroundingSquareBrackets "${ARTIST_NAMES}")
 			calcPrintfLen $ARTIST_FIELD_LENGTH "${ARTIST_NAMES}"
 			ARTIST_PRINTF_FIELD_LENGTH=$PRINTF_FIELD_LENGTH
 			
-			printf "%-19s %-12s %-32.32s   %-*.*s   %-*.*s   %-*.*s\n" "${PLAYED_AT2}" "${CONTEXT_TYPE}" "${DISPLAY_CONTEXT_NAME}" \
+			printf "%-19s %-*.*s %-*.*s   %-*.*s   %-*.*s   %-*.*s\n" "${PLAYED_AT2}" \
+			$CONTEXT_LENGTH $CONTEXT_LENGTH "${CONTEXT_TYPE}" \
+			$CONTEXT_NAME_PRINTF_FIELD_LENGTH $CONTEXT_NAME_PRINTF_FIELD_LENGTH "${DISPLAY_CONTEXT_NAME}" \
 			$TRACK_PRINTF_FIELD_LENGTH $TRACK_PRINTF_FIELD_LENGTH "${TRACK_NAME}" \
 			$ALBUM_PRINTF_FIELD_LENGTH $ALBUM_PRINTF_FIELD_LENGTH "${ALBUM_NAME}" \
 			$ARTIST_PRINTF_FIELD_LENGTH $ARTIST_PRINTF_FIELD_LENGTH "${ARTIST_NAMES}"
